@@ -1,6 +1,6 @@
 gastheer_naam = input("Voer je naam in (Laat leeg als er geen gastheer is): ").lower()
 
-gasten = True
+gasten = False
 drank = True
 chips = True
 
@@ -11,7 +11,7 @@ if mijn_naam:
     print("Er is hoe dan ook een feest.")
 elif lsb_docent_naam:
     print("Er is hoe dan ook geen feest.")
-elif (gasten and (chips and drank)) or (gastheer_naam and (drank and gasten or chips)):
+elif ( (gasten and chips and drank) or (gastheer_naam and drank) ):
     print('Start the Party')
 else:
     print('No Party')
