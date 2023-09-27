@@ -1,3 +1,16 @@
+MAX_LENGTE = 220
+MIN_LENGTE = 150
+MAX_GEWICHT = 120
+MIN_GEWICHT = 90
+MIN_DRESSUUR = 4
+MIN_JONGLEREN = 5
+MIN_ACROBATIEK = 3
+MIN_JAREN_ONDERNEMER = 3
+MIN_WERKNEMERS = 5
+MIN_BREEDTE_SNOR = 10
+MIN_LENGTE_HAAR = 20
+MIN_BREEDTE_GLIMLACH = 10
+
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 print("+     Sollicitatieformulier: 'Ruimte-vuilnisman'     +")
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
@@ -9,40 +22,52 @@ print("Ontspan maar blijf wakker, hier komen de vragen.")
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 naam = input("Wat is uw naam? ").lower()
+geslacht = input("Wat is uw geslacht? (man/vrouw/anders) ").lower
+
+if geslacht == "man":
+    breedte_snor = int(input("Wat is de breedte van uw snor? "))
+elif geslacht == "vrouw":
+    rood_krulhaar = input("Heeft u rood krulhaar? (ja/nee) ").lower()
+    if rood_krulhaar == "ja":
+        haar_lengte = input("Wat is uw haarlengte? ")
+else:
+    breedte_glimlach = int(input("Hoe groot is de breedte of uw glimlach? "))
 
 lengte = int(input("Wat is uw netto lichaamslengte in hele cm? "))
-MAX_LENGTE = 220
-MIN_LENGTE = 150
-
 gewicht = int(input("Wat is uw lichaamsgewicht in hele kg? "))
-MAX_GEWICHT = 120
-MIN_GEWICHT = 90
-
+mbo = input("Bent u in bezit van een MBO-4 diploma? (ja/nee)").lower()
+ondernemer = int(input("Hoeveel jaar bent u al ondernemer? "))
+werknemers = int(input("Hoeveel werknemers heeft u in loondienst? "))
 Certificaat = input("Heeft u de Certificaat 'Overleven Met Gevaarlijk Personeel'? (ja/nee)").lower()
-
 rijbewijs = input("Bent u in bezit van een geldige Vrachtwagen rijbewijs? (ja/nee) ").lower()
-
 hoed = input("Bent u in bezit van een hoge hoed? (ja/nee) ").lower()
-
 dieren_dressuur = int(input("Hoeveel jaar (afgerond) heeft u pratijkservaring met dieren-dressuur? "))
-MIN_DRESSUUR = 4
-
 jongleren = int(input("Hoeveel jaar (afgerond) heeft u ervaring met jongleren? "))
-MIN_JONGLEREN = 5
-
 acrobatiek = int(input("Hoeveel jaar (afgerond) heeft u pratijkservaring met acrobatiek? "))
-MIN_ACROBATIEK = 3
 
-geschikt = (
+afwijzigingsredenen = []
+
+if not(
+    mbo == "ja" or ondernemer >= MIN_JAREN_ONDERNEMER and werknemers >= MIN_WERKNEMERS and
+    (geslacht == "man" and breedte_snor >= MIN_BREEDTE_SNOR) or
+    (geslacht == "vrouw" and rood_krulhaar == "ja" and haar_lengte >= MIN_LENGTE_HAAR) or
+    geslacht == "anders" and breedte_glimlach >= MIN_BREEDTE_GLIMLACH
+):
+    afwijzigingsredenen.append("U voldoet niet aan een of meer van de vereiste criteria.")
+
+if not (
     MIN_LENGTE <= lengte <= MAX_LENGTE and
     MIN_GEWICHT <= gewicht <= MAX_GEWICHT and
-    Certificaat == "ja" or Certificaat == "j" and
-    rijbewijs == "ja" or rijbewijs == "j" and
-    hoed == "ja" or hoed == "j" and
+    Certificaat == "ja" and
+    rijbewijs == "ja" and
+    hoed == "ja" and
     (MIN_DRESSUUR <= dieren_dressuur) or (MIN_JONGLEREN <= jongleren) or (MIN_ACROBATIEK <= acrobatiek)
-    )
+):
+    afwijzigingsredenen.append("U voldoet niet aan een of meer van de vereiste criteria.")
 
-if geschikt:
+if not afwijzigingsredenen:
     print(f"Gefeliciteerd {naam}! U komt in aanmerking voor een sollicitatie gesprek, stuur snel uw cv.")
 else:
-    print(f"Beste {naam}, u voldoet niet aan onze strenge eisen voor de functie Ruimte-vuilnisman, het spijt ons!")
+    print(f"Beste {naam}, u bent afgewezen om de volgende reden(en).")
+    for reden in afwijzigingsredenen:
+        print(reden)
