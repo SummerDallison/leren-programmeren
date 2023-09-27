@@ -22,7 +22,7 @@ print("Ontspan maar blijf wakker, hier komen de vragen.")
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 naam = input("Wat is uw naam? ").lower()
-geslacht = input("Wat is uw geslacht? (man/vrouw/anders) ").lower
+geslacht = input("Wat is uw geslacht? (man/vrouw/anders) ").lower()
 
 if geslacht == "man":
     breedte_snor = int(input("Wat is de breedte van uw snor? "))
@@ -48,22 +48,46 @@ acrobatiek = int(input("Hoeveel jaar (afgerond) heeft u pratijkservaring met acr
 afwijzigingsredenen = []
 
 if not(
-    mbo == "ja" or ondernemer >= MIN_JAREN_ONDERNEMER and werknemers >= MIN_WERKNEMERS and
-    (geslacht == "man" and breedte_snor >= MIN_BREEDTE_SNOR) or
-    (geslacht == "vrouw" and rood_krulhaar == "ja" and haar_lengte >= MIN_LENGTE_HAAR) or
+    mbo == "ja" or ondernemer >= MIN_JAREN_ONDERNEMER and werknemers >= MIN_WERKNEMERS
+):
+    afwijzigingsredenen.append("U voldoet niet aan mbo 4 diploma en/of het aantal jaar ondernemer zijn of aantal werknemers.")
+
+if not(
+    (geslacht == "man" and breedte_snor >= MIN_BREEDTE_SNOR) or   
+    (geslacht == "vrouw" and rood_krulhaar == "ja" and haar_lengte >= MIN_LENGTE_HAAR) or   
     geslacht == "anders" and breedte_glimlach >= MIN_BREEDTE_GLIMLACH
 ):
-    afwijzigingsredenen.append("U voldoet niet aan een of meer van de vereiste criteria.")
+    afwijzigingsredenen.append("U voldoet niet aan de eisen die gediend zijn voor uw geslacht.")
 
 if not (
-    MIN_LENGTE <= lengte <= MAX_LENGTE and
-    MIN_GEWICHT <= gewicht <= MAX_GEWICHT and
-    Certificaat == "ja" and
-    rijbewijs == "ja" and
-    hoed == "ja" and
+    MIN_LENGTE <= lengte <= MAX_LENGTE
+):
+    afwijzigingsredenen.append("U voldoet niet aan uw aan lengte.")
+    
+if not(    
+    MIN_GEWICHT <= gewicht <= MAX_GEWICHT
+):
+    afwijzigingsredenen.append("U voldoet niet aan uw gewicht.")
+    
+if not(    
+    Certificaat == "ja"
+):
+    afwijzigingsredenen.append("U voldoet niet aan een Certificaat 'Overleven met Gevaarlijk personeel'.")
+
+if not(    
+    rijbewijs == "ja"
+):
+    afwijzigingsredenen.append("U voldoet niet aan een geldige vrachtwagen rijbewijs.")
+
+if not(
+    hoed == "ja"
+):
+    afwijzigingsredenen.append("U voldoet niet aan een hoge hoed.")
+
+if not(    
     (MIN_DRESSUUR <= dieren_dressuur) or (MIN_JONGLEREN <= jongleren) or (MIN_ACROBATIEK <= acrobatiek)
 ):
-    afwijzigingsredenen.append("U voldoet niet aan een of meer van de vereiste criteria.")
+    afwijzigingsredenen.append("U voldoet niet aan de hoeveelheid jaren voor dieren_dressuur, jongerleren of acrobatiek.")
 
 if not afwijzigingsredenen:
     print(f"Gefeliciteerd {naam}! U komt in aanmerking voor een sollicitatie gesprek, stuur snel uw cv.")
