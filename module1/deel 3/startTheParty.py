@@ -3,7 +3,7 @@ gastheer_naam = input("Voer je naam in (Laat leeg als er geen gastheer is): ").l
 gasten = int(input("Voer aantal gasten in : "))
 
 drank = False
-chips = False
+chips = True
 
 mijn_naam = gastheer_naam == "summer" or gastheer_naam == "summer dallison"
 lsb_docent_naam = gastheer_naam == "wilfred" or gastheer_naam == "wilfred bouwman"

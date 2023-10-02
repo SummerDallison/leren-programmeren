@@ -39,4 +39,3 @@ elif gemiddelde_score <= 3:
     print(COMPETENTIE_ADVIES_TWIJFELACHTIG)
 else:
     print(COMPETENTIE_ADVIES_GERUSTSTELLEND)
-
