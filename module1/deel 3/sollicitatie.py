@@ -11,15 +11,15 @@ MIN_BREEDTE_SNOR = 10
 MIN_LENGTE_HAAR = 20
 MIN_BREEDTE_GLIMLACH = 10
 
-print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-print("+     Sollicitatieformulier: 'Ruimte-vuilnisman'     +")
-print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++")
+print("+     Sollicitatieformulier: 'Circusdirecteur'     +")
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++")
 print("Er wordt u een aantal relevante vragen gesteld...")
 print("Gelieve die naar eer en geweten in te vullen.")
 print("Als blijkt dat u aan de criteria voldoet dan komt u in")
 print("aanmerking voor een serieus sollicitatiegesprek!")
 print("Ontspan maar blijf wakker, hier komen de vragen.")
-print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 naam = input("Wat is uw naam? ").lower()
 geslacht = input("Wat is uw geslacht? (man/vrouw/anders) ").lower()
@@ -29,7 +29,7 @@ if geslacht == "man":
 elif geslacht == "vrouw":
     rood_krulhaar = input("Heeft u rood krulhaar? (ja/nee) ").lower()
     if rood_krulhaar == "ja":
-        haar_lengte = input("Wat is uw haarlengte? ")
+        haar_lengte = int(input("Wat is uw haarlengte? "))
 else:
     breedte_glimlach = int(input("Hoe groot is de breedte of uw glimlach? "))
 
