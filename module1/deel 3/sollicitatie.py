@@ -50,7 +50,7 @@ afwijzigingsredenen = []
 if not(
     mbo == "ja" or ondernemer >= MIN_JAREN_ONDERNEMER and werknemers >= MIN_WERKNEMERS
 ):
-    afwijzigingsredenen.append("U voldoet niet aan mbo 4 diploma en/of het aantal jaar ondernemer zijn of aantal werknemers.")
+    afwijzigingsredenen.append("U voldoet niet aan een van de eisen: mbo 4 diploma of het aantal jaar ondernemer zijn of aantal werknemers.")
 
 if not(
     (geslacht == "man" and breedte_snor >= MIN_BREEDTE_SNOR) or   
