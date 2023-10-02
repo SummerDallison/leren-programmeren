@@ -11,7 +11,7 @@ aantal_weken_opleiding = int(input('Hoeveel weken ben je al bezig met de opleidi
 
 antwoorden = []
 
-antwoorden.append(int(input('Ik voel stress of blokkades bij het maken van programmeeropdrachten. ')))
+antwoorden.append(int(input(f'Ik voel stress of blokkades bij het maken van programmeeropdrachten.{AANTAL_OPTIES} ')))
 antwoorden.append(int(input('Ik stel programmeeropdrachten en -uitdagingen uit. ')))
 antwoorden.append(int(input('Ik denk dat ik geen talent heb voor de opleiding. ')))
 antwoorden.append(int(input('Ik vermijd assessments (CJV) en feedback van kritische docenten. ')))
