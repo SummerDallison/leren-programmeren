@@ -8,12 +8,12 @@ test('example', expected, calculated)
 
 nr = 13
 expected = 13.0
-calculated = nr # use one function to calculate expected number
+calculated = nr, # use one function to calculate expected number
 test('to-the-point',expected, calculated)
 
 nr = -45.372
 expected = 45.372
-calculated = nr # use one function to calculate expected number
+calculated = nr, # use one function to calculate expected number
 test('optimistic', expected, calculated)
 
 nr = -45.372
@@ -42,6 +42,3 @@ calculated = nr # use one function to calculate expected number
 test('sky-is-the-limit', expected, calculated)
 
 report()
-
-
-
