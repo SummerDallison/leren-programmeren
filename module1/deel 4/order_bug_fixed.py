@@ -1,7 +1,7 @@
 getal_1 = int(input("Voer eerste getal in : "))
 getal_2 = int(input("Voer tweede getal in : "))
 
-if getal_2 == 0:
+if getal_2 == 0 or getal_1 == 0:
     print("Kan niet delen door 0")
 else:
     resultaat = getal_1/getal_2
