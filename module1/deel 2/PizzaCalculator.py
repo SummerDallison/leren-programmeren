@@ -6,9 +6,26 @@ prijs_medium_pizza = 11.99
 prijs_large_pizza = 16.49
 
 #de klant kan de aantal pizza's(small, medium en large) die hij/zij wilt
-aantal_small_pizza = int(input("Hoeveel small pizza's wilt u hebben? "))
-aantal_medium_pizza = int(input("Hoeveel medium pizza's wilt u hebben? "))
-aantal_large_pizza = int(input("Hoeveel large pizza's wilt u hebben? "))
+while True:
+    try:
+        aantal_small_pizza = int(input("Hoeveel small pizza's wilt u hebben? "))
+        break
+    except ValueError:
+        print("Dit is geen geldig bedrag.")
+
+while True:
+    try:
+        aantal_medium_pizza = int(input("Hoeveel medium pizza's wilt u hebben? "))
+        break
+    except ValueError:
+        print("Dit is geen geldig bedrag.")
+
+while True:
+    try:
+        aantal_large_pizza = int(input("Hoeveel large pizza's wilt u hebben? "))
+        break
+    except ValueError:
+        print("Dit is geen geldig bedrag.")
 
 #Hier wordt de totaal bedrag van de small pizza, medium pizza en large pizza apart berekent.
 totaal_bedrag_small = aantal_small_pizza*prijs_small_pizza
