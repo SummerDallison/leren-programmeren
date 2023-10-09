@@ -2,18 +2,21 @@
 def increment(nr: float) -> float:
   return nr + 1
 
-def decrement():
-  pass
+def decrement(nr: float) -> float:
+  return nr -1
 
-def add():
-  pass
+def add(nr: float) -> float:
+  return nr + nr
 
-def substract():
-  pass
+def substract(nr: float) -> float:
+  return nr - nr
 
-def multiply():
-  pass
+def multiply(nr: float) -> float:
+  return nr * nr
 
-def divide():
-  pass
-
+def divide(nr: float) -> float:
+  try:
+    result = nr/nr
+    return result
+  except ZeroDivisionError:
+    return None
