@@ -5,18 +5,18 @@ def increment(nr: float) -> float:
 def decrement(nr: float) -> float:
   return nr -1
 
-def add(nr: float) -> float:
-  return nr + nr
+def add(nr1: float, nr2: float) -> float:
+  return nr1 + nr2
 
-def substract(nr: float) -> float:
-  return nr - nr
+def substract(nr1: float, nr2: float) -> float:
+  return nr1 - nr2
 
-def multiply(nr: float) -> float:
-  return nr * nr
+def multiply(nr1: float, nr2: float) -> float:
+  return nr1 * nr2
 
-def divide(nr: float) -> float:
+def divide(nr1: float, nr2: float) -> float:
   try:
-    result = nr/nr
+    result = nr1/nr2
     return result
   except ZeroDivisionError:
     return None
