@@ -11,7 +11,7 @@ def calc_discount(price: float, brand: str, month_discount_brands: str) -> float
     else:
         discount = 0.0
 
-    return round(discount, 2)
+    return round(discount, 1)
 
 Vespa = calc_discount(100, 'Vespa', month_discount_brands)
 expected_result = 10.0
