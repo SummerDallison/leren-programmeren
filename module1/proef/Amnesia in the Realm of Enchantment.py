@@ -2,15 +2,24 @@ print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 print(">          Amnesia in the Realm of Enchantment          >")
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
-naam = input("Voer uw naam in: ")
-while not naam.isalpha():
-        print("Ongeldige invoer. Voer alleen letters in uw naam.")
-        naam = input("Voer uw naam in: ")
+print("")
 
-bevestiging_naam = input(f"Uw naam is {naam}, klopt dit? (ja/nee): ")
-while bevestiging_naam.lower() != "ja":
-    naam = input("Voer uw naam in: ")
-    bevestiging_naam = input(f"Uw naam is {naam}, klopt dit? (ja/nee): ")
+def vraag_naam():
+    while True:
+        naam = input("Voer uw naam in: ")
+        while not naam.isalpha():
+            print("Ongeldige invoer. Voer alleen letters in uw naam.")
+            naam = input("Voer uw naam in: ")
+
+            bevestiging_naam = input(f"Uw naam is {naam}, klopt dit? (ja/nee): ").lower()
+            while bevestiging_naam not in ["ja", "nee"]:
+                print("Antwoord alstublieft met 'ja' of 'nee'.")
+                bevestiging_naam = input(f"Uw naam is {naam}, klopt dit? (ja/nee): ").lower()
+
+            if bevestiging_naam == "ja":
+                break
+
+vraag_naam()
 
 leeftijd = input("Voer uw leeftijd in: ")
 
@@ -29,5 +38,3 @@ while True:
     except ValueError:
         print("Ongeldige invoer. Voer een numerieke leeftijd in.")
         leeftijd = input("Voer uw leeftijd in: ")
-
-print("")
