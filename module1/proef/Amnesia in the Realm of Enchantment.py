@@ -2,7 +2,10 @@ print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 print(">          Amnesia in the Realm of Enchantment          >")
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
-print("Ik opende mijn ogen en ")
+inventaris = []
+companions = []
+
+print("")
 
 def vraag_naam():
     while True:
@@ -21,4 +24,7 @@ def vraag_naam():
 
 naam = vraag_naam()
 
-print(f"'{naam}', mompelde ik. ")
+print(f"'{naam},' mompel ik, alsof ik het voor het eerst hoor, maar het klinkt ook zo vertrouwd. ")
+
+print("[Nieuwe informatie is onthuld: ]")
+print(f"[naam: {naam}]")
