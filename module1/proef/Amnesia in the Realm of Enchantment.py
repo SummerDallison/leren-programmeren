@@ -6,7 +6,13 @@ inventaris = []
 companions = []
 profiel_inhoud = []
 
-print("")
+print("Ik word langzaam wakker en knijp mijn ogen samen in een poging om te wennen aan het\nverblindende zonlicht dat mijn zicht overweldigt.")
+print("Ik kijk verward om me heen en besef dat ik op een onbekende locatie bevind.")
+print("Ik merk dat ik omringd ben door een prachtige, groene omgeving met hoge bomen. \nIk hoor het zachte geritsel van bladeren dat wordt veroorzaakt door de wind.")
+print("Nadenkend over mijn omgeving, vroeg ik me in verwarring af, 'Waar ben ik? Wat voor plek is dit?' Het voelde vreemd en onbekend.")
+print("Terwijl ik bewust ben dat dit niet mijn vertrouwde thuis, \nkon ik me ook niet herinneren waar ik wel vandaan kwam.")
+print("Ik probeer mijn naam te herinneren, maar er verschijnt niets in mijn gedachten.")
+print("Terwijl ik worstel om mijn vage herinneringen op te frissen, \nkomt er uiteindelijk een naam naar boven.")
 
 def vraag_naam():
     while True:
@@ -25,8 +31,7 @@ def vraag_naam():
 
 naam = vraag_naam()
 
-print(f"'{naam},' mompel ik, alsof ik het voor het eerst hoor, ")
-print("maar het klinkt ook zo vertrouwd. ")
+print(f"'{naam},' mompel ik, alsof ik het voor het eerst hoor,\nmaar het klinkt ook zo vertrouwd. ")
 
 print("[Nieuwe informatie is toegevoegd aan uw profiel!]")
 
