@@ -65,42 +65,52 @@ while True:
         print("De eerste artefact is een zwart kristal met mysterieuze inscripties.")
         print("De tweede artefact is een gouden amulet met een glinsterende edelsteen.")
 
-        kies_artefact = input("Wil je de magische artefacten oppakken? (ja/nee): ")
+        while True:
+            pick_artefacts = input("Wil je de magische artefacten oppakken? (ja/nee): ")
 
-        if kies_artefact.lower() == "ja":
-            beide_artefacten = input("Wil je beide artefacten oppakken? (ja/nee): ")
-            if beide_artefacten.lower() == "ja":
-                print("[Zwart kristal toegevoegd aan inventaris!]")
-                inventaris.append("Zwarte artefact")
-                print("[Gouden amulet toegevoegd aan inventaris!]")
-                inventaris.append("Gouden artefact")
-                break
-                
-            elif beide_artefacten.lower() == "nee":
-                welk_artefact = input("Welke artefact wil je oppakken? (zwart/goud): ")
-                if welk_artefact.lower() == "zwart":
-                    print("[Zwarte artefact toegevoegd aan inventaris!]")
-                    inventaris.append("Zwarte artefact")
-                    break
-                elif welk_artefact.lower() == "goud":
-                    print("[Gouden artefact toegevoegd aan inventaris!]")
-                    inventaris.append("Gouden artefact")
-                    break
-                else:
-                    print("Antwoord alstublieft met 'zwart' of 'goud'.")
+            if pick_artefacts.lower() == "ja":
+                while True:
+                    beide_artefacten = input("Wil je beide artefacten oppakken? (ja/nee): ")
             
-        elif kies_artefact.lower() == "nee": 
-            print("[Je besluit om de magische artefacten met rust te laten.]")
-            break
-        else:
-            print("Antwoord alstublieft met 'ja' of 'nee'.")
-    
+                    if beide_artefacten.lower() == "ja":
+                        print("[Zwart kristal toegevoegd aan inventaris!]")
+                        inventaris.append("Zwarte artefact")
+                        print("[Gouden amulet toegevoegd aan inventaris!]")
+                        inventaris.append("Gouden artefact")
+            
+                    elif beide_artefacten.lower() == "nee":
+                        while True:
+                            welk_artefact = input("Welke artefact wil je oppakken? (zwart/goud): ")
+                            if welk_artefact.lower() == "zwart":
+                                print("[Zwarte artefact toegevoegd aan inventaris!]")
+                                inventaris.append("Zwarte artefact")
+                            elif welk_artefact.lower() == "goud":
+                                print("[Gouden artefact toegevoegd aan inventaris!]")
+                                inventaris.append("Gouden artefact")
+                            else:
+                                print("Antwoord alstublieft met 'zwart' of 'goud'.")
+                    else:
+                        print("Antwoord alstublieft met 'ja' of 'nee'.")
+
+            elif pick_artefacts.lower() == "nee":
+                print("[Je besluit om de magische artefacten met rust te laten.]")
+            else:
+                print("Antwoord alstublieft met 'ja' of 'nee'.")
+
     elif keuze_bibliotheek.lower() == "doorgaan":
         print("[Je besloot om snel door te gaan met jouw reis.]")
         print("Mijn stappen leiden me weg van de bibliotheek, op zoek naar onontdekte geheimen in dit magische wereld.")
 
-        print("Nadat ik een tijdje door het bos heb gelopen, ontdek ik een schattig dorpje tussen de bomen. Kleine huisjes met mooie decoraties trekken mijn aandacht, en het geluid van hamers en smeedwerk komt naar voren. ")
-        break
+        print("Nadat ik een tijdje door het bos heb gelopen, ontdek ik een schattig dorpje tussen de bomen.")
+        print("Kleine huisjes met mooie decoraties trekken mijn aandacht, en het geluid van hamers en smeedwerk komt naar voren.")
+        print("En zonder enige aarzeling besluit ik mijn weg naar het dorpje te vervolgen.")
+        print("Terwijl ik verder door het dorp loop, begin ik steeds meer op te merken.")
+        print("De ambachtelijke winkeltjes zitten propvol met prachtig smeedwerk, en de geur van gesmolten metaal zweeft in de lucht.")
+        print("Terwijl ik om me heen kijk, zie ik mensen van een wat kleinere gestalte, stevig gebouwd en duidelijk bedreven in hun ambacht.")
+        print("Langzaam dringt het tot me door: dit is geen gewoon dorp; ik ben te midden van dwergen.") 
+        print("Een golf van zowel verrassing als nieuwsgierigheid spoelt over me heen.")
+
+        print("")
 
     else:
         print("Antwoord alstublieft met 'tijd' of 'doorgaan'.")
