@@ -50,3 +50,57 @@ while True:
 
 for extra_info in profiel_inhoud:
     print(extra_info)
+
+print("Ik neem het besluit om verder te lopen, vastbesloten om de mysteries van deze \nonbekende plek te ontrafelen.")
+print("Ik ontdek een oude bibliotheek tussen de bomen. De deuren kraken en overal liggen \nstoffige boeken.")
+
+while True:
+    keuze_bibliotheek = input("Moet ik de tijd nemen om de boeken te bekijken, of snel doorgaan met mijn reis?\n(tijd/doorgaan): ")
+
+    if keuze_bibliotheek.lower() == "tijd":
+        print("[Je besloot om de tijd te nemen om de boeken te bekijken.]")
+        print("Ik werp een blik op de boekenplanken en besluit enkele boeken op te pikken om te verkennen.")
+        
+        print("Terwijl ik tussen de verweerde boekenplanken speur, stuit ik op verborgen compartimenten met twee magische artefacten.")
+        print("De eerste artefact is een zwart kristal met mysterieuze inscripties.")
+        print("De tweede artefact is een gouden amulet met een glinsterende edelsteen.")
+
+        kies_artefact = input("Wil je de magische artefacten oppakken? (ja/nee): ")
+
+        if kies_artefact.lower() == "ja":
+            beide_artefacten = input("Wil je beide artefacten oppakken? (ja/nee): ")
+            if beide_artefacten.lower() == "ja":
+                print("[Zwart kristal toegevoegd aan inventaris!]")
+                inventaris.append("Zwarte artefact")
+                print("[Gouden amulet toegevoegd aan inventaris!]")
+                inventaris.append("Gouden artefact")
+                break
+                
+            elif beide_artefacten.lower() == "nee":
+                welk_artefact = input("Welke artefact wil je oppakken? (zwart/goud): ")
+                if welk_artefact.lower() == "zwart":
+                    print("[Zwarte artefact toegevoegd aan inventaris!]")
+                    inventaris.append("Zwarte artefact")
+                    break
+                elif welk_artefact.lower() == "goud":
+                    print("[Gouden artefact toegevoegd aan inventaris!]")
+                    inventaris.append("Gouden artefact")
+                    break
+                else:
+                    print("Antwoord alstublieft met 'zwart' of 'goud'.")
+            
+        elif kies_artefact.lower() == "nee": 
+            print("[Je besluit om de magische artefacten met rust te laten.]")
+            break
+        else:
+            print("Antwoord alstublieft met 'ja' of 'nee'.")
+    
+    elif keuze_bibliotheek.lower() == "doorgaan":
+        print("[Je besloot om snel door te gaan met jouw reis.]")
+        print("Mijn stappen leiden me weg van de bibliotheek, op zoek naar onontdekte geheimen in dit magische wereld.")
+
+        print("Nadat ik een tijdje door het bos heb gelopen, ontdek ik een schattig dorpje tussen de bomen. Kleine huisjes met mooie decoraties trekken mijn aandacht, en het geluid van hamers en smeedwerk komt naar voren. ")
+        break
+
+    else:
+        print("Antwoord alstublieft met 'tijd' of 'doorgaan'.")
