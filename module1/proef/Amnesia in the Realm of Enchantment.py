@@ -6,13 +6,13 @@ inventaris = []
 companions = []
 profiel_inhoud = []
 
-print("Ik word langzaam wakker en knijp mijn ogen samen in een poging om te wennen aan het\nverblindende zonlicht dat mijn zicht overweldigt.")
+print("Ik word langzaam wakker en knijp mijn ogen samen in een poging om te wennen aan het verblindende zonlicht dat mijn zicht overweldigt.")
 print("Ik kijk verward om me heen en besef dat ik op een onbekende locatie bevind.")
-print("Ik merk dat ik omringd ben door een prachtige, groene omgeving met hoge bomen. \nIk hoor het zachte geritsel van bladeren dat wordt veroorzaakt door de wind.")
+print("Ik merk dat ik omringd ben door een prachtige, groene omgeving met hoge bomen. Ik hoor het zachte geritsel van bladeren dat wordt veroorzaakt door de wind.")
 print("Nadenkend over mijn omgeving, vroeg ik me in verwarring af, 'Waar ben ik? Wat voor plek is dit?' Het voelde vreemd en onbekend.")
-print("Terwijl ik bewust ben dat dit niet mijn vertrouwde thuis, \nkon ik me ook niet herinneren waar ik wel vandaan kwam.")
+print("Terwijl ik bewust ben dat dit niet mijn vertrouwde thuis, kon ik me ook niet herinneren waar ik wel vandaan kwam.")
 print("Ik probeer mijn naam te herinneren, maar er verschijnt niets in mijn gedachten.")
-print("Terwijl ik worstel om mijn vage herinneringen op te frissen, \nkomt er uiteindelijk een naam naar boven.")
+print("Terwijl ik worstel om mijn vage herinneringen op te frissen, komt er uiteindelijk een naam naar boven.")
 
 def vraag_naam():
     while True:
@@ -31,7 +31,7 @@ def vraag_naam():
 
 naam = vraag_naam()
 
-print(f"'{naam},' mompel ik, alsof ik het voor het eerst hoor,\nmaar het klinkt ook zo vertrouwd. ")
+print(f"'{naam},' mompel ik, alsof ik het voor het eerst hoor, maar het klinkt ook zo vertrouwd. ")
 
 print("[Nieuwe informatie is toegevoegd aan uw profiel!]")
 
@@ -51,8 +51,8 @@ while True:
 for extra_info in profiel_inhoud:
     print(extra_info)
 
-print("Ik neem het besluit om verder te lopen, vastbesloten om de mysteries van deze \nonbekende plek te ontrafelen.")
-print("Ik ontdek een oude bibliotheek tussen de bomen. De deuren kraken en overal liggen \nstoffige boeken.")
+print("Ik neem het besluit om verder te lopen, vastbesloten om de mysteries van deze onbekende plek te ontrafelen.")
+print("Ik ontdek een oude bibliotheek tussen de bomen. De deuren kraken en overal liggen stoffige boeken.")
 
 while True:
     keuze_bibliotheek = input("Moet ik de tijd nemen om de boeken te bekijken, of snel doorgaan met mijn reis?\n(tijd/doorgaan): ")
@@ -110,6 +110,8 @@ while True:
         print("Langzaam dringt het tot me door: dit is geen gewoon dorp; ik ben te midden van dwergen.") 
         print("Een golf van zowel verrassing als nieuwsgierigheid spoelt over me heen.")
 
+        print("Ik besluit  een van de ambachtelijke winkeltjes binnen te gaan.") 
+        print("Het is gevuld met prachtige smeedkunst en unieke voorwerpen.")
         print("")
 
     else:
