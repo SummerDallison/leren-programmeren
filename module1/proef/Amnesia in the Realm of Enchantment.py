@@ -74,19 +74,19 @@ while True:
             
                     if beide_artefacten.lower() == "ja":
                         print("[Zwart kristal toegevoegd aan inventaris!]")
-                        inventaris.append("Zwarte artefact")
+                        inventaris.append("Zwart kristal")
                         print("[Gouden amulet toegevoegd aan inventaris!]")
-                        inventaris.append("Gouden artefact")
+                        inventaris.append("Gouden amulet")
             
                     elif beide_artefacten.lower() == "nee":
                         while True:
                             welk_artefact = input("Welke artefact wil je oppakken? (zwart/goud): ")
                             if welk_artefact.lower() == "zwart":
-                                print("[Zwarte artefact toegevoegd aan inventaris!]")
-                                inventaris.append("Zwarte artefact")
+                                print("[Zwart kristal toegevoegd aan inventaris!]")
+                                inventaris.append("Zwart kristal")
                             elif welk_artefact.lower() == "goud":
-                                print("[Gouden artefact toegevoegd aan inventaris!]")
-                                inventaris.append("Gouden artefact")
+                                print("[Gouden amulet toegevoegd aan inventaris!]")
+                                inventaris.append("Gouden amulet")
                             else:
                                 print("Antwoord alstublieft met 'zwart' of 'goud'.")
                     else:
@@ -110,9 +110,46 @@ while True:
         print("Langzaam dringt het tot me door: dit is geen gewoon dorp; ik ben te midden van dwergen.") 
         print("Een golf van zowel verrassing als nieuwsgierigheid spoelt over me heen.")
 
-        print("Ik besluit  een van de ambachtelijke winkeltjes binnen te gaan.") 
+        print("Ik besluit een van de ambachtelijke winkeltjes binnen te stappen.") 
         print("Het is gevuld met prachtige smeedkunst en unieke voorwerpen.")
-        print("")
+        print("Als ik binnenstap, verwelkomt me de geur van gesmolten metaal en het geluid van zachte hamerslagen.")
+        print("Ik kijk rond en zie blinkende amuletten, interessante edelstenen en goed gemaakte wapens op de planken.")
 
+        print("Terwijl mijn blik zich laat afdwalen door de variatie aan voorwerpen, wordt mijn aandacht getrokken naar een dwerg gehuld in een leren schort.")
+        print("De smid lijkt diep verzonken in zijn werk bij de smidse.")
+        print("Nieuwsgierig blijf ik staan, terwijl de dwerg bedreven bezig is bij de smidse.")
+        print("'Met een vriendelijke groet kijkt hij op en begroet me. 'Welkom, reiziger! Ik ben Thorin, de smid van dit dorp.'")
+        print("Hij neemt een moment van aarzeling voordat hij vervolgt,")
+        print("'Ik heb een speciale smeedopdracht voor je. Voor het maken van een uniek wapen heb ik een bepaalde hoeveelheid zeldzame stenen nodig, die je kunt vinden in een grot hier in de buurt.")
+        print("Als je bereid bent deze uitdaging aan te nemen, zal ik je voorzien van de benodige gereedschappen.' Thorin kijkt me verwachtingsvol aan, in afwachting van mijn antwoord.")
+
+        while True:
+            print("[Thorin, de bekwame smid van het dorp, heeft een uitdaging voor je!]")
+            quest_stenen = input("Ben je bereid om de uitdaging van de 'Stenen van Schittering' aan te nemen? (ja/nee)")
+            if quest_stenen.lower() == "ja":
+                print("[Je hebt de uitdaging 'Stenen van Schittering' aangenemen!]")
+
+                print("Na mijn instemming glijdt er een veelbetekenende glimlach over het gezicht van Thorin. Hij haalt een oude kaart van de grot en een stevige houweel tevoorschijn en overhandigt ze aan mij.")
+                print("[Versleten map van Donkere Diepten toegevoegd aan inventaris!]")
+                inventaris.append("Versleten map van Donkere Diepten")
+                print("[Houweel toegevoegd aan inventaris!]")
+                inventaris.append("Houweel")
+
+                print("Jouw taak is om die stenen te verzamelen.")
+                print("Hoeveel je precies nodig hebt, vertel ik je niet.")
+                print("Breng gewoon alles wat je kunt vinden terug.")
+                print("Als je precies genoeg hebt, smeed ik dat speciale wapen voor je.")
+                print("En als je meer hebt dan nodig, mag je het overschot verkopen voor extra winst.'")
+                print("Thorin wijst vervolgens op de kaart en licht toe waar de Donkere Diepten, de grot die je zoekt, zich bevindt.")
+                print("Nadat ik beleefd afscheid had genomen van Thorin, zette ik koers naar de plaats waar de grot zich bevond.")
+
+                print("Na een wandeling van ongeveer een half uur, bereik ik de ingang van de grot.")
+                print("Ik stapte de grot in")
+
+            elif quest_stenen.lower() == "nee":
+                print("Je hebt de uitdaging 'Stenen van Schittering' niet aangenemen!")
+                
+            else:
+                print("Antwoord alstublieft met 'ja' of 'nee'.")
     else:
         print("Antwoord alstublieft met 'tijd' of 'doorgaan'.")
