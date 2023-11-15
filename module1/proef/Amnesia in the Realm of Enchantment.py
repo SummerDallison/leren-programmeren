@@ -127,7 +127,7 @@ while True:
             print("[Thorin, de bekwame smid van het dorp, heeft een uitdaging voor je!]")
             quest_stenen = input("Ben je bereid om de uitdaging van de 'Stenen van Schittering' aan te nemen? (ja/nee)")
             if quest_stenen.lower() == "ja":
-                print("[Je hebt de uitdaging 'Stenen van Schittering' aangenemen!]")
+                print("[Je hebt de uitdaging 'Stenen van Schittering' aangenomen!]")
 
                 print("Na mijn instemming glijdt er een veelbetekenende glimlach over het gezicht van Thorin. Hij haalt een oude kaart van de grot en een stevige houweel tevoorschijn en overhandigt ze aan mij.")
                 print("[Versleten map van Donkere Diepten toegevoegd aan inventaris!]")
@@ -144,10 +144,30 @@ while True:
                 print("Nadat ik beleefd afscheid had genomen van Thorin, zette ik koers naar de plaats waar de grot zich bevond.")
 
                 print("Na een wandeling van ongeveer een half uur, bereik ik de ingang van de grot.")
-                print("Ik stapte de grot in")
+                print("Voorzichtig zette ik mijn eerste stappen naar binnen, waar het duister mijn omgeving in een mysterieuze gloed hulde. ")
+                print("De wanden glinsterden door de weerkaatsing van onbekende mineralen, en de echo van druppelend water vulde de lucht.")
+                print("De grot onthulde een doolhof van tunnels.")
+
+                print("De grot vertakt zich nu in vijf verschillende tunnels. Welke tunnel zou het beste zijn om te kiezen?")
+
+                while True:
+                    try:
+                        tunnel = int(input("Welke van deze tunnels lijkt de meest veelbelovende route te zijn? (1/2/3/4/5) "))
+                        if tunnel == 2 or tunnel == 5:
+                            print(f"[Je hebt voor tunnel {tunnel} gekozen!]")
+                        elif tunnel == 1 or tunnel == 3:
+                            print(f"[Je hebt voor tunnel {tunnel} gekozen!]")
+                        elif tunnel == 4:
+                            print(f"[Je hebt voor tunnel {tunnel} gekozen!]")
+                            print("")
+
+                        else:
+                            print("Antwoord alstublieft met '1', '2','3', '4' of '5'.")
+                    except ValueError:
+                        print("Antwoord alstublieft met een getal")
 
             elif quest_stenen.lower() == "nee":
-                print("Je hebt de uitdaging 'Stenen van Schittering' niet aangenemen!")
+                print("Je hebt de uitdaging 'Stenen van Schittering' niet aangenomen!")
                 
             else:
                 print("Antwoord alstublieft met 'ja' of 'nee'.")
