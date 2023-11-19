@@ -6,6 +6,10 @@ inventaris = []
 companions = []
 profiel_inhoud = []
 
+gouden_munten = 0
+zilveren_munten = 0
+bronzen_munten = 0
+
 print("Ik word langzaam wakker en knijp mijn ogen samen in een poging om te wennen aan het verblindende zonlicht dat mijn zicht overweldigt.")
 print("Ik kijk verward om me heen en besef dat ik op een onbekende locatie bevind.")
 print("Ik merk dat ik omringd ben door een prachtige, groene omgeving met hoge bomen. Ik hoor het zachte geritsel van bladeren dat wordt veroorzaakt door de wind.")
@@ -271,10 +275,45 @@ while True:
                         else:
                             print("Antwoord alstublieft met '1', '2','3', '4' of '5'.")
                     except ValueError:
-                        print("Antwoord alstublieft met een getal")
+                        print("Antwoord alstublieft met een getal.")
 
             elif quest_stenen.lower() == "nee":
-                print("Je hebt de uitdaging 'Stenen van Schittering' niet aangenomen!")
+                print("[Je hebt de uitdaging 'Stenen van Schittering' niet aangenomen!]")
+
+                print("Na de weigering van de uitdaging 'Stenen van Schittering' besloot ik mijn verkenningstocht door het dwergendorp voort te zetten.")
+                print("Terwijl ik door de kronkelende steegjes dwaalde, ontdekte ik een levendige handelsmarkt die het centrum van het dwergendorp verlichtte.")
+                print("Kleurrijke kramen stonden vol met exotische waren, van fonkelende edelstenen tot zorgvuldig vervaardigde wapens en handgemaakte voorwerpen.")
+                print("Mijn nieuwsgierigheid groeide en ik besloot de markt verder te verkennen.")
+
+                print("Terwijl ik tussen de kraampjes liep, werd ik aangesproken door een dwerg genaamd Gimli, een ervaren handelaar uit het dorp.")
+                print("Hij was druk bezig met de voorbereidingen voor een handelsmissie naar het elfenkoninkrijk Eldoria.")
+                print("Ze waren op zoek naar mensen met diverse vaardigheden om waardevolle goederen vanuit het dwergendorp naar Eldoria te transporteren.")
+
+                print("'Heb je ooit gedacht aan het deelnemen aan een handelsmissie naar het elfenkoninkrijk?' vroeg Gimli.")
+                print("'We hebben een groep avonturiers verzameld om waardevolle goederen zoals onze prachtige ambachtelijke producten, edelstenen en speciale wapens naar Eldoria te brengen.")
+                print("Ze hebben een grote vraag naar onze ambachten en smeedwerk daar.'")
+
+                print("Nieuwsgierig naar het aanbod vroeg ik Gimli wat de handelsmissie precies inhield.")
+                print("Hij legde uit dat we ambachtelijke producten, edelstenen en speciale wapens van het dwergendorp naar Eldoria zouden brengen.")
+                print("Onze taak was om deze goederen te presenteren aan de inwoners van Eldoria en te handelen voor waardevolle elfenproducten.")
+                print("Als beloning voor onze inspanningen zouden we worden betaald in verschillende valuta, waaronder gouden, zilveren en bronzen munten.")
+                print("Bovendien zouden we de kans krijgen om enkele van de unieke elfenproducten voor onszelf te verkrijgen.")
+
+                while True:
+                    handels_missie = input("Wil je de handelsmissie aannemen? (ja/nee): ")
+                    
+                    if handels_missie.lower() == "ja":
+                        print("[Je hebt de handelsmissie aangenomen!]")
+                        
+                        print("Met de handelsmissie geaccepteerd, maak ik mijn weg naar de sfeervolle stallen, waar tot mijn verrassing een prachtig, zwarte rijpaard op me stond te wachten.")
+                        print("Zijn glanzende zwarte vacht straalt kracht uit, en zijn gespierde lichaamsbouw belooft zowel snelheid als uithoudingsvermogen.")
+                        print("Een witte bles siert zijn edele hoofd, terwijl zijn ogen nieuwsgierig oplichten bij mijn nadering.")
+
+                    elif handels_missie.lower() == "nee":
+                        print("[Je hebt de handelsmissie niet aangenomen!]")
+
+                    else:
+                        print("Antwoord alstublieft met 'ja' of 'nee'.")
                 
             else:
                 print("Antwoord alstublieft met 'ja' of 'nee'.")
