@@ -117,19 +117,29 @@ while True:
 
                                             else:
                                                 print("Antwoord alstublieft met 'ja' of 'nee'.")
+                                                continue
+                                            break
                                                 
                                     else:
                                         print("Antwoord alstublieft met 'links', 'midden' of 'rechts'.")
+                                        continue
+                                    break
 
                             else:
                                 print("Antwoord alstublieft met 'zwart' of 'goud'.")
+                                continue
+                            break
                     else:
                         print("Antwoord alstublieft met 'ja' of 'nee'.")
+                        continue
+                    break
 
             elif pick_artefacts.lower() == "nee":
                 print("[Je besluit om de magische artefacten met rust te laten.]")
             else:
                 print("Antwoord alstublieft met 'ja' of 'nee'.")
+                continue
+            break
 
     elif keuze_bibliotheek.lower() == "doorgaan":
         print("[Je besloot om snel door te gaan met jouw reis.]")
@@ -185,97 +195,99 @@ while True:
                 print("De grot vertakt zich nu in vijf verschillende tunnels. Welke tunnel zou het beste zijn om te kiezen?")
 
                 while True:
-                    try:
-                        vijf_tunnels = int(input("Welke van deze tunnels lijkt de meest veelbelovende route te zijn? (1/2/3/4/5) "))
-                        if vijf_tunnels == 2 or vijf_tunnels == 5:
-                            print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
-                        elif vijf_tunnels == 1 or vijf_tunnels == 3:
-                            print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
-                        elif vijf_tunnels == 4:
-                            print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
-                            print("Terwijl ik dieper de tunnel in loop, bereik ik opnieuw een splitsing, ditmaal met twee verschillende tunnels die zich voor me uitstrekken.")
+                    vijf_tunnels = int(input("Welke van deze tunnels lijkt de meest veelbelovende route te zijn? (1/2/3/4/5) "))
+                    if vijf_tunnels == 2 or vijf_tunnels == 5:
+                        print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
+                    elif vijf_tunnels == 1 or vijf_tunnels == 3:
+                        print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
+                    elif vijf_tunnels == 4:
+                        print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
+                        print("Terwijl ik dieper de tunnel in loop, bereik ik opnieuw een splitsing, ditmaal met twee verschillende tunnels die zich voor me uitstrekken.")
                             
-                            while True:
-                                try:
-                                    twee_tunnels = int(input("Welke van de twee tunnels lijkt de meest veelbelovende route te zijn? (1/2) "))
-                                    if twee_tunnels == 1:
-                                        print(f"[Je hebt voor tunnel {twee_tunnels} gekozen!]")
-                                        print("Terwijl ik verder door de tunnel van de grot loop, ontdek ik glinsterende mineralen aan de wanden en hoor ik het geluid van druppelend water.")
-                                        print("Plotseling kom ik uit in een grote ondergrondse ruimte, verlicht door fosforescerende kristallen die aan het plafond hangen.")
-                                        print("In het midden van de ruimte staat een mysterieus altaar, omringd door symbolen die ik niet kan ontcijferen.")
+                        while True:
+                            twee_tunnels = int(input("Welke van de twee tunnels lijkt de meest veelbelovende route te zijn? (1/2) "))
+                            if twee_tunnels == 1:
+                                print(f"[Je hebt voor tunnel {twee_tunnels} gekozen!]")
+                                print("Terwijl ik verder door de tunnel van de grot loop, ontdek ik glinsterende mineralen aan de wanden en hoor ik het geluid van druppelend water.")
+                                print("Plotseling kom ik uit in een grote ondergrondse ruimte, verlicht door fosforescerende kristallen die aan het plafond hangen.")
+                                print("In het midden van de ruimte staat een mysterieus altaar, omringd door symbolen die ik niet kan ontcijferen.")
                                         
-                                        print("Ik bevind me nu voor het altaar, waar een oude steen met mysterieuze inscripties mijn aandacht trekt.")
-                                        print("De inscripties lijken haast tot me te fluisteren.")
-                                        print("Zonder bewuste gedachten laat ik mezelf naar de steen leiden, mijn focus volledig op het artefact gericht.")
-                                        print("Het is alsof de wereld om me heen vervaagt en ik me in een betoverende trance bevind, ")
-                                        print("geleid door een onzichtbare kracht die me naar de oude steen leidt.")
-                                        print("Mijn hand reikt uit, bijna automatisch, en ik voel de koele aanraking van de steen.")
-                                        print("Op het moment van contact lijkt een golf van energie door me heen te stromen.")
-                                        print("De inscripties op de steen beginnen te gloeien, en de wereld om me heen vervaagt.")
+                                print("Ik bevind me nu voor het altaar, waar een oude steen met mysterieuze inscripties mijn aandacht trekt.")
+                                print("De inscripties lijken haast tot me te fluisteren.")
+                                print("Zonder bewuste gedachten laat ik mezelf naar de steen leiden, mijn focus volledig op het artefact gericht.")
+                                print("Het is alsof de wereld om me heen vervaagt en ik me in een betoverende trance bevind, ")
+                                print("geleid door een onzichtbare kracht die me naar de oude steen leidt.")
+                                print("Mijn hand reikt uit, bijna automatisch, en ik voel de koele aanraking van de steen.")
+                                print("Op het moment van contact lijkt een golf van energie door me heen te stromen.")
+                                print("De inscripties op de steen beginnen te gloeien, en de wereld om me heen vervaagt.")
 
-                                        print("-------------------------------------------")
+                                print("------------BEGIN HERINNERING------------")
 
-                                        print("Plotseling bevind ik me te midden van een nachtmerrieachtige scène.")
-                                        print("Het geluid van huilende wind, brandende vlammen en het geschreeuw van mensen vullen de lucht.")
-                                        print("'Waar ben ik?' vraag ik me af terwijl ik angstig om me heen kijk.")
-                                        print("Alles is verwoest, en ik zie dat mijn lichaam bedekt is met bloed van mijn eigen verwondingen.")
+                                print("Plotseling bevind ik me te midden van een nachtmerrieachtige scène.")
+                                print("Het geluid van huilende wind, brandende vlammen en het geschreeuw van mensen vullen de lucht.")
+                                print("'Waar ben ik?' vraag ik me af terwijl ik angstig om me heen kijk.")
+                                print("Alles is verwoest, en ik zie dat mijn lichaam bedekt is met bloed van mijn eigen verwondingen.")
 
-                                        print("Verbijsterd staar ik naar mijn gewonde zelf, machteloos overgeleverd aan deze gruwelijke omgeving.")
-                                        print("Mijn lichaam begint uit zichzelf op te staan, alsof het wordt voortgestuwd door een onzichtbare kracht.")
-                                        print("Het lijkt wel alsof ik op zoek ben naar iemand in deze chaos, zonder controle over mijn eigen bewegingen.")
-                                        print("Ik ren door de verwoeste omgeving, probeer de gruwelijkheden te negeren en mijn weg te vinden te midden van de ruïnes.")
+                                print("Verbijsterd staar ik naar mijn gewonde zelf, machteloos overgeleverd aan deze gruwelijke omgeving.")
+                                print("Mijn lichaam begint uit zichzelf op te staan, alsof het wordt voortgestuwd door een onzichtbare kracht.")
+                                print("Het lijkt wel alsof ik op zoek ben naar iemand in deze chaos, zonder controle over mijn eigen bewegingen.")
+                                print("Ik ren door de verwoeste omgeving, probeer de gruwelijkheden te negeren en mijn weg te vinden te midden van de ruïnes.")
 
-                                        print("Terwijl ik probeer te begrijpen wat er gaande is, hoor ik plotseling mijn naam die wordt geroepen.")
-                                        print("Verward en geschrokken, probeer ik de stem te plaatsen.")
-                                        print("Langzaam verschijnt er een bekende gestalte te midden van de verwoesting.")
-                                        print("De details vervagen, maar ik herken de persoon ergens van, hoewel ik er nog niet achter kan komen wie het eigenlijk is.")
-                                        print("Het enige wat ik kan onderscheiden, is dat het om een vrouw gaat.")
+                                print("Terwijl ik probeer te begrijpen wat er gaande is, hoor ik plotseling mijn naam die wordt geroepen.")
+                                print("Verward en geschrokken, probeer ik de stem te plaatsen.")
+                                print("Langzaam verschijnt er een bekende gestalte te midden van de verwoesting.")
+                                print("De details vervagen, maar ik herken de persoon ergens van, hoewel ik er nog niet achter kan komen wie het eigenlijk is.")
+                                print("Het enige wat ik kan onderscheiden, is dat het om een vrouw gaat.")
 
-                                        print("'Ga snel! Je moet hier weg!' roept de vrouw met urgentie in haar stem.")
-                                        print("Plotseling strekt ze haar hand uit, en een glinsterend portaal ontstaat voor me.")
-                                        print("'Het is de enige manier om je te beschermen,' voegt ze eraan toe, haastig en bezorgd.")
+                                print("'Ga snel! Je moet hier weg!' roept de vrouw met urgentie in haar stem.")
+                                print("Plotseling strekt ze haar hand uit, en een glinsterend portaal ontstaat voor me.")
+                                print("'Het is de enige manier om je te beschermen,' voegt ze eraan toe, haastig en bezorgd.")
 
-                                        print("Dan voel ik dat het portaal mij erin wil trekken.")
-                                        print("Voordat ik volledig in het portaal verdwijn, werp ik nog een laatste blik op de vrouw.")
-                                        print("Tranen vullen mijn ogen terwijl ik me afvraag waarom deze herinnering zo pijnlijk is.")
-                                        print("En dan wordt alles weer zwart voor mijn ogen.")
+                                print("Dan voel ik dat het portaal mij erin wil trekken.")
+                                print("Voordat ik volledig in het portaal verdwijn, werp ik nog een laatste blik op de vrouw.")
+                                print("Tranen vullen mijn ogen terwijl ik me afvraag waarom deze herinnering zo pijnlijk is.")
+                                print("En dan wordt alles weer zwart voor mijn ogen.")
 
-                                        ("-------------------------------------------")
+                                print("------------EINDE HERINNERING------------")
+                                break
             
-                                    elif twee_tunnels == 2:
-                                        print(f"[Je hebt voor tunnel {twee_tunnels} gekozen!]")
+                            elif twee_tunnels == 2:
+                                print(f"[Je hebt voor tunnel {twee_tunnels} gekozen!]")
 
-                                        print("Ik vervolg mijn weg door de grot en kom plotseling terecht in een ruimte, gevuld met een overvloed aan goud, edelstenen en andere kostbare schatten.")
-                                        print("Echter, mijn aandacht wordt abrupt getrokken door een gigantische draak die op de schatten waakt.")
-                                        print("Een diepe grom ontsnapt uit zijn keel als teken dat mijn aanwezigheid niet onopgemerkt blijft.")
-                                        print("'Wat moet ik nu doen?' vraag ik me in paniek af. Ik zit te twijfelen of ik moet rennen of vechten. ")
-                                        print("In beide scenario's bevind ik me in een nadelige positie.")
+                                print("Ik vervolg mijn weg door de grot en kom plotseling terecht in een ruimte, gevuld met een overvloed aan goud, edelstenen en andere kostbare schatten.")
+                                print("Echter, mijn aandacht wordt abrupt getrokken door een gigantische draak die op de schatten waakt.")
+                                print("Een diepe grom ontsnapt uit zijn keel als teken dat mijn aanwezigheid niet onopgemerkt blijft.")
+                                print("'Wat moet ik nu doen?' vraag ik me in paniek af. Ik zit te twijfelen of ik moet rennen of vechten. ")
+                                print("In beide scenario's bevind ik me in een nadelige positie.")
                                         
-                                        while True:
-                                            draak_keuze = input("Welke actie ben je van plan om te doen? (rennen/vechten)")
-                                            if draak_keuze.lower == "rennen":
-                                                print("Ik besluit om zo snel mogelijk weg te rennen, mijn hart bonkt in mijn keel terwijl ik de grot probeer te ontvluchten.")
-                                                print("Ondanks mijn inspanningen voel ik de hete adem van de draak in mijn nek, en voordat ik het besef, word ik ondergedompeld in een zee van goud.")
-                                                print("Het glanzende metaal bedekt me volledig en verstikt me, waardoor ik een verstikkende dood tegemoet ga.")
-                                                print("[Gestorven door de gouden omhelzing van de draak!]")
-                                                break
-                                            elif draak_keuze == "vechten":
-                                                print("Ik zoek naar een wapen in de omgeving en sta klaar om me te verdedigen tegen de draak.")
-                                                print("De draak overweldigt me met zijn krachtige aanvallen en voor ik het weet, word ik verzwolgen door zijn vlammen.")
-                                                print("[Gestorven door warm welkom!]")
-                                                break
-                                            else:
-                                                print("Antwoord alstublieft met 'rennen' of 'vechten'.")
-                                    
+                                while True:
+                                    draak_keuze = input("Welke actie ben je van plan om te doen? (rennen/vechten)")
+                                    if draak_keuze.lower() == "rennen":
+                                        print("Ik besluit om zo snel mogelijk weg te rennen, mijn hart bonkt in mijn keel terwijl ik de grot probeer te ontvluchten.")
+                                        print("Ondanks mijn inspanningen voel ik de hete adem van de draak in mijn nek, en voordat ik het besef, word ik ondergedompeld in een zee van goud.")
+                                        print("Het glanzende metaal bedekt me volledig en verstikt me, waardoor ik een verstikkende dood tegemoet ga.")
+                                        print("[Gestorven door de gouden omhelzing van de draak!]")
+                                        break
+
+                                    elif draak_keuze.lower() == "vechten":
+                                        print("Ik zoek naar een wapen in de omgeving en sta klaar om me te verdedigen tegen de draak.")
+                                        print("De draak overweldigt me met zijn krachtige aanvallen en voor ik het weet, word ik verzwolgen door zijn vlammen.")
+                                        print("[Gestorven door warm welkom!]")
+                                        break
+                                            
                                     else:
-                                        print("Antwoord alstublieft met '1' of '2'.")
-                                except ValueError:
-                                    print("Antwoord alstublieft met een getal")
+                                        print("Antwoord alstublieft met 'rennen' of 'vechten'.")
+                                        continue
+                                    
+                            else:
+                                print("Antwoord alstublieft met '1' of '2'.")
+                                continue
+                            break
 
                         else:
                             print("Antwoord alstublieft met '1', '2','3', '4' of '5'.")
-                    except ValueError:
-                        print("Antwoord alstublieft met een getal.")
+                            continue  
+                    break
 
             elif quest_stenen.lower() == "nee":
                 print("[Je hebt de uitdaging 'Stenen van Schittering' niet aangenomen!]")
@@ -307,15 +319,43 @@ while True:
                         
                         print("Met de handelsmissie geaccepteerd, maak ik mijn weg naar de sfeervolle stallen, waar tot mijn verrassing een prachtig, zwarte rijpaard op me stond te wachten.")
                         print("Zijn glanzende zwarte vacht straalt kracht uit, en zijn gespierde lichaamsbouw belooft zowel snelheid als uithoudingsvermogen.")
-                        print("Een witte bles siert zijn edele hoofd, terwijl zijn ogen nieuwsgierig oplichten bij mijn nadering.")
+                        print("Een witte bles siert zijn hoofd, terwijl zijn ogen nieuwsgierig oplichten bij mijn nadering.")
+
+                        def vraag_paard():
+                            while True:
+                                paard_naam = input("Welke naam wil je aan jouw paard geven? ")
+                                while not paard_naam.isalpha():
+                                    print("Ongeldige invoer. Voer alleen letters in de naam van uw paard.")
+                                    paard_naam = input("Welke naam wil je aan jouw paard geven? ")
+
+                                bevestiging_paard = input(f"Weet je zeker dat je jouw paard {paard_naam} wilt noemen? (ja/nee): ").lower()
+                                while bevestiging_paard not in ["ja", "nee"]:
+                                    print("Antwoord alstublieft met 'ja' of 'nee'.")
+                                    bevestiging_paard = input(f"Weet je zeker dat je jouw paard {paard_naam} wilt noemen? (ja/nee): ").lower()
+
+                                if bevestiging_paard == "ja":
+                                    return paard_naam
+                                
+                        paard = vraag_paard()
+
+                        break
 
                     elif handels_missie.lower() == "nee":
                         print("[Je hebt de handelsmissie niet aangenomen!]")
+                        break
 
                     else:
                         print("Antwoord alstublieft met 'ja' of 'nee'.")
+                        continue
+
+                    break
                 
             else:
                 print("Antwoord alstublieft met 'ja' of 'nee'.")
+                continue
+            break
+
     else:
         print("Antwoord alstublieft met 'tijd' of 'doorgaan'.")
+        continue
+    break
