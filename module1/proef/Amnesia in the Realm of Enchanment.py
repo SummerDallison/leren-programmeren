@@ -62,6 +62,7 @@ while True:
     keuze_bibliotheek = input("Moet ik de tijd nemen om de boeken te bekijken, of snel doorgaan met mijn reis?\n(tijd/doorgaan): ")
 
     if keuze_bibliotheek.lower() == "tijd":
+
         print("[Je besloot om de tijd te nemen om de boeken te bekijken.]")
         print("Ik werp een blik op de boekenplanken en besluit enkele boeken op te pikken om te verkennen.")
         
@@ -75,21 +76,21 @@ while True:
             if pick_artefacts.lower() == "ja":
                 while True:
                     beide_artefacten = input("Wil je beide artefacten oppakken? (ja/nee): ")
-            
+
                     if beide_artefacten.lower() == "ja":
                         print("[Zwart kristal toegevoegd aan inventaris!]")
                         inventaris.append("Zwart kristal")
                         print("[Gouden amulet toegevoegd aan inventaris!]")
                         inventaris.append("Gouden amulet")
 
-                        print("")
-            
                     elif beide_artefacten.lower() == "nee":
                         while True:
                             welk_artefact = input("Welke artefact wil je oppakken? (zwart/goud): ")
+                            
                             if welk_artefact.lower() == "zwart":
                                 print("[Zwart kristal toegevoegd aan inventaris!]")
                                 inventaris.append("Zwart kristal")
+
                             elif welk_artefact.lower() == "goud":
                                 print("[Gouden amulet toegevoegd aan inventaris!]")
                                 inventaris.append("Gouden amulet")
@@ -97,18 +98,21 @@ while True:
                                 print("Terwijl de gouden amulet plotseling begon te stralen, werd ik omhuld door het felle licht, waardoor ik niets meer kon zien.")
                                 print("Toen het licht eindelijk verdween, bevond ik me niet langer in de bibliotheek.")
                                 print("Ik bevond me op een drijvend eiland in de lucht, met zwevende stenen paden die allemaal leken te leiden naar verschillende delen van het eiland.")
-                                
+
                                 while True:
                                     zwevende_pad = input("Welke pad wil je nemen? (links/midden/rechts): ")
-                                    if zwevende_pad == "links":
+
+                                    if zwevende_pad.lower() == "links":
                                         print("Ik besloot het pad aan mijn linkerkant te volgen.")
                                         print("Naarmate ik verder liep, begon het pad steeds smaller te worden.")
+
                                         while True:
                                             terug = input("Wil je weer teruggaan naar het zwevende eiland? (ja/nee): ")
-                                            
+
                                             if terug == "ja":
                                                 print("[Je besloot om weer terug te gaan naar het zwevende eiland!]")
-                                            
+                                                continue
+
                                             elif terug == "nee":
                                                 print("[Je besloot om de pad verder te vervolgen!]")
                                                 print("Plotseling kwam ik bij een punt waar het pad abrupt eindigde, en de afgrond onder me was angstaanjagend diep. ")
@@ -119,16 +123,23 @@ while True:
                                                 print("Antwoord alstublieft met 'ja' of 'nee'.")
                                                 continue
                                             break
-                                                
+
+                                    elif zwevende_pad.lower() == "rechts":
+                                        print("")
+
+                                    elif zwevende_pad.lower() == "midden":
+                                        print("")
+
                                     else:
                                         print("Antwoord alstublieft met 'links', 'midden' of 'rechts'.")
                                         continue
                                     break
-
+                            
                             else:
                                 print("Antwoord alstublieft met 'zwart' of 'goud'.")
                                 continue
                             break
+
                     else:
                         print("Antwoord alstublieft met 'ja' of 'nee'.")
                         continue
@@ -136,10 +147,11 @@ while True:
 
             elif pick_artefacts.lower() == "nee":
                 print("[Je besluit om de magische artefacten met rust te laten.]")
+
             else:
                 print("Antwoord alstublieft met 'ja' of 'nee'.")
                 continue
-            break
+            break          
 
     elif keuze_bibliotheek.lower() == "doorgaan":
         print("[Je besloot om snel door te gaan met jouw reis.]")
@@ -169,7 +181,8 @@ while True:
 
         while True:
             print("[Thorin, de bekwame smid van het dorp, heeft een uitdaging voor je!]")
-            quest_stenen = input("Ben je bereid om de uitdaging van de 'Stenen van Schittering' aan te nemen? (ja/nee)")
+            quest_stenen = input("Ben je bereid om de uitdaging van de 'Stenen van Schittering' aan te nemen? (ja/nee): ")
+
             if quest_stenen.lower() == "ja":
                 print("[Je hebt de uitdaging 'Stenen van Schittering' aangenomen!]")
 
@@ -195,23 +208,27 @@ while True:
                 print("De grot vertakt zich nu in vijf verschillende tunnels. Welke tunnel zou het beste zijn om te kiezen?")
 
                 while True:
-                    vijf_tunnels = int(input("Welke van deze tunnels lijkt de meest veelbelovende route te zijn? (1/2/3/4/5) "))
-                    if vijf_tunnels == 2 or vijf_tunnels == 5:
-                        print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
-                    elif vijf_tunnels == 1 or vijf_tunnels == 3:
-                        print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
-                    elif vijf_tunnels == 4:
-                        print(f"[Je hebt voor tunnel {vijf_tunnels} gekozen!]")
-                        print("Terwijl ik dieper de tunnel in loop, bereik ik opnieuw een splitsing, ditmaal met twee verschillende tunnels die zich voor me uitstrekken.")
-                            
+                    vijf_tunnels = input("Welke van deze tunnels lijkt de meest veelbelovende route te zijn? (eerste/tweede/derde/vierde/vijfde): ")
+                    
+                    if vijf_tunnels.lower() == "tweede" or vijf_tunnels.lower() == "vijfde":
+                        print(f"[Je hebt voor de {vijf_tunnels} tunnel gekozen!]")
+
+                    elif vijf_tunnels.lower() == "eerste" or vijf_tunnels.lower() == "derde":
+                        print(f"[Je hebt voor de {vijf_tunnels} tunnel gekozen!]")
+
+                    elif vijf_tunnels.lower() == "vierde":
+                        print(f"[Je hebt voor de {vijf_tunnels} tunnel gekozen!]")
+
                         while True:
-                            twee_tunnels = int(input("Welke van de twee tunnels lijkt de meest veelbelovende route te zijn? (1/2) "))
-                            if twee_tunnels == 1:
-                                print(f"[Je hebt voor tunnel {twee_tunnels} gekozen!]")
+                            twee_tunnels = input("Welke van de twee tunnels lijkt de meest veelbelovende route te zijn? (eerste/tweede): ")
+
+                            if twee_tunnels.lower() == "eerste":
+                                print(f"[Je hebt voor de {twee_tunnels} tunnel gekozen!]")
+
                                 print("Terwijl ik verder door de tunnel van de grot loop, ontdek ik glinsterende mineralen aan de wanden en hoor ik het geluid van druppelend water.")
                                 print("Plotseling kom ik uit in een grote ondergrondse ruimte, verlicht door fosforescerende kristallen die aan het plafond hangen.")
                                 print("In het midden van de ruimte staat een mysterieus altaar, omringd door symbolen die ik niet kan ontcijferen.")
-                                        
+
                                 print("Ik bevind me nu voor het altaar, waar een oude steen met mysterieuze inscripties mijn aandacht trekt.")
                                 print("De inscripties lijken haast tot me te fluisteren.")
                                 print("Zonder bewuste gedachten laat ik mezelf naar de steen leiden, mijn focus volledig op het artefact gericht.")
@@ -249,17 +266,16 @@ while True:
                                 print("En dan wordt alles weer zwart voor mijn ogen.")
 
                                 print("------------EINDE HERINNERING------------")
-                                break
-            
-                            elif twee_tunnels == 2:
-                                print(f"[Je hebt voor tunnel {twee_tunnels} gekozen!]")
+
+                            elif twee_tunnels.lower() == "tweede":
+                                print(f"[Je hebt voor de {twee_tunnels} tunnel gekozen!]")
 
                                 print("Ik vervolg mijn weg door de grot en kom plotseling terecht in een ruimte, gevuld met een overvloed aan goud, edelstenen en andere kostbare schatten.")
                                 print("Echter, mijn aandacht wordt abrupt getrokken door een gigantische draak die op de schatten waakt.")
                                 print("Een diepe grom ontsnapt uit zijn keel als teken dat mijn aanwezigheid niet onopgemerkt blijft.")
                                 print("'Wat moet ik nu doen?' vraag ik me in paniek af. Ik zit te twijfelen of ik moet rennen of vechten. ")
                                 print("In beide scenario's bevind ik me in een nadelige positie.")
-                                        
+
                                 while True:
                                     draak_keuze = input("Welke actie ben je van plan om te doen? (rennen/vechten)")
                                     if draak_keuze.lower() == "rennen":
@@ -267,28 +283,27 @@ while True:
                                         print("Ondanks mijn inspanningen voel ik de hete adem van de draak in mijn nek, en voordat ik het besef, word ik ondergedompeld in een zee van goud.")
                                         print("Het glanzende metaal bedekt me volledig en verstikt me, waardoor ik een verstikkende dood tegemoet ga.")
                                         print("[Gestorven door de gouden omhelzing van de draak!]")
-                                        break
 
                                     elif draak_keuze.lower() == "vechten":
                                         print("Ik zoek naar een wapen in de omgeving en sta klaar om me te verdedigen tegen de draak.")
                                         print("De draak overweldigt me met zijn krachtige aanvallen en voor ik het weet, word ik verzwolgen door zijn vlammen.")
                                         print("[Gestorven door warm welkom!]")
-                                        break
-                                            
+
                                     else:
                                         print("Antwoord alstublieft met 'rennen' of 'vechten'.")
                                         continue
-                                    
+                                    break
+
                             else:
                                 print("Antwoord alstublieft met '1' of '2'.")
                                 continue
                             break
 
-                        else:
-                            print("Antwoord alstublieft met '1', '2','3', '4' of '5'.")
-                            continue  
+                    else:
+                        print("Antwoord alstublieft met '1', '2','3', '4' of '5'.")
+                        continue  
                     break
-
+    
             elif quest_stenen.lower() == "nee":
                 print("[Je hebt de uitdaging 'Stenen van Schittering' niet aangenomen!]")
 
@@ -313,7 +328,7 @@ while True:
 
                 while True:
                     handels_missie = input("Wil je de handelsmissie aannemen? (ja/nee): ")
-                    
+
                     if handels_missie.lower() == "ja":
                         print("[Je hebt de handelsmissie aangenomen!]")
                         
@@ -338,22 +353,18 @@ while True:
                                 
                         paard = vraag_paard()
 
-                        break
-
                     elif handels_missie.lower() == "nee":
                         print("[Je hebt de handelsmissie niet aangenomen!]")
-                        break
 
                     else:
                         print("Antwoord alstublieft met 'ja' of 'nee'.")
                         continue
-
                     break
-                
+
             else:
-                print("Antwoord alstublieft met 'ja' of 'nee'.")
+                print("Antwoord astublieft met 'ja' of 'nee'.")
                 continue
-            break
+            break       
 
     else:
         print("Antwoord alstublieft met 'tijd' of 'doorgaan'.")
