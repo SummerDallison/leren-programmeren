@@ -105,30 +105,90 @@ while True:
                                     if zwevende_pad.lower() == "links":
                                         print("Ik besloot het pad aan mijn linkerkant te volgen.")
                                         print("Naarmate ik verder liep, begon het pad steeds smaller te worden.")
+                                        print("Plotseling kwam ik bij een punt waar het pad abrupt eindigde, en de afgrond onder me was angstaanjagend diep. ")
+                                        print("Mijn aarzeling kostte me mijn evenwicht, en ik viel in de leegte.")
+                                        print("[Gestorven door acrobatische mislukking!")
 
+                                    elif zwevende_pad.lower() == "rechts":
+                                        print("Ik besloot het pad aan mijn rechterkant te volgen.")
+
+                                        print("Na het volgen van het pad kom ik uiteindelijk uit op een schijnbaar oneindige uitgestrektheid van wolken.")
+                                        print("De lucht is om me heen, en ik voel me licht als een veertje terwijl ik over de wolken loop.")
+                                        print("Het uitzicht is adembenemend, met een oneindige horizon van lucht en wolken.")
+                                        print("Plotseling merk ik dat de wolken onder me beginnen te vervagen.")
+                                        print("Ik probeert mijn grip te houden, maar voor ik het weet, val ik door de zachte massa heen.")
+                                        
+                                        print("Terwijl ik door de wolken val en de grond onder me steeds dichterbij komt, verwacht ik de onvermijdelijke klap.")
+                                        print("Maar op het laatste moment word ik ruw vastgegrepen.")
+                                        print("Het is niet de zachte omhelzing van de lucht, maar de ijzige greep van scherpe klauwen.")
+                                        print("Ik kijk omhoog en realiseer me dat ik gevangen ben in de klauwen van een gigantische adelaar, haar vlijmscherpe blik boort in de mijne.")
+
+                                        print("De adelaar draagt me omhoog, ver boven de wolken, en ik voel de koude wind langs mijn gezicht suizen.")
+                                        print("Angst verstikt me als ik bedenk wat er gaat gebeuren.")
+                                        print("Plotseling landen we op een rotsachtige uitstulping hoog in de bergen.")
+                                        print("De adelaar, met haar veren glanzend in het zonlicht, kijkt me dreigend aan.")
+                                        print("Haar nest, vol hongerige jongen, is slechts een paar meter verderop.")
+
+                                        print("Ik voel de trillende vleugels van de adelaar onder me als ze haar klauwen strakker aanspant.")
+                                        print("Een rilling kruipt langs mijn ruggengraat terwijl ik besef dat ik niet langer een passagier ben, maar een potentieel hapje voor haar hongerige kroost.")
+                                        print("De angstige realisatie van mijn benarde situatie vult mijn gedachten, en ik kan alleen maar hopen op een wonder om aan deze angstaanjagende ontmoeting te ontsnappen.")
+
+                                        print("De adelaar fixeert me met haar indringende blik terwijl ik hulpeloos in haar klauwen hang.")
+                                        print("Haar nest met hongerige jongen wacht geduldig op voedsel, en ik ben op dit moment niets meer dan een prooi in haar greep.")
+                                        print("Terwijl ik mijn adem inhoud, voel ik de adelaar haar klauwen strakker aanspannen.")
+                                        print("Haar ogen lijken me te doorboren, en ik realiseer me dat mijn lot op het spel staat.")
+                                        print("In een flits bedenk ik me dat ik misschien een manier kan vinden om haar gunst te winnen en mijn leven te redden.")
+
+                                        print("Ik staar naar de scherpe klauwen die me vasthouden en overweeg mijn opties:")
                                         while True:
-                                            terug = input("Wil je weer teruggaan naar het zwevende eiland? (ja/nee): ")
+                                            print(" - Probeer de adelaar gerust te stellen door rustig te blijven en haar niet aan te staren.")
+                                            print(" - Schreeuw om hulp in de hoop dat er iemand in de buurt is.")
+                                            print(" - Trek aan de veren van de adelaar om jezelf te verdedigen.")
 
-                                            if terug == "ja":
-                                                print("[Je besloot om weer terug te gaan naar het zwevende eiland!]")
-                                                continue
+                                            keuze_adelaar = input("Wat is mijn beslissing? (geruststellen/schreeuwen/veren): ")
 
-                                            elif terug == "nee":
-                                                print("[Je besloot om de pad verder te vervolgen!]")
-                                                print("Plotseling kwam ik bij een punt waar het pad abrupt eindigde, en de afgrond onder me was angstaanjagend diep. ")
-                                                print("Mijn aarzeling kostte me mijn evenwicht, en ik viel in de leegte.")
-                                                print("[Gestorven door acrobatische mislukking!")
+                                            if "geruststellen" in keuze_adelaar.lower():
+                                                print("Ik besluit ervoor om de adelaar gerust te stellen.")
+                                                print("Langzaam adem ik in, probeer ik mijn hartslag te vertragen en vermijd ik oogcontact.")
+
+                                            elif "schreeuwen" in keuze_adelaar.lower():
+                                                print("Ik besluit om om hulp te schreeuwen, in de hoop dat iemand mijn noodkreet zal horen en hulp zal bieden.")
+                                                print("Mijn schreeuw om hulp lijkt onbedoelde gevolgen te hebben.")
+
+                                                print("De adelaar, in een mengeling van beschermende instincten en honger van haar jongen, grijpt me vast met haar scherpe klauwen en vliegt met grote vleugelslagen naar haar nest.")                                               
+                                                print("Eenmaal aangekomen bij het nest, voel ik de nieuwsgierige blikken van de hongerige jongen die me omringen.")
+                                                print("De adelaar, vastberaden om haar kroost te voeden, plaatst me midden in het nest.")
+
+                                                print("De jongen stoten elkaar aan de kant om bij hun onverwachte maaltijd te komen.")
+                                                print("Hun snavels en klauwen trekken mijn aandacht, en het besef dat ik geen ontsnappingsroute heb, dringt door.")
+                                                print("Terwijl ik machteloos toekijk, beginnen de jongen gulzig aan me te pikken en te scheuren.")
+                                                print("Mijn schreeuw om hulp heeft me in de hoogste regionen van de voedselketen geplaatst, maar niet op de manier die ik had gehoopt.")
+                                                
+                                                print("Het wordt snel donker voor mijn ogen terwijl ik dien als offer voor de hongerige jongen van de adelaar.")
+                                                print("Mijn noodkreet heeft mijn lot bezegeld, en ik verdwijn in de maag van de bergbewoners hoog boven de wolken.")
+                                                print("[Gestorven door een plotselinge carrièreswitch naar adelaarvoer!]")
+
+                                            elif "veren" in keuze_adelaar.lower():
+                                                print("Mijn handen trillen terwijl ik in paniek aan de veren van de adelaar trek, een impulsieve reactie op de dreigende situatie waarin ik me bevind.")
+                                                print("De veren geven mee onder mijn greep, en ik voel de zachte textuur ervan in mijn handen.")
+
+                                                print("Echter, mijn poging tot zelfverdediging lijkt weinig effect te hebben.")
+                                                print("De adelaar reageert op mijn actie met een scherpe kreet, haar grote ogen bliksemen van verontwaardiging.")
+                                                print("In plaats van dat ze schrikt, lijkt mijn handeling haar eerder boos te maken.")
+
+                                                print("Met een snelle beweging draait de adelaar zich naar me toe, haar klauwen uitgestrekt.")
+                                                print("Ik besef dat ik mijn situatie alleen maar erger heb gemaakt.")
+                                                print("De adelaar slaat me met haar vleugel, waardoor ik uit balans raak en tegen de rotsachtige ondergrond stort.")
+                                                print("De harde klap veroorzaakt pijn in mijn lichaam, en alles wordt zwart om me heen.")
+                                                print("[Gestorven door een overdosis veren!]")
 
                                             else:
-                                                print("Antwoord alstublieft met 'ja' of 'nee'.")
+                                                print("Mijn gedachten raken verward door de dreigende situatie. Ik moet een beslissing nemen.")
                                                 continue
                                             break
 
-                                    elif zwevende_pad.lower() == "rechts":
-                                        print("")
-
                                     elif zwevende_pad.lower() == "midden":
-                                        print("")
+                                        print("Ik besloot het pad in het midden te volgen.")
 
                                     else:
                                         print("Antwoord alstublieft met 'links', 'midden' of 'rechts'.")
