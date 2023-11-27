@@ -143,13 +143,22 @@ while True:
                                         while True:
                                             print(" - Probeer de adelaar gerust te stellen door rustig te blijven en haar niet aan te staren.")
                                             print(" - Schreeuw om hulp in de hoop dat er iemand in de buurt is.")
-                                            print(" - Trek aan de veren van de adelaar om jezelf te verdedigen.")
+                                            print(" - Trek aan de veren van de adelaar om mezelf te verdedigen.")
 
                                             keuze_adelaar = input("Wat is mijn beslissing? (geruststellen/schreeuwen/veren): ")
 
                                             if "geruststellen" in keuze_adelaar.lower():
                                                 print("Ik besluit ervoor om de adelaar gerust te stellen.")
                                                 print("Langzaam adem ik in, probeer ik mijn hartslag te vertragen en vermijd ik oogcontact.")
+                                                print("Ik probeer mijn angst te onderdrukken, hopend dat mijn kalme houding haar zal kalmeren.")
+
+                                                print("Na een paar spannende seconden merk ik dat de adelaar haar klauwen ontspant en haar vurige blik afzwakt.")
+                                                print("Langzaam laat ze me los, haar grote vleugels gespreid, en ik voel de druk van haar klauwen verminderen.")
+                                                print("Haar nieuwsgierige ogen kijken me aan, alsof ze mijn intenties probeert te begrijpen.")
+                                                print("Voorzichtig beweeg ik mijn ledematen, bang dat ik opnieuw haar woede zal opwekken.")
+
+                                                print("De adelaar, haar vijandigheid nu verdwenen, spreidt haar vleugels en vliegt weg.")
+                                                print("Ik blijf achter op de rotsachtige uitstulping, opgelucht dat ik deze confrontatie met de reusachtige adelaar heb doorstaan.")
 
                                             elif "schreeuwen" in keuze_adelaar.lower():
                                                 print("Ik besluit om om hulp te schreeuwen, in de hoop dat iemand mijn noodkreet zal horen en hulp zal bieden.")
