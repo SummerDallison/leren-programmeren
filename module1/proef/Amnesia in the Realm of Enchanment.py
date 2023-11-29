@@ -160,6 +160,31 @@ while True:
                                                 print("De adelaar, haar vijandigheid nu verdwenen, spreidt haar vleugels en vliegt weg.")
                                                 print("Ik blijf achter op de rotsachtige uitstulping, opgelucht dat ik deze confrontatie met de reusachtige adelaar heb doorstaan.")
 
+                                                print("Nu de adelaar is vertrokken, overweeg ik mijn volgende stap.")
+                                                print("Ik kijk naar de uitgestrekte bergen voor me en bedenk wat de beste route zou kunnen zijn.")
+                                                print(" - Ga verder door de bergen, op zoek naar het onbekende.")
+                                                print(" - Daal af naar beneden, mogelijk naar bewoonde gebieden.")
+
+                                                while True:
+                                                    keuze_bergen = input("Wat is mijn beslissing? (bergen/beneden): ")
+
+                                                    if "bergen" in keuze_bergen.lower():
+                                                        print("Met mijn besluit genomen, vervolg ik mijn reis door de ruige bergpaden.")
+                                                        print("De paden worden steiler; elke stap vergt meer moeite en ik voel de vermoeidheid in mijn benen toenemen.")
+                                                        print("Net op het moment dat ik me afvraag of ik wel de juiste route heb genomen, word ik overstemd door het vrolijke lied van fluitende vogels.")
+
+                                                        print("Ik kijk om me heen en ontdek een kleurrijke papegaai met veren die schitteren als edelstenen.")
+                                                        print("Haar melodie vult de omgeving met een betoverende symfonie, enprint de papegaai kijkt me aan met fonkelende ogen, alsof ze me uitnodigt om haar te volgen.")
+                                                        
+
+                                                    elif "beneden" in keuze_bergen.lower():
+                                                        print("Ik kies ervoor om naar beneden te gaan, hopend op meer bewoonde gebieden.")
+
+                                                    else:
+                                                        print("Antwoord alstublieft met 'bergen' of 'beneden'.")
+                                                        continue
+                                                    break
+
                                             elif "schreeuwen" in keuze_adelaar.lower():
                                                 print("Ik besluit om om hulp te schreeuwen, in de hoop dat iemand mijn noodkreet zal horen en hulp zal bieden.")
                                                 print("Mijn schreeuw om hulp lijkt onbedoelde gevolgen te hebben.")
@@ -192,7 +217,7 @@ while True:
                                                 print("[Gestorven door een overdosis veren!]")
 
                                             else:
-                                                print("Mijn gedachten raken verward door de dreigende situatie. Ik moet een beslissing nemen.")
+                                                print("Antwoord alstublieft met 'geruststellen', 'schreeuwen' of 'veren'.")
                                                 continue
                                             break
 
