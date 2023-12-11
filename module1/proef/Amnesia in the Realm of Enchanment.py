@@ -59,7 +59,7 @@ print("Ik neem het besluit om verder te lopen, vastbesloten om de mysteries van 
 print("Ik ontdek een oude bibliotheek tussen de bomen. De deuren kraken en overal liggen stoffige boeken.")
 
 while True:
-    keuze_bibliotheek = input("Moet ik de tijd nemen om de boeken te bekijken, of snel doorgaan met mijn reis?\n(tijd/doorgaan): ")
+    keuze_bibliotheek = input("Moet ik de tijd nemen om de boeken te bekijken, of snel doorgaan met mijn reis? (tijd/doorgaan): ")
 
     if keuze_bibliotheek.lower() == "tijd":
 
@@ -170,13 +170,26 @@ while True:
 
                                                     if "bergen" in keuze_bergen.lower():
                                                         print("Met mijn besluit genomen, vervolg ik mijn reis door de ruige bergpaden.")
-                                                        print("De paden worden steiler; elke stap vergt meer moeite en ik voel de vermoeidheid in mijn benen toenemen.")
-                                                        print("Net op het moment dat ik me afvraag of ik wel de juiste route heb genomen, word ik overstemd door het vrolijke lied van fluitende vogels.")
+                                                        print(" De paden worden steiler; elke stap vergt meer moeite en vermoeidheid kruipt in mijn benen.")
+                                                        print("Twijfel nestelt zich langzaam in mijn gedachten - heb ik wel de juiste route genomen?")
 
-                                                        print("Ik kijk om me heen en ontdek een kleurrijke papegaai met veren die schitteren als edelstenen.")
-                                                        print("Haar melodie vult de omgeving met een betoverende symfonie, enprint de papegaai kijkt me aan met fonkelende ogen, alsof ze me uitnodigt om haar te volgen.")
+                                                        print("Juist op dat moment overstemt het vrolijke lied van fluitende vogels mijn twijfels.")
+                                                        print("Ik kijk om me heen en ontdek een kleurrijke papegaai, haar veren schitterend als edelstenen. ")
+                                                        print("Haar melodie vult de omgeving met een betoverende symfonie, en de papegaai kijkt me aan met fonkelende ogen, alsof ze me uitnodigt om haar te volgen.")
+                                                        print("De vermoeidheid lijkt even vergeten te zijn, vervangen door nieuwsgierigheid.")
+
+                                                        print("Aarzelend zet ik de eerste stap in haar richting.")
+                                                        print("De papegaai fladdert een paar meter voor me uit en lijkt me te leiden naar een verborgen opening tussen de rotsen.")
+                                                        print("Terwijl we naderen, voel ik een zachte bries die door de opening waait, vergezeld van de geur van bloemen.")
+
+                                                        print("De opening onthult een prachtige vallei, gehuld in het zachte licht van de ondergaande zon.")
+                                                        print("Een kristalheldere rivier slingert zich een weg door het landschap, omringd door kleurrijke bloemen en exotische planten.")
+
+                                                        print("Plotseling voel ik een lichte druk op mijn schouder, en als ik opkijk, ontmoet ik de sprankelende ogen van de papegaai.")
+                                                        print("Ze lijkt nieuwsgierig naar me te kijken, haar veren glinsterend in het zonlicht.")
+                                                        print("Een vreemde, maar aangename band lijkt zich tussen ons te vormen.")
+                                                        print("Haar aanwezigheid voelt vertrouwd, alsof ze altijd al bij me is geweest.")
                                                         
-
                                                     elif "beneden" in keuze_bergen.lower():
                                                         print("Ik kies ervoor om naar beneden te gaan, hopend op meer bewoonde gebieden.")
 
