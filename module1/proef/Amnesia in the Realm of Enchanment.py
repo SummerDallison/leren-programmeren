@@ -443,7 +443,17 @@ while True:
                     break
 
             elif pick_artefacts.lower() == "nee":
-                print("[Je besluit om de magische artefacten met rust te laten.]")
+                print("\n[Je besluit om de magische artefacten met rust te laten.]\n")
+
+                print("Terwijl je aarzelde, voelde je plotseling een vreemde trilling in de lucht.")
+                print("De magische artefacten reageren onrustig op je weigering.")
+                print("Een krachtige energieomslag vindt plaats, en voordat je het weet, word je overspoeld door een magische explosie.")
+                print("De boekenplanken schudden, en je wordt weggeblazen door een onzichtbare kracht.")
+                print("Als de stofwolken optrekken, bevind je je op mysterieuze wijze op een andere locatie, ver weg van de magische bibliotheek.")
+                print("Het lijkt erop dat het negeren van de magische artefacten niet zonder gevolgen is gebleven.")
+                print("Je hebt de magische dimensie betreden, en de weg terug lijkt onmogelijk te vinden.")
+
+                print("[Verdwaald door de Magische Meltdown!]")
 
             else:
                 print("Antwoord alstublieft met 'ja' of 'nee'.")
