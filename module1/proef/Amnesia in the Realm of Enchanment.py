@@ -451,12 +451,12 @@ while True:
                 print("De boekenplanken schudden, en je wordt weggeblazen door een onzichtbare kracht.")
                 print("Als de stofwolken optrekken, bevind je je op mysterieuze wijze op een andere locatie, ver weg van de magische bibliotheek.")
                 print("Het lijkt erop dat het negeren van de magische artefacten niet zonder gevolgen is gebleven.")
-                print("Je hebt de magische dimensie betreden, en de weg terug lijkt onmogelijk te vinden.")
+                print("Je hebt de magische dimensie betreden, en de weg terug lijkt onmogelijk te vinden.\n")
 
                 print("[Verdwaald door de Magische Meltdown!]")
 
             else:
-                print("Antwoord alstublieft met 'ja' of 'nee'.")
+                print("\nAntwoord alstublieft met 'ja' of 'nee'.\n")
                 continue
             break          
 
