@@ -6,10 +6,6 @@ inventaris = []
 companions = []
 profiel_inhoud = []
 
-gouden_munten = 0
-zilveren_munten = 0
-bronzen_munten = 0
-
 print("Ik word langzaam wakker en knijp mijn ogen samen in een poging om te wennen aan het verblindende zonlicht dat mijn zicht overweldigt.")
 print("Ik kijk verward om me heen en besef dat ik op een onbekende locatie bevind.")
 print("Ik merk dat ik omringd ben door een prachtige, groene omgeving met hoge bomen.")
