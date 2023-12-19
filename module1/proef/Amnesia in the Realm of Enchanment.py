@@ -724,9 +724,9 @@ while True:
                         print("Ze verbannen me naar de donkere, gevaarlijke wildernis buiten het dwergendorp.")
                         print("In deze meedogenloze omgeving sta ik voor talloze gevaren, variërend van hongerige roofdieren tot onbekende vijandige wezens.\n")
 
-                        print("Gedurende je verbanning worstel je om te overleven.")
-                        print("Je zoekt wanhopig naar een veilige uitweg, maar de wildernis is meedogenloos.")
-                        print("Uiteindelijk, verzwakt en uitgeput, kom je oog in oog te staan met een mysterieuze, duistere kracht die je gevangen neemt.\n")
+                        print("Gedurende mijn verbanning worstel ik om te overleven.")
+                        print("Ik zoekt wanhopig naar een veilige uitweg, maar de wildernis is meedogenloos.")
+                        print("Uiteindelijk, verzwakt en uitgeput, kom ik oog in oog te staan met een mysterieuze, duistere kracht die me gevangen neemt.\n")
 
                         print("[Harmonie? Dwergendorp denkt van niet - Exit 'harmonie'!]")
 
