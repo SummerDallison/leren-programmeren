@@ -1,0 +1,627 @@
+<mxfile host="app.diagrams.net" modified="2023-12-19T12:21:52.597Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="dbQ95b3n85vP47GWIDML" version="22.1.11" type="onedrive">
+  <diagram name="Pagina-1" id="qAXu49TXR0TU_a721IPP">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-2" target="aaQSE_zxZhMoj1HWHNT5-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-2" value="START" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;shadow=1;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="-1603.5" y="490" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-4" target="aaQSE_zxZhMoj1HWHNT5-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-4" value="Wordt wakker zonder geheugen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1598.5" y="595" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-15" value="Ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-11" target="aaQSE_zxZhMoj1HWHNT5-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-87" value="Nee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-11" target="aaQSE_zxZhMoj1HWHNT5-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1740" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1650" y="840" />
+              <mxPoint x="-1650" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-11" value="Naam&lt;br&gt;bevestiging" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1585" y="800" width="93" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-14" target="aaQSE_zxZhMoj1HWHNT5-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-14" value="Naam" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1600" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-17" target="aaQSE_zxZhMoj1HWHNT5-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-17" value="Informatie aan profiel toegevoegd" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1380" y="845" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-23" value="Ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-18" target="aaQSE_zxZhMoj1HWHNT5-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-70" value="Nee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-18" target="aaQSE_zxZhMoj1HWHNT5-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-18" value="Open profiel?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1410" y="970" width="107" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-22" target="aaQSE_zxZhMoj1HWHNT5-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-22" value="Open profiel" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1240" y="965" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-24" target="aaQSE_zxZhMoj1HWHNT5-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-24" value="Verderlopen, en kom bibliotheek tegen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1613.5" y="1040" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-35" value="Tijd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-30" target="aaQSE_zxZhMoj1HWHNT5-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-36" value="Doorgaan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-30" target="aaQSE_zxZhMoj1HWHNT5-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-30" value="Tijd nemen om boeken te bekijken of doorgaan" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1602.75" y="1225" width="98.5" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-32" target="aaQSE_zxZhMoj1HWHNT5-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-32" value="Tijd nemen om boeken te bekijken" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1900" y="1300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-34" value="Snel doorgaan met de reis" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1410" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-37" target="aaQSE_zxZhMoj1HWHNT5-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-37" value="kom twee&amp;nbsp;magische artefacten tegen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1900" y="1430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-62" value="Ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-39" target="aaQSE_zxZhMoj1HWHNT5-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-10" value="Nee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-39" target="aaQSE_zxZhMoj1HWHNT5-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-39" value="Oppakken?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1708.5" y="1480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-43" target="aaQSE_zxZhMoj1HWHNT5-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-43" value="Naam" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;shadow=1;rounded=0;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="-1598.5" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-54" target="aaQSE_zxZhMoj1HWHNT5-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-54" value="Magische explosie" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1700" y="1650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-56" value="Verdwaald in magische demensie" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1580" y="1530" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-73" value="Nee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-58" target="aaQSE_zxZhMoj1HWHNT5-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-81" value="Ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-58" target="aaQSE_zxZhMoj1HWHNT5-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-58" value="Beide artefacten oppakken?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1870" y="1570" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-7" value="Zwart" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-60" target="74VtwA1WrdMq_-6j1hrR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-12" value="Goud" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-60" target="74VtwA1WrdMq_-6j1hrR-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-60" value="Gouden of zwarte artefact?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2003" y="1720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-17" target="aaQSE_zxZhMoj1HWHNT5-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-80" target="aaQSE_zxZhMoj1HWHNT5-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-80" value="Magische energie reageert op een oncontroleerbare manier" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1870" y="1730" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-82" value="Gestorven door uitbarsting van magische energie" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1733.5" y="1820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aaQSE_zxZhMoj1HWHNT5-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-24" target="aaQSE_zxZhMoj1HWHNT5-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-6" target="74VtwA1WrdMq_-6j1hrR-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-6" value="Zwart kristal begint duistere kracht uit te stralen en omringd de speler" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2023" y="1860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-8" value="Zit vast in een eindeloze leegte" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1920" y="1960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-11" value="Gouden amulet begint te stralen, speler komt terecht op een zwevend eiland" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2210" y="1675" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-14" target="74VtwA1WrdMq_-6j1hrR-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-14" value="Er zijn 3 paden die leiden naar verschillende delen van het eiland&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2180" y="1820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.663;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-11" target="74VtwA1WrdMq_-6j1hrR-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-31" value="Midden" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-17" target="74VtwA1WrdMq_-6j1hrR-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-2283" y="1920" />
+              <mxPoint x="-2110" y="1920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-34" value="Rechts" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-17" target="74VtwA1WrdMq_-6j1hrR-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-113" value="Links" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-17" target="74VtwA1WrdMq_-6j1hrR-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-17" value="Links, rechts of midden?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2405" y="1760" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-20" target="74VtwA1WrdMq_-6j1hrR-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-20" value="Pad wordt steeds smaller totdat die&amp;nbsp;abrupt eindigt" style="rounded=0;whiteSpace=wrap;html=1;glass=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2660" y="1775" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-24" value="Verliest evenwicht en val naar beneden" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2665" y="1900" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-26" target="74VtwA1WrdMq_-6j1hrR-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-26" value="Midden pad leidt naar een&amp;nbsp;mistige vlakte" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2280" y="1940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-29" value="Verdwaald in de&amp;nbsp;mistige vlakte" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2230" y="2070" width="134.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-33" value="Komt uit&amp;nbsp;op een schijnbaar oneindige uitgestrektheid van wolken" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2420" y="1610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-35" target="74VtwA1WrdMq_-6j1hrR-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-35" value="Wolken vervagen, en speler valt door de wolken heen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2243" y="1500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.59;entryY=1.112;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-33" target="74VtwA1WrdMq_-6j1hrR-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-37" target="74VtwA1WrdMq_-6j1hrR-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-37" value="Wordt tijdens vallen opgevangen door een&amp;nbsp;gigantische adelaar" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2365" y="1400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-40" target="74VtwA1WrdMq_-6j1hrR-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-40" value="Adelaar wilt speler aan&amp;nbsp;haar hongerige kroost voeren" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2123" y="1300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-44" target="74VtwA1WrdMq_-6j1hrR-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-44" value="Overwegen van opties om zichzelf te redden." style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2330" y="1220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-50" value="veren" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-46" target="74VtwA1WrdMq_-6j1hrR-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-61" value="Geruststellen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-46" target="74VtwA1WrdMq_-6j1hrR-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-66" value="Schreeuwen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-46" target="74VtwA1WrdMq_-6j1hrR-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-46" value="Schreeuwen om hulp, adelaar geruststellen of aan veren trekken&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2114.5" y="1100" width="103" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-48" target="74VtwA1WrdMq_-6j1hrR-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-48" value="Trekken aan de veren van adelaar, maakt adelaar boos" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1870" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-53" value="Adelaar slaat speler met haar vleugel, en speler sterft door impact tegen rotsachtige&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;ondergrond&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1800" y="1010" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-56" target="74VtwA1WrdMq_-6j1hrR-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-56" value="Speler schreeuwt om hulp" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2030" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-58" value="Word gevoerd aan de hongerige kroost." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="840" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-60" target="74VtwA1WrdMq_-6j1hrR-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-60" value="Probeert de adelaar gerust te stellen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2330" y="1020" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-62" target="74VtwA1WrdMq_-6j1hrR-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-62" value="Overwegen om welke route te volgen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2245" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-69" value="Bergen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-64" target="74VtwA1WrdMq_-6j1hrR-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-80" value="Beneden" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-64" target="74VtwA1WrdMq_-6j1hrR-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-64" value="Verder door de bergen of daal af naar beneden?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2230" y="760" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-68" value="Reis vervolgen door de ruige&amp;nbsp;bergpaden" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1940" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-70" target="74VtwA1WrdMq_-6j1hrR-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-70" value="Komt een papegaai tegen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1840" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.624;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-68" target="74VtwA1WrdMq_-6j1hrR-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-72" target="74VtwA1WrdMq_-6j1hrR-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-72" value="Papegaai leidt de speler naar&amp;nbsp;een verborgen opening tussen de rotsen; de opening onthuld een vallei" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2080" y="500" width="133" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-74" target="74VtwA1WrdMq_-6j1hrR-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-74" value="Papegaai verandert naar een angstaanjagende gedaante" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2280" y="590" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-76" value="&#39;Papegaai&#39; valt aan en speler valt levenloos neer&amp;nbsp;in de vallei" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2480" y="510" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-79" target="74VtwA1WrdMq_-6j1hrR-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-79" value="Zet de afdaling voort" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2460" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-81" target="74VtwA1WrdMq_-6j1hrR-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-81" value="Komt verlaten dorp tegen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2580" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-83" target="74VtwA1WrdMq_-6j1hrR-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-83" value="Komt geest van moeder tegen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2740" y="587.5" width="110" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-86" target="74VtwA1WrdMq_-6j1hrR-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-86" value="Krijgt herinneringen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2970" y="595" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-90" value="Herinnering" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-3060" y="770" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-93" target="74VtwA1WrdMq_-6j1hrR-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-93" value="Malachai (de vijand) komt opdagen en valt aan" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2940" y="890" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.585;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-90" target="74VtwA1WrdMq_-6j1hrR-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-95" target="74VtwA1WrdMq_-6j1hrR-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-95" value="Moeder geeft de speler 2 opties" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2740" y="800" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-100" value="Vluchten" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-97" target="74VtwA1WrdMq_-6j1hrR-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-106" value="Confrontatie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-97" target="74VtwA1WrdMq_-6j1hrR-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-97" value="Vluchten of de confrontatie aan te gaan?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2590" y="950" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-99" value="Angst overweldigt de speler, de speler probeert te vluchten" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2490" y="1090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-101" value="Malachai valt aan en de speler sterft" style="rounded=1;whiteSpace=wrap;html=1;arcSize=41;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2580" y="1250" width="135" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.589;entryY=0.045;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-99" target="74VtwA1WrdMq_-6j1hrR-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-105" target="74VtwA1WrdMq_-6j1hrR-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-105" value="De speler gaat de confrontatie aan met Malachai" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2820" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-107" target="74VtwA1WrdMq_-6j1hrR-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-107" value="Malachai&amp;nbsp;ontketent duistere krachten." style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2730" y="1165" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-116" target="74VtwA1WrdMq_-6j1hrR-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-116" value="Moeder springt ertussen om de speler te beschermt en een gloed omhult haar" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2970" y="1105" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-119" target="74VtwA1WrdMq_-6j1hrR-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-119" value="De twee krachten (moeder en Malachai) botsen tegen elkaar en ze vervagen allebei" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-3170" y="1105" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-125" target="74VtwA1WrdMq_-6j1hrR-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-125" value="De licht houdt op. De moeder en Malchai zijn allebei verdwenen. Moeder heeft zichzelf opgeofferd" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-3060" y="1230" width="135" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-127" value="Malachai is verslagen, maar wel een tegen een prijs." style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-2880" y="1330" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-130" target="74VtwA1WrdMq_-6j1hrR-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-130" value="Komt een dwergendorp tegen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1400" y="1350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.405;entryY=0.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-34" target="74VtwA1WrdMq_-6j1hrR-130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-134" target="74VtwA1WrdMq_-6j1hrR-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-134" value="Loopt een ambachtelijke winkeltje binnen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1400" y="1460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-137" target="74VtwA1WrdMq_-6j1hrR-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-137" value="Smid biedt een uitdaging aan" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1220" y="1460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-143" value="Ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-140" target="74VtwA1WrdMq_-6j1hrR-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-140" target="74VtwA1WrdMq_-6j1hrR-175">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-140" value="Uitdaging&amp;nbsp;&#39;Stenen van Schittering&#39; aannemen?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1210" y="1580" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-142" target="74VtwA1WrdMq_-6j1hrR-144">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-142" value="Krijgt map van de grot en houweel" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-950" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-144" target="74VtwA1WrdMq_-6j1hrR-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-144" value="Informatie over uitdaging" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-148" target="74VtwA1WrdMq_-6j1hrR-151">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-148" value="Vertrek naar de grot, en komt er aan." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="1600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-151" target="74VtwA1WrdMq_-6j1hrR-153">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-151" value="Grot loopt uit in meerdere tunnels" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="1710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-156" value="Tweede&lt;br&gt;of&lt;br&gt;Vijfde" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-153" target="74VtwA1WrdMq_-6j1hrR-155">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-153" target="74VtwA1WrdMq_-6j1hrR-160">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-153" target="74VtwA1WrdMq_-6j1hrR-167">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-153" value="Keuze uit 5 tunnels" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;shadow=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="1700" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-155" target="74VtwA1WrdMq_-6j1hrR-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-155" value="Gekozen voor de tweede of de vijfde tunnel" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="1550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-157" value="Tunnel stort in en speler wordt verpletterd door instortende rotsen" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="-572.5" y="1400" width="145" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-164" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-160" target="74VtwA1WrdMq_-6j1hrR-162">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-160" value="Gekozen voor de eerste of de derde tunnel" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="1835" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-162" target="74VtwA1WrdMq_-6j1hrR-165">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-162" value="Giftige gassen ontsnappen uit de tunnel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="1835" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-165" value="Stikt in giftige gassen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-780" y="1960" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-167" target="74VtwA1WrdMq_-6j1hrR-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-167" value="Gekozen voor de vierde tunnel" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="1630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-169" target="74VtwA1WrdMq_-6j1hrR-171">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-169" value="De tunnel pad wordt steeds smaller" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="1510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-171" target="74VtwA1WrdMq_-6j1hrR-173">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-171" value="Brokstukken vallen naar beneden en blokkeren de uitweg naar buiten" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-285" y="1390" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-173" value="Gevangen in de tunnel zonder uitweg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-440" y="1240" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-175" target="74VtwA1WrdMq_-6j1hrR-177">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-175" value="Verkenningstocht&amp;nbsp;door het dwergendorp voort te zetten" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1360" y="1710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-177" target="74VtwA1WrdMq_-6j1hrR-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-177" value="Wordt aangesproken door&amp;nbsp;Gimli, vertelt over handelsmissie" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1360" y="1820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-179" target="74VtwA1WrdMq_-6j1hrR-181">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-179" value="Vraagt of de speler de handelsmissie wil aannemen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1360" y="1930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-185" value="Nee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-181" target="74VtwA1WrdMq_-6j1hrR-184">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-197" value="Ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-181" target="74VtwA1WrdMq_-6j1hrR-196">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-181" value="Handelsmissie aannemen?" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1345" y="2040" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-184" target="74VtwA1WrdMq_-6j1hrR-186">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-184" value="Na de weigering, de sfeer van dwergendorp word grimmig" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1660" y="1990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-189" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-186" target="74VtwA1WrdMq_-6j1hrR-188">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-186" value="Wordt door groep dwergen beschuldigt&amp;nbsp;van de mislukte handelsmissie" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1665" y="2120" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-188" target="74VtwA1WrdMq_-6j1hrR-190">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-188" value="De confrontatie escaleert,&amp;nbsp;resulteert in een gewelddadige confrontatie" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1667.5" y="2250" width="135" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-190" target="74VtwA1WrdMq_-6j1hrR-193">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-190" value="Speler wordt verbannen naar&amp;nbsp;donkere, gevaarlijke wildernis buiten het dwergendorp" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1877.5" y="2250" width="135" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-193" value="Verzwakt, komt de speler&amp;nbsp;een mysterieuze, duistere kracht tegen die de speler gevangen neemt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-2114.5" y="2247.5" width="140" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-196" target="74VtwA1WrdMq_-6j1hrR-199">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-196" value="heeft handelsmissie aangenomen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1140" y="2055" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-199" target="74VtwA1WrdMq_-6j1hrR-202">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-199" value="Krijgt eigen paard" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1140" y="2180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-202" target="74VtwA1WrdMq_-6j1hrR-206">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-202" value="Naam voor de paard" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;shadow=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="-1145" y="2290" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-206" target="74VtwA1WrdMq_-6j1hrR-208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-206" value="Naam voor de paard gekozen" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1140" y="2410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-208" value="Reis naar de&amp;nbsp;elfenkoninkrijk Eldoria" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1410" y="2320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-213" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-210" target="74VtwA1WrdMq_-6j1hrR-212">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-210" value="We komen aan bij de&amp;nbsp;elfenkoninkrijk Eldoria" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1510" y="2480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-211" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.432;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-208" target="74VtwA1WrdMq_-6j1hrR-210">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-212" target="74VtwA1WrdMq_-6j1hrR-216">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-212" value="Gimli begint met het tonen van het tonen van&amp;nbsp;onze handelswaren" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1510" y="2590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-220" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="74VtwA1WrdMq_-6j1hrR-216" target="74VtwA1WrdMq_-6j1hrR-219">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-216" value="Elfenwachters omsingelen ons, en we worden gearresteerd op verdenking van spionage" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1303" y="2585" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-219" value="We belanden in de Elfengevangenis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="-1304.5" y="2720" width="133" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-224" value="Suumer&lt;br&gt;Dallison" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1692" y="532.5" width="200" height="95" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
