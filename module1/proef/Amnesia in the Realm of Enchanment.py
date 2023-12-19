@@ -79,6 +79,11 @@ while True:
                         inventaris.append("Zwart kristal")
                         print("[Gouden amulet toegevoegd aan inventaris!]")
                         inventaris.append("Gouden amulet")
+                       
+                        print("Echter, op het moment dat je de artefacten aanraakt, voel je een onvoorstelbare kracht die je overweldigt.")
+                        print("De magische energie reageert op je aanraking op een oncontroleerbare manier.")
+                        print("Een krachtige uitbarsting van magie volgt, en je wordt door de ontembare krachten verteerd.")
+                        print("[Gestorven door Overweldigende Magische Energie]")
 
                     elif beide_artefacten.lower() == "nee":
                         while True:
@@ -184,7 +189,7 @@ while True:
 
                                                     if "bergen" in keuze_bergen.lower():
                                                         print("Met mijn besluit genomen, vervolg ik mijn reis door de ruige bergpaden.")
-                                                        print(" De paden worden steiler; elke stap vergt meer moeite en vermoeidheid kruipt in mijn benen.")
+                                                        print("De paden worden steiler; elke stap vergt meer moeite en vermoeidheid kruipt in mijn benen.")
                                                         print("Twijfel nestelt zich langzaam in mijn gedachten - heb ik wel de juiste route genomen?\n")
 
                                                         print("Juist op dat moment overstemt het vrolijke lied van fluitende vogels mijn twijfels.")
