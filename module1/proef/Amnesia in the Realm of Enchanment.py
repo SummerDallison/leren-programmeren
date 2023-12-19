@@ -344,7 +344,7 @@ while True:
                                                                 print("'Je kunt niet ontsnappen aan de schaduwen van je verleden,' gromt Malachai, zijn stem doordringt de stilte.")
                                                                 print("'Jullie dorp was slechts het begin.'\n")
 
-                                                                print("De lucht lijkt te trillen van spanning terwijl we ons schrap zetten voor de komende strijd. ")
+                                                                print("De lucht lijkt te trillen van spanning terwijl we ons schrap zetten voor de komende strijd.")
                                                                 print("Onze vastberadenheid brandt helder, als een laatste vonk van hoop te midden van de verwoesting.\n")
 
                                                                 print("Malachai's duistere aanwezigheid vult de ruimte, en we voelen de druk van de geschiedenis die op onze schouders rust.")
