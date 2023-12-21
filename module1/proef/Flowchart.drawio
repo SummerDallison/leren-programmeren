@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-19T12:21:52.597Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="dbQ95b3n85vP47GWIDML" version="22.1.11" type="onedrive">
+<mxfile host="app.diagrams.net" modified="2023-12-19T12:33:34.271Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="zQQYYwfHRlCK7qS8N_pE" version="22.1.11" type="onedrive">
   <diagram name="Pagina-1" id="qAXu49TXR0TU_a721IPP">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -29,7 +29,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="aaQSE_zxZhMoj1HWHNT5-11" value="Naam&lt;br&gt;bevestiging" style="rhombus;whiteSpace=wrap;html=1;shadow=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1585" y="800" width="93" height="80" as="geometry" />
+          <mxGeometry x="-1580" y="800" width="85" height="80" as="geometry" />
         </mxCell>
         <mxCell id="aaQSE_zxZhMoj1HWHNT5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aaQSE_zxZhMoj1HWHNT5-14" target="aaQSE_zxZhMoj1HWHNT5-17">
           <mxGeometry relative="1" as="geometry" />
@@ -618,8 +618,8 @@
         <mxCell id="74VtwA1WrdMq_-6j1hrR-219" value="We belanden in de Elfengevangenis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="-1304.5" y="2720" width="133" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="74VtwA1WrdMq_-6j1hrR-224" value="Suumer&lt;br&gt;Dallison" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1692" y="532.5" width="200" height="95" as="geometry" />
+        <mxCell id="74VtwA1WrdMq_-6j1hrR-230" value="Summer Dallison" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1605" y="560" width="70" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
