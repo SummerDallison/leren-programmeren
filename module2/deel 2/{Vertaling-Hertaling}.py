@@ -16,7 +16,7 @@ translation = {
     'feeën' : 'kabouters',
 }
 
-translated_text = str(original_text)
+translated_text = original_text
 
 for key, value in translation.items():
     translated_text = translated_text.replace(key, value)
