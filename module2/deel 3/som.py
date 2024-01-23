@@ -4,6 +4,6 @@ iteratie = 1
 
 while total <= 1000:
     total += num 
-    print(f"{iteratie}. { ' + '.join(map(str, range(50, num + 2)))} = {total}")
+    print(f"{iteratie}. { ' + '.join(map(str, range(50, num + 1)))} = {total}")
     iteratie += 1
     num += 1
