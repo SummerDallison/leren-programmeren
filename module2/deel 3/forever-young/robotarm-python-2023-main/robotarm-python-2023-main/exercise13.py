@@ -4,6 +4,7 @@ robotArm = RobotArm()
 robotArm.randomLevel(1,7)
 
 # Jouw python instructies zet je vanaf hier:
+aantal = 1
 
 while True:
     robotArm.grab()
@@ -12,9 +13,14 @@ while True:
     print(robotArm.scan())
 
     if color != "":
-        robotArm.moveRight()
+        for i in range(aantal):
+            robotArm.moveRight()
         robotArm.drop()
-        robotArm.moveLeft()
+        for i in range(aantal):
+            robotArm.moveLeft()
+
+        aantal += 1
+
     else:
         break
 
