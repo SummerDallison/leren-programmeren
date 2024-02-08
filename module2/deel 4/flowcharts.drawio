@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-08T11:13:05.064Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="7PWNPsY6WEfQTyjS4bkZ" version="23.1.1" type="device">
+<mxfile host="app.diagrams.net" modified="2024-02-08T11:50:50.541Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="5WPZxxPkH65WvwS45BZd" version="23.1.1" type="device">
   <diagram name="Pagina-1" id="86XxUkd9Ytf5J9jopJS4">
-    <mxGraphModel dx="742" dy="421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1670" dy="948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -105,7 +105,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-78" value="Verschil &amp;lt; 50?" style="rhombus;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="3180" y="940" width="128.44" height="130" as="geometry" />
+          <mxGeometry x="3310" y="990" width="128.44" height="130" as="geometry" />
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-91" value="Ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="ijPyet67MNjV_9AJ14ty-81" target="ijPyet67MNjV_9AJ14ty-90">
           <mxGeometry relative="1" as="geometry" />
@@ -114,19 +114,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-81" value="Verschil &amp;lt; 20?" style="rhombus;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="3330" y="700" width="128.44" height="130" as="geometry" />
+          <mxGeometry x="3410" y="730" width="128.44" height="130" as="geometry" />
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="ijPyet67MNjV_9AJ14ty-90" target="ijPyet67MNjV_9AJ14ty-99">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-90" value="Je bent heel warm" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="3304.22" y="480" width="180" height="90" as="geometry" />
+          <mxGeometry x="3378.4399999999996" y="490" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="ijPyet67MNjV_9AJ14ty-93" target="ijPyet67MNjV_9AJ14ty-99">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-93" value="Je bent warm" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="3620" y="490" width="189.22" height="90" as="geometry" />
+          <mxGeometry x="3670" y="490" width="189.22" height="90" as="geometry" />
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-104" value="&amp;lt; 10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="ijPyet67MNjV_9AJ14ty-99" target="ijPyet67MNjV_9AJ14ty-25">
           <mxGeometry relative="1" as="geometry" />
@@ -143,7 +143,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ijPyet67MNjV_9AJ14ty-99" value="Aantal keer geraden?" style="rhombus;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="3049.22" y="347.5" width="130.78" height="135" as="geometry" />
+          <mxGeometry x="3160" y="345" width="130.78" height="135" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
