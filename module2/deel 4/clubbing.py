@@ -47,7 +47,7 @@ while True:
                             print("Alstublieft, complimenten van het huis.")
 
                         else:
-                            print(f"Alstublieft uw {DRANKJES}, dat is dan €{PRIJS_COLA:.2f}.")
+                            print(f"Alstublieft uw {DRANKJES.lower()}, dat is dan €{PRIJS_COLA:.2f}.")
                     
                     elif DRANKJES.lower() == "bier":
                         
@@ -57,7 +57,7 @@ while True:
                                 print("Alstublieft, complimenten van het huis.")
                             
                             else:
-                                print(f"Alstublieft uw {DRANKJES}, dat is dan €{PRIJS_BIER:.2f}.")
+                                print(f"Alstublieft uw {DRANKJES.lower()}, dat is dan €{PRIJS_BIER:.2f}.")
                         
                         else:
                             print("Sorry, u mag geen alcohol bestellen onder de 21.")
@@ -68,7 +68,7 @@ while True:
                         if "blauw bandje" in bandje_stempel or "rood bandje" in bandje_stempel:
 
                             if "blauw bandje" in bandje_stempel:
-                                print(f"Alstublieft uw {DRANKJES}, dat is dan €{PRIJS_CHAMPAGNE:.2f}.")
+                                print(f"Alstublieft uw {DRANKJES.lower()}, dat is dan €{PRIJS_CHAMPAGNE:.2f}.")
 
                             else:
                                 print("Sorry, u mag geen alcohol bestellen onder de 21.")
