@@ -17,7 +17,7 @@ while True:
     while True:
         more_items = input("Wil je nog meer items toevoegen aan uw boodschappenlijstje? (ja/nee) ").lower()
 
-        if more_items.lower() == "nee":
+        if more_items == "nee":
             print(" --- [Boodschappenlijst] --- ")
             for item, quantity in shopping_list.items():
                 print(f"{quantity}x {item}")

@@ -5,6 +5,8 @@ PRIJS_CHAMPAGNE = 12.30
 DRANKJES = ('cola', 'bier', 'champagne')
 VIP_LIST = ('jeroen', 'jouke', 'rudi')
 
+bandje_stempel = None
+
 #bouw hieronder de flowchart na
 
 while True:
@@ -22,53 +24,51 @@ while True:
 
                 if naam.isalpha():
 
-                    bandje_stempel = []
-
                     if naam.lower() in VIP_LIST:
 
                         if leeftijd >= 21:
-                            bandje_stempel.append("blauw bandje")
-                            print(f"U krijgt van mij een {bandje_stempel[0]}.")
+                            bandje_stempel = "blauw bandje"
+                            print(f"U krijgt van mij een {bandje_stempel}.")
 
                         else:
-                            bandje_stempel.append("rood bandje")
-                            print(f"U krijgt van mij een {bandje_stempel[0]}.")
+                            bandje_stempel = "rood bandje"
+                            print(f"U krijgt van mij een {bandje_stempel}.")
                     
                     else:
 
                         if leeftijd >= 21:
-                            bandje_stempel.append("stempel")
-                            print(f"U krijgt van mij een {bandje_stempel[0]}.")
+                            bandje_stempel = "stempel"
+                            print(f"U krijgt van mij een {bandje_stempel}.")
                     
-                    DRANKJES = input(f"Wat wilt u drinken? ")
+                    DRANKJES = input(f"Wat wilt u drinken? ").lower()
 
-                    if DRANKJES.lower() == "cola":
-                        if "blauw bandje" in bandje_stempel or "rood bandje" in bandje_stempel:
+                    if DRANKJES == "cola":
+                        if bandje_stempel == "blauw bandje" or bandje_stempel == "rood bandje":
                             print("Alstublieft, complimenten van het huis.")
 
                         else:
-                            print(f"Alstublieft uw {DRANKJES.lower()}, dat is dan €{PRIJS_COLA:.2f}.")
+                            print(f"Alstublieft uw {DRANKJES}, dat is dan €{PRIJS_COLA:.2f}.")
                     
-                    elif DRANKJES.lower() == "bier":
+                    elif DRANKJES == "bier":
                         
-                        if "blauw bandje" in bandje_stempel or "rood bandje" in bandje_stempel or "stempel" in bandje_stempel:
+                        if bandje_stempel == "blauw bandje" or bandje_stempel == "rood bandje" or bandje_stempel == "stempel":
                             
-                            if "blauw bandje" in bandje_stempel or "rood bandje" in bandje_stempel:
+                            if bandje_stempel == "blauw bandje" or bandje_stempel == "rood bandje":
                                 print("Alstublieft, complimenten van het huis.")
                             
                             else:
-                                print(f"Alstublieft uw {DRANKJES.lower()}, dat is dan €{PRIJS_BIER:.2f}.")
+                                print(f"Alstublieft uw {DRANKJES}, dat is dan €{PRIJS_BIER:.2f}.")
                         
                         else:
                             print("Sorry, u mag geen alcohol bestellen onder de 21.")
                             print(f"Probeer het over {21 - leeftijd} jaar nog eens.")
 
-                    elif DRANKJES.lower() == "champagne":
+                    elif DRANKJES == "champagne":
 
-                        if "blauw bandje" in bandje_stempel or "rood bandje" in bandje_stempel:
+                        if bandje_stempel == "blauw bandje" or bandje_stempel == "rood bandje":
 
-                            if "blauw bandje" in bandje_stempel:
-                                print(f"Alstublieft uw {DRANKJES.lower()}, dat is dan €{PRIJS_CHAMPAGNE:.2f}.")
+                            if bandje_stempel == "blauw bandje":
+                                print(f"Alstublieft uw {DRANKJES}, dat is dan €{PRIJS_CHAMPAGNE:.2f}.")
 
                             else:
                                 print("Sorry, u mag geen alcohol bestellen onder de 21.")
