@@ -5,6 +5,9 @@ while True:
     if not item:
         print("U hebt nog geen item ingevoerd.")
         continue
+    elif not item.isalpha():
+        print("Voer alstublieft een geldig item in.")
+        continue
 
     if item in shopping_list:
         shopping_list[item] += 1
