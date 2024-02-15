@@ -1,16 +1,16 @@
 from fruitmand import fruitmand
 
-watermelon = {
+watermeloen = {
     'name' : 'watermeloen',
     'weight' : 2500,
     'color' : 'green',
     'round' : True
 }
-fruitmand.append(watermelon)
+fruitmand.append(watermeloen)
 
-totalWeight = 0
+totaalGewicht = 0
 
 for fruit in fruitmand:
-    totalWeight += fruit['weight']
+    totaalGewicht += fruit['weight']
 
-print(totalWeight)
+print(totaalGewicht)
