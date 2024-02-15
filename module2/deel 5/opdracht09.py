@@ -4,10 +4,10 @@ for fruit in fruitmand:
     if fruit.get('name') == 'druif':
         fruitmand.remove(fruit)
 
-kleuren = set()
+colors = set()
 
 for fruit in fruitmand:
-    kleuren.add(fruit['color'])
+    colors.add(fruit['color'])
 
-for kleur in kleuren:
-    print(kleur)
+for color in colors:
+    print(color)
