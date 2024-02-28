@@ -1,4 +1,4 @@
-#Herhaal:
+#Herhaal als het geen naam is (letters/symbolen):
     #Er wordt gevraagd om de naam van een deelnemer in te voeren
     #Als de naam niet in deelnemers zit:
         #Voeg naam toe aan de lootjes
