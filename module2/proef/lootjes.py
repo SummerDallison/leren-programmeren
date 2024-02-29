@@ -66,6 +66,7 @@ while True:
             if lootje_opvragen.isalpha():
                 if lootje_opvragen in deelnemers_lootjes:
                     print(f"Het lootje van {deelnemers_lootjes[lootje_opvragen]} is gekoppeld aan {lootje_opvragen}.")
+                    break
                 
                 else:
                     print("Deze naam staat niet op de lijst van deelnemers.")
