@@ -53,3 +53,32 @@ while True:
 
 for deelnemer, lootje in zip(deelnemers, lootjes):
     print(f"{deelnemer} trekt lootje van {lootje}.")
+
+deelnemers_lootjes = dict(zip(deelnemers, lootjes))
+
+while True:
+    opvragen = input("Wilt u een lootje van een deelnemer opvragen? (ja/nee): ").lower()
+    if opvragen == "ja":
+
+        while True:
+            lootje_opvragen = input("Voer de naam in van een deelnemer in om het lootje op te vragen: ").lower()
+            
+            if lootje_opvragen.isalpha():
+                if lootje_opvragen in deelnemers_lootjes:
+                    print(f"Het lootje van {deelnemers_lootjes[lootje_opvragen]} is gekoppeld aan {lootje_opvragen}.")
+                
+                else:
+                    print("Deze naam staat niet op de lijst van deelnemers.")
+
+            else:
+                print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
+                continue
+            break
+    
+    elif opvragen == "nee":
+        break
+
+    else:
+        print("Voer alstublieft 'ja' of 'nee' in.")
+        continue
+    break
