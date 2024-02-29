@@ -72,8 +72,6 @@ while True:
 
             else:
                 print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
-                continue
-            break
     
     elif opvragen == "nee":
         break
