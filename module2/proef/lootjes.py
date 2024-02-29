@@ -42,11 +42,11 @@ while True:
     else:
         print("Voer alstublieft 'ja' of 'nee' in.")
 
+print("De lootjes worden nu gecontroleerd en verdeeld.")
+
 while True:
     lootjes = deelnemers.copy()
     random.shuffle(lootjes)
-
-    print("De lootjes worden nu gecontroleerd en verdeeld.")
 
     if all(deelnemer != lootje for deelnemer, lootje in zip(deelnemers, lootjes)):
         break
