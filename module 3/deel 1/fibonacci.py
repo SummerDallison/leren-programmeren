@@ -16,7 +16,16 @@ def bereken_gulden_snede(reeks):
         return None
 
 def bereken_fibonacci():
-    aantal_getallen = int(input("Hoeveel getallen wil je berekenen in de fibonacci reeks? "))
+    while True:
+        try:
+            aantal_getallen = int(input("Hoeveel getallen wil je berekenen in de fibonacci reeks? "))
+            if aantal_getallen < 0:
+                print("Ongeldige invoer. Voer alstublieft een positief getal in. ")
+                continue
+            break
+        except ValueError:
+            print("Ongeldige invoer. Voer alstublieft een getal in.")
+
 
     fib_reeks = fibonacci(aantal_getallen)
 
