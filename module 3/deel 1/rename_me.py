@@ -4,8 +4,8 @@ def even_getal(getal:int) -> bool:
 
 def omgekeerde_woorden(zin:str) -> str:
     woorden = zin.split()
-    doldwaze_broccoli = woorden[::-1]
-    omgekeerde_zin = ' '.join(doldwaze_broccoli)
+    omgekeerde_woordenlijst = woorden[::-1]
+    omgekeerde_zin = ' '.join(omgekeerde_woordenlijst)
     return omgekeerde_zin 
 #Deze functie keert de volgorde van woorden in de gegeven zin om.
 
