@@ -1,130 +1,144 @@
 from collections import Counter
 import math, random
 
-def analyseer_getallenlijst(getallen:list, controlegetal1:int, controlegetal2:int) -> dict:
+def check_empty_list(getallen: list) -> dict:
     if not getallen:
         return {"Lijst is leeg, voer getallen in.":getallen}
-
+    
+def check_numeric1(controlegetal1:int) -> dict:
     if not str(controlegetal1).isnumeric():
         return {"Eerste controlle getal incorrect.":controlegetal1}
-
+    
+def check_numeric2(controlegetal2:int) -> dict:
     if not str(controlegetal2).isnumeric():
-        return {"Tweede controlle getal incorrect.":controlegetal2}
-
-    # Gemiddelde berekenen
-    aantal = len(getallen)
-
-    # Som van alle getallen in de lijst
-    som = sum(getallen)
-
-    # Gemiddelde berekenen
-    gemiddelde = som / aantal
-
-    # Het grootste getal in de lijst
-    grootste_getal = max(getallen)
+        return {"Eerste controlle getal incorrect.":controlegetal2}
     
-    # Het kleinste getal in de lijst
-    kleinste_getal = min(getallen)
-    
-    # Het eerste getal in de lijst
-    eerste_getal = getallen[0]
-    
-    # Het kleinste getal gedeeld door het eerste controle getal
-    delen1 = kleinste_getal / controlegetal1
+def aantal(getallen: list) -> int:
+    return len(getallen)
 
-    # Het grootste getal gedeeld door het tweede controle getal
-    delen2 = grootste_getal / controlegetal2
+def bereken_som(getallen: list) -> int:
+    return sum(getallen)
 
-    # alle unieke getallen
-    unieke_getallen = list(set(getallen))
+def gemiddelde(getallen: list) -> float:
+    aantal_elementen = aantal(getallen)
+    som_getallen = bereken_som(getallen)
+    return som_getallen / aantal_elementen
 
-    # Aantal unieke elementen in de lijst
-    aantal_unieke_elementen = len(unieke_getallen)
+def grootste_getal(getallen: list) -> int:
+    return max(getallen)
 
-    # Verschil tussen aantal unieke elementen en eerste controle getal
-    verschil1 = abs(aantal_unieke_elementen - controlegetal1)
+def kleinste_getal(getallen: list) -> int:
+    return min(getallen)
 
-    # Sorteer de lijst van getallen
-    gesorteerde_lijst = sorted(getallen)
+def eerste_getal(getallen: list) -> int:
+    return getallen[0]
 
-    # Sorteer de lijst van unieke getallen
-    gesorteerde_lijst_uniek = sorted(unieke_getallen)
+def delen1(kleinste_getal:int, controlegetal1:int) -> float:
+    return kleinste_getal / controlegetal1
 
-    # Tel het aantal keren dat elk uniek element voorkomt in de lijst
+def delen2(grootste_getal:int, controlegetal1:int) -> float:
+    return grootste_getal / controlegetal1
+
+def unieke_getallen(getallen: list) -> list:
+    return list(set(getallen))
+
+def aantal_unieke_elementen(getallen: list) -> int:
+    unieke_getallen_lijst = unieke_getallen(getallen)
+    return len(unieke_getallen_lijst)
+
+def bereken_verschil1(aantal_unieke_elementen:int, controlegetal1: int) -> int:
+    return abs(aantal_unieke_elementen - controlegetal1)
+
+def sorteer_lijst(getallen: list) -> list:
+    return sorted(getallen)
+
+def gesorteerde_lijst_uniek(unieke_getallen: int) -> list:
+    return sorted(unieke_getallen)
+
+def tel_elementen(getallen: list) -> dict:
     telling_elementen = {}
     for getal in getallen:
         aantalkeer = telling_elementen[getal]+1 if getal in telling_elementen else 1
         telling_elementen[getal] = aantalkeer
+    return telling_elementen
 
-    # Getallen die deelbaar zijn door het eerste controlle getal
+def deelbare_getallen1(unieke_getallen:list, controlegetal1:int) -> list:
     deelbaar1 = []
     for getal in unieke_getallen:
         if getal % controlegetal1 == 0:
             deelbaar1.append(getal)
     deelbaar1 = sorted(deelbaar1)
+    return deelbaar1
 
-    # Getallen die deelbaar zijn door het tweede controlle getal
+def deelbare_getallen2(unieke_getallen:list, controlegetal2:int) -> list:
     deelbaar2 = []
     for getal in unieke_getallen:
         if getal % controlegetal2 == 0:
             deelbaar2.append(getal)
     deelbaar2 = sorted(deelbaar2)
+    return deelbaar2
 
-    # Controleer of een bepaald getallen in de lijst voorkomen
-    komtvoor = controlegetal1 in getallen and controlegetal2 in getallen
+def controleer_voorkomen(getallen: list, controlegetal1:int, controlegetal2:int):
+    return controlegetal1 in getallen and controlegetal2 in getallen
 
-    # Vindt de posities van heteerste controle getal
+def positie_controlegetal1(getallen:list, controlegetal1:int) -> list:
     posities = []
     for index, num in enumerate(getallen):
         if num == controlegetal1:
             posities.append(index)
+    return posities
 
-    # Standaardafwijking berekenen
+def bereken_standaardafwijking(getallen:list, gemiddelde:float) -> float:
     verschil_kwadraat = sum((x - gemiddelde) ** 2 for x in getallen)
-    variantie = verschil_kwadraat / aantal
+    aantal1 = aantal(getallen)
+    variantie = verschil_kwadraat / aantal1
     standaardafwijking = math.sqrt(variantie)
+    return standaardafwijking
 
-    # Shuffle de lijst
-    random.shuffle(getallen)
+def shuffle_lijst(getallen: list) -> list:
+    lijst_shuffle = list(getallen)
+    random.shuffle(lijst_shuffle)
+    return lijst_shuffle
 
-    # Pak een random getal uit de lijst
-    random_getal = getallen[random.randint(0,aantal-1)]
+def kies_random_getal(getallen: list) -> int:
+    aantal_getallen = aantal(getallen)
+    random_getal = random.randint(0, aantal_getallen - 1)
+    return random_getal
 
-    # Verschil tussen twee getallen
-    verschil2 = abs(random_getal - controlegetal2)
+def bereken_verschil2(random_getal: int, controlegetal2: int) -> int:
+    return abs(random_getal - controlegetal2)
 
+def analyseer_getallenlijst(getallen:list, controlegetal1:int, controlegetal2:int, random_getal:int) -> dict:
     resultaten = {
-        "Aantal getallen": aantal,
-        "Gemiddelde": gemiddelde,
-        "Som": som,
-        "Grootste getal": grootste_getal,
-        "Kleinste getal": kleinste_getal,
-        "Eerste getal": eerste_getal,
-        f"{kleinste_getal} / {controlegetal1}": delen1,
-        f"{grootste_getal} / {controlegetal2}": delen2,
-        "Aantal unieke elementen": aantal_unieke_elementen,
-        f"Het verschil tussen {aantal_unieke_elementen} & {controlegetal1}": verschil1,
-        "Gesorteerde lijst getallen": gesorteerde_lijst,
-        "Gesorteerde lijst unieke getallen": gesorteerde_lijst_uniek,
-        "Telling van elementen": telling_elementen,
-        f"Deelbaar door {controlegetal1} (op volgorde)": deelbaar1,
-        f"Deelbaar door {controlegetal2} (op volgorde)": deelbaar2,
-        f"{controlegetal1} & {controlegetal2} komt wel voor in de lijst": komtvoor,
-        f"{controlegetal1} komt voor op positie(s)": posities,
-        "Standaardafwijking": standaardafwijking,
-        "Geshufflede lijst": getallen,
+        "Aantal getallen": aantal(getallen),
+        "Gemiddelde": gemiddelde(getallen),
+        "Som": bereken_som(getallen),
+        "Grootste getal": grootste_getal(getallen),
+        "Kleinste getal": kleinste_getal(getallen),
+        "Eerste getal": eerste_getal(getallen),
+        f"{kleinste_getal(getallen)} / {controlegetal1}": delen1(kleinste_getal(getallen), controlegetal1),
+        f"{grootste_getal(getallen)} / {controlegetal2}": delen2(grootste_getal(getallen), controlegetal2),
+        "Aantal unieke elementen": aantal_unieke_elementen(getallen),
+        f"Het verschil tussen {aantal_unieke_elementen(getallen)} & {controlegetal1}": bereken_verschil1(aantal_unieke_elementen(getallen), controlegetal1),
+        "Gesorteerde lijst getallen": sorteer_lijst(getallen),
+        "Gesorteerde lijst unieke getallen": gesorteerde_lijst_uniek(unieke_getallen(getallen)),
+        "Telling van elementen": tel_elementen(getallen),
+        f"Deelbaar door {controlegetal1} (op volgorde)": deelbare_getallen1(unieke_getallen(getallen), controlegetal1),
+        f"Deelbaar door {controlegetal2} (op volgorde)": deelbare_getallen2(unieke_getallen(getallen), controlegetal2),
+        f"{controlegetal1} & {controlegetal2} komt wel voor in de lijst": controleer_voorkomen(getallen, controlegetal1, controlegetal2),
+        f"{controlegetal1} komt voor op positie(s)": positie_controlegetal1(getallen, controlegetal1),
+        "Standaardafwijking": bereken_standaardafwijking(getallen, gemiddelde(getallen)),
+        "Geshufflede lijst": shuffle_lijst(getallen),
         "Willekeurige getal uit de lijst": random_getal,
-        f"Het verschil tussen {random_getal} & {controlegetal2}": verschil2,
+        f"Het verschil tussen {random_getal} & {controlegetal2}": bereken_verschil2(random_getal, controlegetal2),
     }
-
     return resultaten
 
-
-# Voorbeeld van het gebruik van de functie:
 getallenlijst = [16, 2, 5, 8, 12, 3, 9, 16, 5, 8, 64, 33]
 controlegetal1 = 8
 controlegetal2 = 3
-analyse_resultaat = analyseer_getallenlijst(getallenlijst, controlegetal1, controlegetal2)
+random_getal = kies_random_getal(getallenlijst)
+analyse_resultaat = analyseer_getallenlijst(getallenlijst, controlegetal1, controlegetal2, random_getal)
 print("Analyse resultaten:")
 for key, value in analyse_resultaat.items():
     print(f"{key}: {value}")
