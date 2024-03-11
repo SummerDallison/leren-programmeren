@@ -26,7 +26,6 @@ def bereken_fibonacci():
         except ValueError:
             print("Ongeldige invoer. Voer alstublieft een getal in.")
 
-
     fib_reeks = fibonacci(aantal_getallen)
 
     print(f"Fibonacci reeks tot het {aantal_getallen} de getal: {fib_reeks}")
