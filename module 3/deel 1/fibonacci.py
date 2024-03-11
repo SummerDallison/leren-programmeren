@@ -9,7 +9,7 @@ def fibonacci(aantal_getallen):
 
 def bereken_gulden_snede(reeks):
     if len(reeks) >= 3:
-        gulden_snede = reeks[-1] - reeks[-2]
+        gulden_snede = reeks[-1] / reeks[-2]
         return gulden_snede
     
     else:
