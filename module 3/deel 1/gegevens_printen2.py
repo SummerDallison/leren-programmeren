@@ -1,7 +1,6 @@
 from gegevens_opvragen import vragen_gegevens
 
-#Naam, leeftijd en woonplaats (dictionaries(keys: 'name', 'age' en 'city')) worden omgezet in een lijst.
-def verzamel_gegevens() -> list:
+def verzamel_gegevens():
     gegevens_list = []
     gegevens = vragen_gegevens()
     gegevens_list.append(gegevens)
@@ -20,4 +19,4 @@ def verzamel_gegevens() -> list:
 gegevens = verzamel_gegevens()
 
 for data in gegevens:
-    print(f"{data['name']}, die in {data['city']} woont, is {data['age']} jaar.")
+    print(f"In {data['city']} woont de {data['age']} jarige {data['name']}.")
