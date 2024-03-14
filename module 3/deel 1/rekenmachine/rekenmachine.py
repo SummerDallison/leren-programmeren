@@ -1,6 +1,6 @@
 from functions import *
 
-def input_number(number):
+def input_number(number) -> float:
     while True:
         num_input = input(number)
         if num_input.replace('.', '', 1).replace('-', '', 1).isdigit():
