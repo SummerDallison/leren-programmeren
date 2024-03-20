@@ -7,7 +7,7 @@ from data import JOURNEY_IN_DAYS
 
 #schrijf je test hier
 
-expected = 10
+expected = 11
 
 result = JOURNEY_IN_DAYS
 

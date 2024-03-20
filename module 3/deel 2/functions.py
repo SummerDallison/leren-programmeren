@@ -6,16 +6,16 @@ from data import COST_FOOD_HUMAN_COPPER_PER_DAY, COST_FOOD_HORSE_COPPER_PER_DAY
 ##################### O03 #####################
 
 def copper2silver(amount:int) -> float:
-    return amount / 10
+    return round(amount / 10, 2)
 
 def silver2gold(amount:int) -> float:
-    return amount / 5
+    return round(amount / 5, 2)
 
 def copper2gold(amount:int) -> float:
-    return silver2gold(copper2silver(amount))
+    return silver2gold(copper2silver(round(amount, 2)))
 
 def platinum2gold(amount:int) -> float:
-    return amount * 25
+    return round(amount * 25, 2)
 
 def getPersonCashInGold(personCash:dict) -> float:
     total_gold = 0
@@ -27,8 +27,11 @@ def getPersonCashInGold(personCash:dict) -> float:
 
 ##################### O05 #####################
 
-def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
-    pass
+def getJourneyFoodCostsInGold(people: int, horses: int) -> float:
+    total_cost_people = people * COST_FOOD_HUMAN_COPPER_PER_DAY * JOURNEY_IN_DAYS
+    total_cost_horses = horses * COST_FOOD_HORSE_COPPER_PER_DAY * JOURNEY_IN_DAYS
+    total_cost_gold = copper2gold(total_cost_people + total_cost_horses)
+    return total_cost_gold
 
 ##################### O06 #####################
 
@@ -36,10 +39,10 @@ def getFromListByKeyIs(list:list, key:str, value:any) -> list:
     pass
 
 def getAdventuringPeople(people:list) -> list:
-    pass
+    return getFromListByKeyIs(people, 'adventuring', True)
 
 def getShareWithFriends(friends:list) -> list:
-    pass
+    return getFromListByKeyIs(friends, 'shareWith', True)
 
 def getAdventuringFriends(friends:list) -> list:
     pass
