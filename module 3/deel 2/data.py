@@ -20,7 +20,7 @@ mainCharacter = {
     }
 }
 
-friends = friends = [{
+friends = [{
     'name' : 'Jorick',
     'shareWith' : True,
     'adventuring' : True,
