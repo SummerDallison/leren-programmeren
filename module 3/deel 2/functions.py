@@ -41,8 +41,8 @@ def getJourneyFoodCostsInGold(people: int, horses: int) -> float:
 def getFromListByKeyIs(list:list, key:str, value:any) -> list:
     result = []
     for item in list:
-        if key in item and item[key] == value: #Controleert of de sleutel in de dictionary voorkomt en of de waarde overeenkomt met de gegeven waarde
-            result.append(item) #Voegt het item toe aan de resultatenlijst als aan de voorwaarden is voldaan
+        if key in item and item[key] == value:
+            result.append(item)
     return result
 
 def getAdventuringPeople(people:list) -> list:
@@ -71,6 +71,7 @@ def getNumberOfHorsesNeeded(people:int) -> int:
 def getNumberOfTentsNeeded(people:int) -> int:
     return math.ceil(people / 3)
 
+#Bereken de kosten (in goud) van de huur van de paarden en de tenten
 def getTotalRentalCost(horses:int, tents:int) -> float:
     horse_cost = JOURNEY_IN_DAYS * horses * silver2gold(COST_HORSE_SILVER_PER_DAY)
     tent_cost = math.ceil(JOURNEY_IN_DAYS / 7) * tents * COST_TENT_GOLD_PER_WEEK
@@ -79,18 +80,20 @@ def getTotalRentalCost(horses:int, tents:int) -> float:
 
 ##################### O08 #####################
 
+#Deze functie zet een lijst van items om naar een tekst(str)
 def getItemsAsText(items: list) -> str:
     item_texts = []
     for item in items:
         item_text = f"{item['amount']}{item['unit']} {item['name']}"
         item_texts.append(item_text)
 
-    if len(item_texts) > 1:
+    if len(item_texts) > 1: 
         last_item = item_texts.pop()
-        return ', '.join(item_texts) + f" & {last_item}"
+        return ', '.join(item_texts) + f" & {last_item}" 
     else:
         return item_texts[0]
 
+#Deze functie berekent de totale waarde van de items in goud
 def getItemsValueInGold(items:list) -> float:
     total_value_gold = 0.0
     for item in items:
