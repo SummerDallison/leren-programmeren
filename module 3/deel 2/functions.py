@@ -18,6 +18,7 @@ def copper2gold(amount:int) -> float:
 def platinum2gold(amount:int) -> float:
     return round(amount * 25, 2)
 
+#Deze functie berekent de totale waarde in goud op basis an de hoeveelheden koper, zilver, goud en platinum van een persoon
 def getPersonCashInGold(personCash:dict) -> float:
     total_gold = 0
     total_gold += copper2gold(personCash['copper'])
@@ -36,11 +37,12 @@ def getJourneyFoodCostsInGold(people: int, horses: int) -> float:
 
 ##################### O06 #####################
 
+#Deze functie selecteert items uit een lijst van dictionaries op basis van een specifieke key-value
 def getFromListByKeyIs(list:list, key:str, value:any) -> list:
     result = []
     for item in list:
-        if key in item and item[key] == value:
-            result.append(item)
+        if key in item and item[key] == value: #Controleert of de sleutel in de dictionary voorkomt en of de waarde overeenkomt met de gegeven waarde
+            result.append(item) #Voegt het item toe aan de resultatenlijst als aan de voorwaarden is voldaan
     return result
 
 def getAdventuringPeople(people:list) -> list:
@@ -49,6 +51,7 @@ def getAdventuringPeople(people:list) -> list:
 def getShareWithFriends(friends:list) -> list:
     return getFromListByKeyIs(friends, 'shareWith', True)
 
+#Deze functie filtert een lijst van vrienden en geeft alleen de vrienden terug die avontuurlijk zijn en waarmee gedeeld wordt
 def getAdventuringFriends(friends:list) -> list:
     adventuring_people = getAdventuringPeople(friends)
     share_with_friends = getShareWithFriends(friends)
