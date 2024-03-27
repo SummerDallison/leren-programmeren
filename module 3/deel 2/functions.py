@@ -109,8 +109,13 @@ def getItemsValueInGold(items:list) -> float:
 
 ##################### O09 #####################
 
+#Bereken het totale goud van de groep op basis van de individuele geldhoeveelheden van elke persoon
 def getCashInGoldFromPeople(people:list) -> float:
-    pass
+    total_gold = 0.0
+    for person in people:
+        cash = person.get('cash', {}) #Haal het geld van de persoon op, als het niet bestaat, neem een lege dictionary
+        total_gold += getPersonCashInGold(cash)
+    return round(total_gold, 2)
 
 ##################### O10 #####################
 
