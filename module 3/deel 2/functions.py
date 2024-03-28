@@ -136,9 +136,9 @@ def getAdventuringInvestors(investors:list) -> list:
     return adventuring_investors
 
 #Berekent de totale kosten voor investeerders die mee gaan op avontuur
-def getTotalInvestorsCosts(investors:list, gear:list) -> float:
+def getTotalInvestorsCosts(investors:list, gear:list) -> float: 
     total_cost = 0.0
-
+    
 ##################### O11 #####################
 
 def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int:
