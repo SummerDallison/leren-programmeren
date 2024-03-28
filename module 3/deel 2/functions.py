@@ -119,14 +119,25 @@ def getCashInGoldFromPeople(people:list) -> float:
 
 ##################### O10 #####################
 
+#Selecteer interessante investeerders die minder dan 10% van de opbrengst vragen
 def getInterestingInvestors(investors:list) -> list:
-    pass
+    interesting_investors = []
+    for investor in investors:
+        if investor['profitReturn'] < 10:
+            interesting_investors.append(investor)
+    return interesting_investors
 
+#Selecteert investeerders die geïnteresseerd zijn in avonturieren (adventuring=True)
 def getAdventuringInvestors(investors:list) -> list:
-    pass
+    adventuring_investors = []
+    for investor in investors:
+        if investor['adventuring']:
+            adventuring_investors.append(investor)
+    return adventuring_investors
 
+#Berekent de totale kosten voor investeerders die mee gaan op avontuur
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
-    pass
+    total_cost = 0.0
 
 ##################### O11 #####################
 
