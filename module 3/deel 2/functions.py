@@ -137,12 +137,21 @@ def getAdventuringInvestors(investors:list) -> list:
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
     total_costs = 0.0
 
-    adventuring_investors = getAdventuringFriends(investors)
+    adventuring_investors = getAdventuringInvestors(investors)
 
     for investor in adventuring_investors:
-        gear = getItemsValueInGold(['item'])
-        total_costs += gear
-    
+        investor_gear_cost = getItemsValueInGold(gear)
+        total_costs += investor_gear_cost
+
+        horses_costs = JOURNEY_IN_DAYS * silver2gold(COST_HORSE_SILVER_PER_DAY)
+        tents_costs = math.ceil(JOURNEY_IN_DAYS / 7) * COST_TENT_GOLD_PER_WEEK
+        tents_horses_costs = horses_costs + tents_costs
+        total_costs += tents_horses_costs
+
+        food_cost = getJourneyFoodCostsInGold(1, 1)  # 1 persoon en 1 paard per investeerder
+        total_costs += food_cost
+
+    return round(total_costs, 2)
 ##################### O11 #####################
 
 def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int:
