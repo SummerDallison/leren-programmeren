@@ -3,6 +3,7 @@ from termcolor import colored
 from data import JOURNEY_IN_DAYS
 from data import COST_FOOD_HUMAN_COPPER_PER_DAY, COST_FOOD_HORSE_COPPER_PER_DAY
 from data import COST_TENT_GOLD_PER_WEEK, COST_HORSE_SILVER_PER_DAY
+from data import COST_INN_HUMAN_SILVER_PER_NIGHT, COST_INN_HORSE_COPPER_PER_NIGHT
 
 ##################### O03 #####################
 
@@ -148,16 +149,18 @@ def getTotalInvestorsCosts(investors:list, gear:list) -> float:
         tents_horses_costs = horses_costs + tents_costs
         total_costs += tents_horses_costs
 
-        food_cost = getJourneyFoodCostsInGold(1, 1)  # 1 persoon en 1 paard per investeerder
+        food_cost = getJourneyFoodCostsInGold(1, 1)
         total_costs += food_cost
 
     return round(total_costs, 2)
 
 ##################### O11 #####################
 
+#Deze functie rekent uit hoevel nachten er maximaal in een herberg overnacht kan worden
 def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int:
     pass
 
+#Deze functie rekent uit hoeveel alle nachten samen die in een herberg gespendeerd worden kosten
 def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
     pass
 
