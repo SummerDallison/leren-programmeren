@@ -152,6 +152,7 @@ def getTotalInvestorsCosts(investors:list, gear:list) -> float:
         total_costs += food_cost
 
     return round(total_costs, 2)
+
 ##################### O11 #####################
 
 def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int:
