@@ -129,15 +129,19 @@ def getInterestingInvestors(investors:list) -> list:
 
 #Selecteert investeerders die geïnteresseerd zijn in avonturieren (adventuring=True)
 def getAdventuringInvestors(investors:list) -> list:
-    adventuring_investors = []
-    for investor in investors:
-        if investor['adventuring']:
-            adventuring_investors.append(investor)
+    interesting_investors = getInterestingInvestors(investors)
+    adventuring_investors = getAdventuringPeople(interesting_investors)
     return adventuring_investors
 
 #Berekent de totale kosten voor investeerders die mee gaan op avontuur
-def getTotalInvestorsCosts(investors:list, gear:list) -> float: 
-    total_cost = 0.0
+def getTotalInvestorsCosts(investors:list, gear:list) -> float:
+    total_costs = 0.0
+
+    adventuring_investors = getAdventuringFriends(investors)
+
+    for investor in adventuring_investors:
+        gear = getItemsValueInGold(['item'])
+        total_costs += gear
     
 ##################### O11 #####################
 
