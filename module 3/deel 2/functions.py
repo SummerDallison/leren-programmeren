@@ -156,9 +156,12 @@ def getTotalInvestorsCosts(investors:list, gear:list) -> float:
 
 ##################### O11 #####################
 
-#Deze functie rekent uit hoevel nachten er maximaal in een herberg overnacht kan worden
+#Deze functie rekent uit hoeveel nachten er maximaal in een herberg overnacht kan worden
 def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int:
-    pass
+    gold_beginning = getInterestingInvestors(['cash']) + getCashInGoldFromPeople
+
+    investors_costs = getTotalInvestorsCosts()
+    gold_beginning -= investors_costs
 
 #Deze functie rekent uit hoeveel alle nachten samen die in een herberg gespendeerd worden kosten
 def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
