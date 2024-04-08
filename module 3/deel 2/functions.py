@@ -158,14 +158,19 @@ def getTotalInvestorsCosts(investors:list, gear:list) -> float:
 
 #Deze functie rekent uit hoeveel nachten er maximaal in een herberg overnacht kan worden
 def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int:
-    gold_beginning = getInterestingInvestors(['cash']) + getCashInGoldFromPeople
+    inn_costs_human = silver2gold(people * COST_INN_HUMAN_SILVER_PER_NIGHT)
+    inn_costs_horse = copper2gold(horses * COST_INN_HORSE_COPPER_PER_NIGHT)
+    total_inn_costs = inn_costs_human + inn_costs_horse
+    max_nights = int(leftoverGold / total_inn_costs)
 
-    investors_costs = getTotalInvestorsCosts()
-    gold_beginning -= investors_costs
+    return max_nights
 
 #Deze functie rekent uit hoeveel alle nachten samen die in een herberg gespendeerd worden kosten
 def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
-    pass
+    total_cost_human = nightsInInn * people * silver2gold(COST_INN_HUMAN_SILVER_PER_NIGHT)
+    total_cost_horse = nightsInInn * horses * copper2gold(COST_INN_HORSE_COPPER_PER_NIGHT)
+    total_cost = total_cost_human + total_cost_horse
+    return round(total_cost, 2)
 
 ##################### O13 #####################
 
