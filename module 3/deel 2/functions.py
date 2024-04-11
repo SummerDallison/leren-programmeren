@@ -137,21 +137,10 @@ def getAdventuringInvestors(investors:list) -> list:
 #Berekent de totale kosten voor investeerders die mee gaan op avontuur
 def getTotalInvestorsCosts(investors:list, gear:list) -> float:
     total_costs = 0.0
-
-    adventuring_investors = getAdventuringInvestors(investors)
-
-    for investor in adventuring_investors:
-        investor_gear_cost = getItemsValueInGold(gear)
-        total_costs += investor_gear_cost
-
-        horses_costs = JOURNEY_IN_DAYS * silver2gold(COST_HORSE_SILVER_PER_DAY)
-        tents_costs = math.ceil(JOURNEY_IN_DAYS / 7) * COST_TENT_GOLD_PER_WEEK
-        tents_horses_costs = horses_costs + tents_costs
-        total_costs += tents_horses_costs
-
-        food_cost = getJourneyFoodCostsInGold(1, 1)
-        total_costs += food_cost
-
+    investor_gear_cost = getItemsValueInGold(gear)
+    horses_tents_cost = getTotalRentalCost(1, 1)
+    food_cost = getJourneyFoodCostsInGold(1, 1)
+    total_costs += (investor_gear_cost + horses_tents_cost + food_cost) * len(getAdventuringInvestors(investors))
     return round(total_costs, 2)
 
 ##################### O11 #####################
