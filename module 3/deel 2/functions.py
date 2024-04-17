@@ -182,7 +182,7 @@ def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> fl
 
 ##################### O14 #####################
 
-def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:list) -> list:
+def getEarnings(profitGold:float, mainCharacter:dict, friends:list, investors:list) -> list:
     pass
 
 ##################### view functions #####################
