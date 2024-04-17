@@ -194,11 +194,14 @@ def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:lis
     goldCut = 0.0
 
     for person in people:
-        
+
+        start_cash = getPersonCashInGold(person['cash'])
+        end_cash = start_cash
+ 
         earnings.append({
-            'name'   : '??',
-            'start'  : 0.0,
-            'end'    : 0.0
+            'name'   : person['name'],
+            'start'  : start_cash,
+            'end'    : end_cash
         })
 
     return earnings
