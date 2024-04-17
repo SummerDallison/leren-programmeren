@@ -182,8 +182,26 @@ def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> fl
 
 ##################### O14 #####################
 
+#Deze functie berekent voor iedere persoon (ook de mensen die niet mee hebben gedaan), met hoeveel goud ze starten en met hoeveel goud ze het verhaal eindigen
 def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:list) -> list:
-    pass
+    people = [mainCharacter] + friends + investors
+    earnings = []
+
+    adventuringFriends = getAdventuringFriends(friends)
+    interestingInvestors = getInterestingInvestors(investors)
+    adventuringInvestors = getAdventuringInvestors(investors)
+    investorsCuts = getInvestorsCuts(profitGold, investors)
+    goldCut = 0.0
+
+    for person in people:
+        
+        earnings.append({
+            'name'   : '??',
+            'start'  : 0.0,
+            'end'    : 0.0
+        })
+
+    return earnings
 
 ##################### view functions #####################
 
