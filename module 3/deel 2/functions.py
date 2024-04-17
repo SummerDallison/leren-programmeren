@@ -163,11 +163,22 @@ def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
 
 ##################### O13 #####################
 
+#Deze functie berekent het deel van de investeerders op basis van hun winstdeling
 def getInvestorsCuts(profitGold:float, investors:list) -> list:
-    pass
+    cuts = []
+    interesting_investors = getInterestingInvestors(investors)
+    for investor in interesting_investors:
+        cut = investor['profitReturn'] * profitGold / 100
+        cuts.append(round(cut, 2))
+    return cuts
 
+#Deze functie berekent het bedrag dat elke avonturier moet krijgen
 def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> float:
-    pass
+    total_investors_cuts = sum(investorsCuts)
+    if profitGold <= 0:
+        return 0.0
+    adventurer_cut = (profitGold - total_investors_cuts) / fellowship
+    return round(adventurer_cut, 2)
 
 ##################### O14 #####################
 
