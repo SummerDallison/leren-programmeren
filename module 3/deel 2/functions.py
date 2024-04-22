@@ -168,7 +168,7 @@ def getInvestorsCuts(profitGold:float, investors:list) -> list:
     cuts = []
     interesting_investors = getInterestingInvestors(investors)
     for investor in interesting_investors:
-        cut = investor['profitReturn'] * profitGold / 100
+        cut = investor['profitReturn'] * profitGold / 100 #Bereken het deel van de winst voor deze investeerder
         cuts.append(round(cut, 2))
     return cuts
 
@@ -177,7 +177,7 @@ def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> fl
     total_investors_cuts = sum(investorsCuts)
     if profitGold <= 0:
         return 0.0
-    adventurer_cut = (profitGold - total_investors_cuts) / fellowship
+    adventurer_cut = (profitGold - total_investors_cuts) / fellowship #Bereken het deel van elke avonturier
     return round(adventurer_cut, 2)
 
 ##################### O14 #####################
@@ -197,7 +197,7 @@ def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:lis
 
         start_cash = getPersonCashInGold(person['cash'])
         end_cash = start_cash
- 
+
         earnings.append({
             'name'   : person['name'],
             'start'  : start_cash,
