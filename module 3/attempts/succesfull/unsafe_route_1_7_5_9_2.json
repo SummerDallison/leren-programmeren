@@ -1,7 +1,7 @@
 {
     "roomorder": "1,7,4,5,8,3,9,6,2,10",
-    "start": "15-05-2024 13:57:08",
-    "end": "15-05-2024 13:57:38",
+    "start": "15-05-2024 09:33:11",
+    "end": "15-05-2024 09:34:38",
     "data": {
         "player": {
             "noice": 2,
@@ -44,7 +44,12 @@
                 "Je stapt voorzichtig verder de ruimte in.",
                 "Plots schrik je op van een hard gegrom achter je.",
                 "Je kijkt om en achter je staat een enorme trol die zijn knuppel naar achterwaarts beweegt om je te slaan.",
-                "Je rent de eerste de beste afslag in die je ziet.",
+                "Je bukt net op tijd en een van de pilaren krijgt het voor zijn kiezen.",
+                "Een groot brokstuk vliegt de hal door en maakt een gat in de muur.",
+                "De pilaar stort in op het hoofd van de trol, die alleen maar bozer wordt.",
+                "Even neem je de tijd om om je heen te kijken en zie je 2 opties.",
+                "Een gang verderop of door het zojuist ontstane gat.",
+                "Je staat op en trekt een sprintje naar de gang.",
                 "Plots sta je voor een houte loopbrug met de trol op je hielen.",
                 "Je probeert voorzichtig te doen maar je enige optie is nu om door te lopen.",
                 "Je rent over de brug met de trol op je hielen.",
@@ -65,11 +70,10 @@
                 "Neem je A) de deur links of B) de gang rechts? : b",
                 "Wil je het schild meenemen? (Y/N) : n",
                 "Neem je de gang A) links of B) rechts? : a",
-                "Wat doe je? A) Rennen of B) Bukken? : a"
+                "Wat doe je? A) Rennen of B) Bukken? : b",
+                "Wat doe je? A) Naar de gang of B) Door het gat? : a"
             ],
-            "errors": [
-                "Wil je het schild meenemen? (Y/N) : b"
-            ]
+            "errors": []
         }
     }
 }
