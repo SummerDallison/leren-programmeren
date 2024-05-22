@@ -23,6 +23,18 @@ def generate_password():
 
         password = ''.join(combined_characters)
 
+        if any([password[11].isupper(), password[12].isupper()]):
+            continue
+
+        if password[-1].islower():
+            continue
+
+        if password[0] in special_characters or password[-1] in special_characters:
+            continue
+
+        if password[0].isdigit() or password[1].isdigit() or password[2].isdigit():
+            continue
+
         return password
 
 wachtwoord = generate_password()
