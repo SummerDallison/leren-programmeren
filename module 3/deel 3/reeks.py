@@ -4,6 +4,7 @@ def generate_next_sequence(sequence):
     index = 0
     while index < len(sequence):
         count = 1
+        #Kijk hoe vaak hetzelfde getal achter elkaar voorkomt
         while index + 1 < len(sequence) and sequence[index] == sequence[index + 1]:
             index += 1
             count += 1
