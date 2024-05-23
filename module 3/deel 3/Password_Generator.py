@@ -23,15 +23,19 @@ def generate_password():
 
         password = ''.join(combined_characters)
 
+        #Controleer of de 2 middelste posities een hoofdletter is, zo ja, begin opnieuw
         if any([password[11].isupper(), password[12].isupper()]):
             continue
 
+        #Controleer of het laatste karakter een kleine letter is, zo ja, begin opnieuw
         if password[-1].islower():
             continue
 
+        #Controleer of het eerste of laatste karakter een speciaal karakter is, zo ja, begin opnieuw
         if password[0] in special_characters or password[-1] in special_characters:
             continue
 
+        #Controleer of een van de eerste drie karakters een cijfer is, zo ja, begin opnieuw
         if password[0].isdigit() or password[1].isdigit() or password[2].isdigit():
             continue
 
