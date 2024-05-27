@@ -9,7 +9,7 @@ TXT_OIL = 'olijfolie'
 TXT_ONIONS = 'kleine ui|kleine uien'
 TXT_GARLICS = 'teentje knoflook|teentjes knoflook'
 TXT_PAPRIKAS = 'paprika|paprika\'s' 
-TXT_SPINACH = 'spinazie'
+TXT_SPINACH = 'spinazie'    
 TXT_CHEESE = 'geraspte cheddar kaas'
 TXT_PERSONS = 'persoon|personen'
 
