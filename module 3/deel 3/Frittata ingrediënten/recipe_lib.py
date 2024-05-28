@@ -23,22 +23,32 @@ def input_nr_persons(prompt: str) -> int:
 
 
 def round_piece(amount: float) -> int:
-  pass
+  return math.ceil(amount)
 
 # returns amount rounded to the closest decimals: .00 or .25 or .50 or 0.75 unless amount >= 10
 def round_quarter(amount: float) -> float:
-  pass
+  if amount >= 10:
+    return round(amount)
+  return round(amount * 4) / 4
 
 
 # returns single or plural description of a string 'single desciption|plural description' 
 # depending on amount
 def str_single_plural(amount: float, txt: str) -> str:
-  pass
+  single, plural = txt.split('|')
+  return single if amount == 1 else plural
 
 
 # returns description of single or plural units
 def str_units(amount: float, unit: str) -> str:
-  pass
+  if unit == UNIT_PIECES:
+    return str_single_plural(amount, TXT_PIECES)
+  if unit == UNIT_CUPS:
+    return str_single_plural(amount, TXT_CUPS)
+  if unit == UNIT_SPOONS:
+    return str_single_plural(amount, TXT_SPOONS)
+  if unit == UNIT_TEASPOONS:
+    return str_single_plural(amount, TXT_TEASPOONS)
 
 
 # returns amount in string with 1/4 or 1/2 or 3/4
