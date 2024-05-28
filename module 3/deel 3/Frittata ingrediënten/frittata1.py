@@ -43,7 +43,9 @@ amount_cheese = round_quarter(AMOUNT_CHEESE * factor)
 
 # -------- OUTPUT -------
 print('=============== Frittata recept ===============')
-print(f'Ingrediënten voor {nr_persons} personen:')
+print(f'Ingrediënten voor {nr_persons} {str_single_plural(nr_persons, TXT_PERSONS)}:')
 print('-----------------------------------------------')
-# print (formatted) all amounts and units combined with their ingrediënt descriptions
+print(f'* {amount_eggs} {str_units(amount_eggs, UNIT_EGGS)} {str_single_plural(amount_eggs, TXT_EGGS)}')
+print(f'* {str_amount_fraction(amount_milk)} {str_units(amount_milk, UNIT_MILK)} {TXT_MILK}')
+print(f'* {str_amount_fraction(amount_salt)} {str_units(amount_salt, UNIT_SALT)} {TXT_SALT}')
 print('-----------------------------------------------')
