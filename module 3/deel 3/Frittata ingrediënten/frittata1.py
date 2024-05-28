@@ -5,7 +5,7 @@ from frittata_ingredients import *
 print('=============== Frittata recept ===============')
 # -------- INPUT --------
 # use recipe_lib for input of nr_persons
-nr_persons = input_nr_persons("Ingrediënten voor hoeveel personen?\n") # replace this with better input
+nr_persons = input_nr_persons('Ingrediënten voor hoeveel personen?\n') # replace this with better input
 
 # ----- CALCULATIONS ----
 # calculate factor 
