@@ -79,6 +79,8 @@ def unit2ml(amount: float, unit: str) -> float:
     return amount * ML_SPOON
   if unit == UNIT_TEASPOONS:
     return amount * ML_TEASPOON
+  else:
+    raise TypeError(f"Ongeldige eenheid: {unit}. Geldige eenheden zijn {UNIT_SPOONS}, {UNIT_TEASPOONS} of {UNIT_CUPS}")
 
 # average densities in gram per ml for common ingredients, to calculate weight(gram) from milliliters(ml)
 # 1ml of salt weighs 1.2 gram 
