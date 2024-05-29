@@ -29,7 +29,10 @@ def round_piece(amount: float) -> int:
 def round_quarter(amount: float) -> float:
   if amount >= 10:
     return round(amount)
-  return round(amount * 4) / 4
+  rounded = round(amount * 4) / 4
+  if rounded < 0.25:
+    return 0.25
+  return rounded
 
 
 # returns single or plural description of a string 'single desciption|plural description' 
