@@ -38,9 +38,9 @@ def round_quarter(amount: float) -> float:
 # returns single or plural description of a string 'single desciption|plural description' 
 # depending on amount
 def str_single_plural(amount: float, txt: str) -> str:
-  singular, plural = txt.split('|')
-  if amount == 1:
-    return singular
+  single, plural = txt.split('|')
+  if amount < 2:
+    return single
   else:
     return plural
 
@@ -49,11 +49,11 @@ def str_single_plural(amount: float, txt: str) -> str:
 def str_units(amount: float, unit: str) -> str:
   if unit == UNIT_PIECES:
     return str_single_plural(amount, TXT_PIECES)
-  if unit == UNIT_CUPS:
+  elif unit == UNIT_CUPS:
     return str_single_plural(amount, TXT_CUPS)
-  if unit == UNIT_SPOONS:
+  elif unit == UNIT_SPOONS:
     return str_single_plural(amount, TXT_SPOONS)
-  if unit == UNIT_TEASPOONS:
+  elif unit == UNIT_TEASPOONS:
     return str_single_plural(amount, TXT_TEASPOONS)
 
 
@@ -75,9 +75,9 @@ ML_CUP = 240 # one cup contains 240 ml
 def unit2ml(amount: float, unit: str) -> float:
   if unit == UNIT_CUPS:
     return amount * ML_CUP
-  if unit == UNIT_SPOONS:
+  elif unit == UNIT_SPOONS:
     return amount * ML_SPOON
-  if unit == UNIT_TEASPOONS:
+  elif unit == UNIT_TEASPOONS:
     return amount * ML_TEASPOON
   else:
     raise TypeError(f"Ongeldige eenheid: {unit}. Geldige eenheden zijn {UNIT_SPOONS}, {UNIT_TEASPOONS} of {UNIT_CUPS}")
