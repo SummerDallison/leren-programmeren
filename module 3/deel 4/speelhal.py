@@ -22,7 +22,7 @@ if not (answer == 'J' or answer == 'j' or answer == 'N' or answer == 'n'):
   exit(RESTART_TEXT)
 
 # --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
-if answer == 'N' or answer == 'n': 
+if answer in ('N', 'n'): 
   exit('Nu geen interesse? Tot ziens!')
 else:
   print('Ik ga u nu vragen wat en hoeveel u wilt...')
