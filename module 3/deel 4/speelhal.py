@@ -16,10 +16,7 @@ VAT_CODE_L = 'L'
 # ***************** INPUT *****************
 print("SPEELHAL-ENTREE-KASSA")
 # --> Vereenvoudig hier de code m.b.v. de help.py function: input_yes_no() (zie tip 1)
-answer = input("Wilt u bestellen?(J/N)\n") 
-if not (answer == 'J' or answer == 'j' or answer == 'N' or answer == 'n'):
-  print('Alleen een optie uit: J of j of N of n')
-  exit(RESTART_TEXT)
+answer = input_yes_no("Wilt u bestellen?(J/N)") 
 
 # --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
 if answer in ('N', 'n'): 
@@ -28,33 +25,14 @@ else:
   print('Ik ga u nu vragen wat en hoeveel u wilt...')
 
 # --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
-try:
-  min = 1
-  max = MAX_TICKETS
-  answer = input("Hoeveel personen?\n")
-  nr_tickets = int(answer)
-  if nr_tickets < min:
-    print(f'Minimum is: {min}')
-    exit(RESTART_TEXT)
-  elif nr_tickets > max:
-    print(f'Maximum is: {max}')
-    exit(RESTART_TEXT)
-except:
-  print(f'Geen geldig getal: {answer}')
-  exit(RESTART_TEXT)
+nr_tickets = input_int("Hoeveel personen?", min=1, max=MAX_TICKETS)
 
 # --> Vereenvoudig hier de code m.b.v. de help.py function: input_yes_no() (zie tip 1)
-answer = input("Ook VR-VIP seats?(J/N)\n")
-if not (answer == 'J' or answer == 'j' or answer == 'N' or answer == 'n'):
-  print('Alleen een optie uit: J of j of N of n')
-  exit()
+answer = input_yes_no("Ook VR-VIP seats?(J/N)")
 
 # --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
 # --> Vereenvoudig vervolgens de code door de uitkomst van de conditie toe te kennen aan: vr_vip_ordered (tip 4)
-if answer == 'J' or answer == 'j':
-  vr_vip_ordered = True
-else:
-  vr_vip_ordered = False
+vr_vip_ordered = answer in ('J','j')
 
 # --> Vereenvoudig hier de conditie (zie tip 5)
 if vr_vip_ordered == True:
@@ -73,6 +51,7 @@ if vr_vip_ordered == True:
   except:
     print(f'Geen geldig getal: {answer}')
     exit(RESTART_TEXT)
+    
   # --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
   try:
     min = 5
