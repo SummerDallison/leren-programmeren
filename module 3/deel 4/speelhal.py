@@ -19,7 +19,7 @@ print("SPEELHAL-ENTREE-KASSA")
 answer = input_yes_no("Wilt u bestellen?(J/N)") 
 
 # --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
-if answer in ('N', 'n'): 
+if answer in NO_OPTIONS: 
   exit('Nu geen interesse? Tot ziens!')
 else:
   print('Ik ga u nu vragen wat en hoeveel u wilt...')
@@ -32,93 +32,35 @@ answer = input_yes_no("Ook VR-VIP seats?(J/N)")
 
 # --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
 # --> Vereenvoudig vervolgens de code door de uitkomst van de conditie toe te kennen aan: vr_vip_ordered (tip 4)
-vr_vip_ordered = answer in ('J','j')
+vr_vip_ordered = answer in YES_OPTIONS
 
 # --> Vereenvoudig hier de conditie (zie tip 5)
-if vr_vip_ordered == True:
+if vr_vip_ordered:
   # --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
-  try:
-    min = 0
-    max = nr_tickets
-    answer = input("hoeveel VR-VIP seats?\n")
-    nr_vr_vip_seats = int(answer)
-    if nr_vr_vip_seats < min:
-      print(f'Minimum is: {min}')
-      exit(RESTART_TEXT)
-    elif nr_vr_vip_seats > max:
-      print(f'Maximum is: {max}')
-      exit(RESTART_TEXT)
-  except:
-    print(f'Geen geldig getal: {answer}')
-    exit(RESTART_TEXT)
+  nr_vr_vip_seats = input_int("Hoeveel VR-VIP seats?", min=0, max=nr_tickets)
     
   # --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
-  try:
-    min = 5
-    max = MAX_VR_VIP_SEAT_TIME
-    answer = input("hoeveel minuten in de VR-VIP-seats?\n")
-    vr_vip_seat_time = int(answer)
-    if vr_vip_seat_time < min:
-      print(f'Minimum is: {min}')
-      exit(RESTART_TEXT)
-    elif vr_vip_seat_time > max:
-      print(f'Maximum is:time > max: {max}')
-      exit(RESTART_TEXT)
-  except:
-    print(f'Geen geldig getal: {answer}')
-    exit(RESTART_TEXT)
+  vr_vip_seat_time = input_int("Hoeveel minuten in de VR-VIP-seats?", min=5, max=MAX_VR_VIP_SEAT_TIME)
 else:
   nr_vr_vip_seats = 0
   vr_vip_seat_time = 0
 
 # --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
-try:
-  min = 0
-  max = nr_tickets
-  answer = input("Hoeveel cola?\n")
-  nr_cola = int(answer)
-  if nr_cola < min:
-    print(f'Minimum is: {min}')
-    exit(RESTART_TEXT)
-  elif nr_cola > max:
-    print(f'Maximum is: {max}')
-    exit(RESTART_TEXT)
-except:
-  print(f'Geen geldig getal: {answer}')
-  exit(RESTART_TEXT)
+nr_cola = input_int("Hoeveel cola?", min=0, max=nr_tickets)
 
 # --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
-try:
-  min = 0
-  max = nr_tickets
-  answer = input("Hoeveel popcorn?\n")
-  nr_popcorn = int(answer)
-  if nr_cola < min:
-    print(f'Minimum is: {min}')
-    exit(RESTART_TEXT)
-  elif nr_cola > max:
-    print(f'Maximum is: {max}')
-    exit(RESTART_TEXT)
-except:
-  print(f'Geen geldig getal: {answer}')
-  exit(RESTART_TEXT)
+nr_popcorn = input_int("Hoeveel popcorn?", min=0, max=nr_tickets)
 
 # --> Vereenvoudig hier de code m.b.v. de help.py function: input_yes_no() (zie tip 1)
-answer = input("Wilt u een factuur met BTW specificatie?(J/N)\n")
-if not (answer == 'J' or answer == 'j' or answer == 'N' or answer == 'n'):
-  print('Alleen een optie uit: J of j of N of n')
-  exit(RESTART_TEXT)
+answer = input_yes_no("Wilt u een factuur met BTW specificatie?(J/N)") 
 
 # --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
 # --> Vereenvoudig vervolgens de code door de uitkomst van de conditie toe te kennen aan: vr_vip_ordered (tip 4)
-if answer == 'J' or answer == 'j':
-  vat_invoice = True
-else:
-  vat_invoice = False
+vat_invoice = answer in YES_OPTIONS
 
 # --> Vereenvoudig hier de conditie (zie tip 5)
-if vat_invoice == True:
-   company_name = input('Op welke bedrijfsnaam komt de factuur?\n').trim()
+if vat_invoice:
+   company_name = input('Op welke bedrijfsnaam komt de factuur?\n').strip()
    if len(company_name) == 0:
      company_name = '........... (zelf invullen)'
 
@@ -131,7 +73,7 @@ total_popcorn = round(nr_popcorn * POPCORN_PRICE, 2)
 total_all = total_tickets + total_vr_vip_seats + total_cola + total_popcorn
 
 # --> Vereenvoudig hier de conditie (zie tip 5)
-if vat_invoice == True:
+if vat_invoice:
 # --> Vereenvoudig hier de code met de help.py function: get_vat_from_amount_incl() (zie tip 6)
   vat_perc_H = 21 # voor VAT_CODE_H
   total_tickets_vat = round(total_tickets / (100 + vat_perc_H) * vat_perc_H, 2)
