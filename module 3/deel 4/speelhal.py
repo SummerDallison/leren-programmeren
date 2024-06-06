@@ -15,50 +15,34 @@ VAT_CODE_L = 'L'
 
 # ***************** INPUT *****************
 print("SPEELHAL-ENTREE-KASSA")
-# --> Vereenvoudig hier de code m.b.v. de help.py function: input_yes_no() (zie tip 1)
 answer = input_yes_no("Wilt u bestellen?(J/N)") 
 
-# --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
 if answer in NO_OPTIONS: 
   exit('Nu geen interesse? Tot ziens!')
 else:
   print('Ik ga u nu vragen wat en hoeveel u wilt...')
 
-# --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
 nr_tickets = input_int("Hoeveel personen?", min=1, max=MAX_TICKETS)
 
-# --> Vereenvoudig hier de code m.b.v. de help.py function: input_yes_no() (zie tip 1)
 answer = input_yes_no("Ook VR-VIP seats?(J/N)")
 
-# --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
-# --> Vereenvoudig vervolgens de code door de uitkomst van de conditie toe te kennen aan: vr_vip_ordered (tip 4)
 vr_vip_ordered = answer in YES_OPTIONS
 
-# --> Vereenvoudig hier de conditie (zie tip 5)
 if vr_vip_ordered:
-  # --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
   nr_vr_vip_seats = input_int("Hoeveel VR-VIP seats?", min=0, max=nr_tickets)
-    
-  # --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
   vr_vip_seat_time = input_int("Hoeveel minuten in de VR-VIP-seats?", min=5, max=MAX_VR_VIP_SEAT_TIME)
 else:
   nr_vr_vip_seats = 0
   vr_vip_seat_time = 0
 
-# --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
 nr_cola = input_int("Hoeveel cola?", min=0, max=nr_tickets)
 
-# --> Vereenvoudig hier de code m.b.v. de help.py function: input_int() (zie tip 3)
 nr_popcorn = input_int("Hoeveel popcorn?", min=0, max=nr_tickets)
 
-# --> Vereenvoudig hier de code m.b.v. de help.py function: input_yes_no() (zie tip 1)
 answer = input_yes_no("Wilt u een factuur met BTW specificatie?(J/N)") 
 
-# --> Vereenvoudig hier de conditie met de 'in'-operator (zie tip 2)
-# --> Vereenvoudig vervolgens de code door de uitkomst van de conditie toe te kennen aan: vr_vip_ordered (tip 4)
 vat_invoice = answer in YES_OPTIONS
 
-# --> Vereenvoudig hier de conditie (zie tip 5)
 if vat_invoice:
    company_name = input('Op welke bedrijfsnaam komt de factuur?\n').strip()
    if len(company_name) == 0:
@@ -72,16 +56,12 @@ total_cola = round(nr_cola * COLA_PRICE, 2)
 total_popcorn = round(nr_popcorn * POPCORN_PRICE, 2)
 total_all = total_tickets + total_vr_vip_seats + total_cola + total_popcorn
 
-# --> Vereenvoudig hier de conditie (zie tip 5)
 if vat_invoice:
-# --> Vereenvoudig hier de code met de help.py function: get_vat_from_amount_incl() (zie tip 6)
-  vat_perc_H = 21 # voor VAT_CODE_H
-  total_tickets_vat = round(total_tickets / (100 + vat_perc_H) * vat_perc_H, 2)
-  total_vr_vip_seats_vat = round(total_vr_vip_seats / (100 + vat_perc_H) * vat_perc_H, 2)
+  total_tickets_vat = get_vat_from_amount_incl(total_tickets, 'H')
+  total_vr_vip_seats_vat = get_vat_from_amount_incl(total_vr_vip_seats, 'H')
 
-  vat_perc_L = 9  # voor VAT_CODE_L
-  total_cola_ex_vat = round(total_cola / (100 + vat_perc_H) * vat_perc_L, 2)
-  total_popcorn_ex_vat = round(total_popcorn / (100 + vat_perc_H) * vat_perc_L, 2)
+  total_cola_ex_vat = get_vat_from_amount_incl(total_cola, 'L')
+  total_popcorn_ex_vat = get_vat_from_amount_incl(total_popcorn, 'L')
 
   total_vat_H = total_tickets_vat + total_vr_vip_seats_vat
   total_vat_L = total_cola_ex_vat + total_popcorn_ex_vat
@@ -104,10 +84,12 @@ print('.'*len(receipt_text))
 print(f'Totaal:                               {total_all:6.2f}')
 
 print()
-# --> Verbeter hier de code met de help.py function: get_vat_perc() en gebruikmakend van de vat codes: VAT_CODE_H en VAT_CODE_L (zie tip 7)
+
 if vat_invoice:
+  vat_perc_H = get_vat_perc('H')
+  vat_perc_L = get_vat_perc('L')
+
   print(f'BTW Hoog                          {vat_perc_H:2}% {total_vat_H:6.2f}')
   print(f'BTW Laag                          {vat_perc_L:2}% {total_vat_L:6.2f}')
 print('='*len(receipt_text))
 print('Bedankt voor de bestelling, veel plezier!')
-# --> Verwijder na succesvolle testen alle refactor instructies uit de code
