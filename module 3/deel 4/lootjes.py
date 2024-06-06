@@ -1,6 +1,14 @@
 import random
 
 deelnemers = []
+cadeau_wensen = {}
+
+def vraag_cadeau_wensen(naam):
+    wensen = []
+    for cadeau in range(3):
+        wens = input(f"Voer cadeauwens {cadeau+1} in voor {naam}: ")
+        wensen.append(wens)
+    cadeau_wensen[naam] = wensen
 
 while len(deelnemers) < 3:
     naam = input("Voer de naam van een deelnemer in: ").lower()
@@ -9,7 +17,9 @@ while len(deelnemers) < 3:
         if naam not in deelnemers:
             deelnemers.append(naam)
             print(f"De naam '{naam}' is toegevoegd aan de lootjes.")   
-                
+
+            vraag_cadeau_wensen(naam)
+
         else:
             print(f"De naam {naam} is al toegevoegd aan de lootjes. Deze naam wordt niet opnieuw toegevoegd.")
     
@@ -27,6 +37,8 @@ while True:
                 if naam not in deelnemers:
                     deelnemers.append(naam)
                     print(f"De naam '{naam}' is toegevoegd aan de lootjes.")
+
+                    vraag_cadeau_wensen(naam)
             
                 else:
                     print(f"De naam {naam} is al toegevoegd aan de lootjes. Deze naam wordt niet opnieuw toegevoegd.")
@@ -66,6 +78,11 @@ while True:
             if lootje_opvragen.isalpha():
                 if lootje_opvragen in deelnemers_lootjes:
                     print(f"Het lootje van {deelnemers_lootjes[lootje_opvragen]} is gekoppeld aan {lootje_opvragen}.")
+
+                    print(f"Cadeauwensen van {deelnemers_lootjes[lootje_opvragen]}: ")
+                    for cadeau, wens in enumerate(cadeau_wensen[deelnemers_lootjes[lootje_opvragen]], 1):
+                        print(f"{cadeau}. {wens}")
+
                     break
                 
                 else:
