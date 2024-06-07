@@ -1,6 +1,10 @@
 deelnemers = []
 cadeau_wensen = {}
 
+def vraag_naam():
+    naam = input("Voer de naam van een deelnemer in: ").lower()
+    deelnemer_toevoegen(naam)
+
 def deelnemer_toevoegen(naam):
     if naam.isalpha():
         if naam not in deelnemers:

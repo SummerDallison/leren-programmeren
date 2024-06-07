@@ -1,10 +1,6 @@
 from functies import *
 import random
 
-def vraag_naam():
-    naam = input("Voer de naam van een deelnemer in: ").lower()
-    deelnemer_toevoegen(naam)
-
 while len (deelnemers) < 3:
     vraag_naam()
 
