@@ -1,56 +1,20 @@
+from functies import *
 import random
 
-deelnemers = []
-cadeau_wensen = {}
-
-def vraag_cadeau_wensen(naam):
-    wensen = []
-    for cadeau in range(3):
-        wens = input(f"Voer cadeauwens {cadeau+1} in voor {naam}: ")
-        wensen.append(wens)
-    cadeau_wensen[naam] = wensen
-
-while len(deelnemers) < 3:
+def vraag_naam():
     naam = input("Voer de naam van een deelnemer in: ").lower()
+    deelnemer_toevoegen(naam)
 
-    if naam.isalpha():
-        if naam not in deelnemers:
-            deelnemers.append(naam)
-            print(f"De naam '{naam}' is toegevoegd aan de lootjes.")   
-
-            vraag_cadeau_wensen(naam)
-
-        else:
-            print(f"De naam {naam} is al toegevoegd aan de lootjes. Deze naam wordt niet opnieuw toegevoegd.")
-    
-    else:
-        print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
+while len (deelnemers) < 3:
+    vraag_naam()
 
 while True:
     meer_toevoegen = input("Wilt u meer deelnemers toevoegen? (ja/nee): ").lower()
 
-    if meer_toevoegen == "ja":
-        while True:
-            naam = input("Voer de naam van een deelnemer in: ").lower()
-
-            if naam.isalpha():
-                if naam not in deelnemers:
-                    deelnemers.append(naam)
-                    print(f"De naam '{naam}' is toegevoegd aan de lootjes.")
-
-                    vraag_cadeau_wensen(naam)
-            
-                else:
-                    print(f"De naam {naam} is al toegevoegd aan de lootjes. Deze naam wordt niet opnieuw toegevoegd.")
-
-            else:
-                print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
-                continue
-            break
-
-    elif meer_toevoegen == "nee":
+    if meer_toevoegen == 'ja':
+        vraag_naam()
+    elif meer_toevoegen == 'nee':
         break
-
     else:
         print("Voer alstublieft 'ja' of 'nee' in.")
 
