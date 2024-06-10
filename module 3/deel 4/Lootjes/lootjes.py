@@ -1,3 +1,4 @@
+from functies import *
 import random
 
 deelnemers = []
