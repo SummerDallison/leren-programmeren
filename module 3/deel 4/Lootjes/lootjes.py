@@ -1,16 +1,51 @@
-from functies import *
 import random
 
-while len (deelnemers) < 3:
-    vraag_naam()
+deelnemers = []
+cadeau_wensen = {}
+
+while len(deelnemers) < 3:
+    naam = input("Voer de naam van een deelnemer in: ").lower()
+
+    if naam.isalpha():
+        if naam not in deelnemers:
+            deelnemers.append(naam)
+            print(f"De naam '{naam}' is toegevoegd aan de lootjes.")
+
+            wensen = []
+            for cadeau in range(3):
+                wens = input(f"Voer cadeauwens {cadeau+1} in voor {naam}: ")
+                wensen.append(wens)
+            cadeau_wensen[naam] = wensen
+        
+        else:
+            print(f"De naam {naam} is al toegevoegd aan de lootjes. Deze naam wordt niet opnieuw toegevoegd.")
+
+    else:
+        print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
 
 while True:
     meer_toevoegen = input("Wilt u meer deelnemers toevoegen? (ja/nee): ").lower()
 
-    if meer_toevoegen == 'ja':
-        vraag_naam()
-    elif meer_toevoegen == 'nee':
+    if meer_toevoegen == "ja":
+        while True:
+            naam = input("Voer de naam van een deelnemer in: ").lower()
+
+            if naam.isalpha():
+                if naam not in deelnemers:
+                    deelnemers.append(naam)
+                    print(f"De naam '{naam}' is toegevoegd aan de lootjes.")
+            
+                else:
+                    print(f"De naam {naam} is al toegevoegd aan de lootjes. Deze naam wordt niet opnieuw toegevoegd.")
+
+            else:
+                print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
+                continue
+            break
+
+    elif meer_toevoegen == "nee":
         break
+
     else:
         print("Voer alstublieft 'ja' of 'nee' in.")
 
@@ -42,7 +77,7 @@ while True:
                     print(f"Cadeauwensen van {deelnemers_lootjes[lootje_opvragen]}: ")
                     for cadeau, wens in enumerate(cadeau_wensen[deelnemers_lootjes[lootje_opvragen]], 1):
                         print(f"{cadeau}. {wens}")
-
+                        
                     break
                 
                 else:
