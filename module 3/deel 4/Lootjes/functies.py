@@ -12,7 +12,7 @@ def input_yes_no(prompt):
 
 def input_string(prompt):
     while True:
-        waarde = input(prompt).lower()
+        waarde = input(prompt).capitalize()
         if waarde.isalpha():
             return waarde
         print("Ongeldige invoer. Voer alstublieft alleen letters in.")
@@ -39,3 +39,14 @@ def verdelen_lootjes(deelnemers):
         random.shuffle(lootjes)
         if all(deelnemer != lootje for deelnemer, lootje in zip(deelnemers, lootjes)):
             return dict(zip(deelnemers, lootjes))
+        
+def opvragen_lootje(deelnemers_lootjes, cadeau_wensen):
+    lootje_opvragen = input_string("Voer de naam in van een deelnemer in om het lootje op te vragen: ")
+    if lootje_opvragen in deelnemers_lootjes:
+        lootje = deelnemers_lootjes[lootje_opvragen]
+        print(f"Het lootje van {lootje} is gekoppeld aan {lootje_opvragen}.")
+        print(f"Cadeauwensen van {lootje}: ")
+        for cadeau, wens in enumerate(cadeau_wensen[lootje], 1):
+            print(f"{cadeau}. {wens}")
+    else:
+        print("Deze naam staat niet op de lijst van deelnemers.")

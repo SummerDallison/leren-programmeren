@@ -1,96 +1,16 @@
-from functies import *
-import random
-
-deelnemers = []
-cadeau_wensen = {}
+from functies import * 
 
 while len(deelnemers) < 3:
-    naam = input("Voer de naam van een deelnemer in: ").lower()
+    voeg_deelnemer_toe(deelnemers, cadeau_wensen)
 
-    if naam.isalpha():
-        if naam not in deelnemers:
-            deelnemers.append(naam)
-            print(f"De naam '{naam}' is toegevoegd aan de lootjes.")
-
-            wensen = []
-            for cadeau in range(3):
-                wens = input(f"Voer cadeauwens {cadeau+1} in voor {naam}: ")
-                wensen.append(wens)
-            cadeau_wensen[naam] = wensen
-        
-        else:
-            print(f"De naam {naam} is al toegevoegd aan de lootjes. Deze naam wordt niet opnieuw toegevoegd.")
-
-    else:
-        print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
-
-while True:
-    meer_toevoegen = input("Wilt u meer deelnemers toevoegen? (ja/nee): ").lower()
-
-    if meer_toevoegen == "ja":
-        while True:
-            naam = input("Voer de naam van een deelnemer in: ").lower()
-
-            if naam.isalpha():
-                if naam not in deelnemers:
-                    deelnemers.append(naam)
-                    print(f"De naam '{naam}' is toegevoegd aan de lootjes.")
-            
-                else:
-                    print(f"De naam {naam} is al toegevoegd aan de lootjes. Deze naam wordt niet opnieuw toegevoegd.")
-
-            else:
-                print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
-                continue
-            break
-
-    elif meer_toevoegen == "nee":
-        break
-
-    else:
-        print("Voer alstublieft 'ja' of 'nee' in.")
+while input_yes_no("Wilt u meer deelnemers toevoegen?"):
+    voeg_deelnemer_toe(deelnemers, cadeau_wensen)
 
 print("De lootjes worden nu gecontroleerd en verdeeld.")
+deelnemers_lootjes = verdelen_lootjes(deelnemers)
 
-while True:
-    lootjes = deelnemers.copy()
-    random.shuffle(lootjes)
-
-    if all(deelnemer != lootje for deelnemer, lootje in zip(deelnemers, lootjes)):
-        break
-
-for deelnemer, lootje in zip(deelnemers, lootjes):
+for deelnemer, lootje in deelnemers_lootjes.items():
     print(f"{deelnemer} trekt lootje van {lootje}.")
 
-deelnemers_lootjes = dict(zip(deelnemers, lootjes))
-
-while True:
-    opvragen = input("Wilt u een lootje van een deelnemer opvragen? (ja/nee): ").lower()
-    if opvragen == "ja":
-
-        while True:
-            lootje_opvragen = input("Voer de naam in van een deelnemer in om het lootje op te vragen: ").lower()
-            
-            if lootje_opvragen.isalpha():
-                if lootje_opvragen in deelnemers_lootjes:
-                    print(f"Het lootje van {deelnemers_lootjes[lootje_opvragen]} is gekoppeld aan {lootje_opvragen}.")
-
-                    print(f"Cadeauwensen van {deelnemers_lootjes[lootje_opvragen]}: ")
-                    for cadeau, wens in enumerate(cadeau_wensen[deelnemers_lootjes[lootje_opvragen]], 1):
-                        print(f"{cadeau}. {wens}")
-                        
-                    break
-                
-                else:
-                    print("Deze naam staat niet op de lijst van deelnemers.")
-
-            else:
-                print("Ongeldige invoer. Voer alstublieft alleen letters in voor de naam.")
-    
-    elif opvragen == "nee":
-        break
-
-    else:
-        print("Voer alstublieft 'ja' of 'nee' in.")
-        continue
-    break
+while input_yes_no("Wilt u een lootje van een deelnemer opvragen?"):
+    opvragen_lootje(deelnemers_lootjes, cadeau_wensen)
