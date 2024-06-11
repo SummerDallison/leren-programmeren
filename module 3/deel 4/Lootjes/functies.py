@@ -20,8 +20,12 @@ def input_string(prompt):
 def input_cadeauwensen(naam):
     wensen = []
     for i in range(3):
-        wens = input(f"Voer cadeauwens {i+1} in voor {naam}: ")
-        wensen.append(wens)
+        while True:
+            wens = input(f"Voer cadeauwens {i+1} in voor {naam}: ")
+            if wens:
+                wensen.append(wens)
+                break
+            print(f"Geen cadeauwens ingevoerd. Voer alstublieft een geldig wens in voor {naam}.")
     return wensen
 
 def voeg_deelnemer_toe(deelnemers, cadeau_wensen):

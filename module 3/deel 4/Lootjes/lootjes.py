@@ -14,3 +14,4 @@ for deelnemer, lootje in deelnemers_lootjes.items():
 
 while input_yes_no("Wilt u een lootje van een deelnemer opvragen?"):
     opvragen_lootje(deelnemers_lootjes, cadeau_wensen)
+    break
