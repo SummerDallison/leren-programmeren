@@ -24,7 +24,7 @@ def input_cadeauwensen(naam):
     wensen = []
     for i in range(3):
         while True:
-            wens = input(f"Voer cadeauwens {i+1} in voor {naam}.").strip()
+            wens = input(f"Voer cadeauwens {i+1} in voor {naam}: ").lower().strip()
             if not wens:
                 print("Er is geen cadeauwens ingevoerd. Voer alstublieft een wens in.")
             elif wens in wensen:
