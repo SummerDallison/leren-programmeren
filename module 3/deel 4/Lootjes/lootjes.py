@@ -7,7 +7,7 @@ while input_yes_no("Wilt u meer deelnemers toevoegen?"):
     voeg_deelnemer_toe(deelnemers, cadeau_wensen)
 
 print("De lootjes worden nu gecontroleerd en verdeeld.")
-deelnemers_lootjes = verdelen_lootjes(deelnemers)
+deelnemers_lootjes = verdelen_lootjes(deelnemers) 
 
 for deelnemer, lootje in deelnemers_lootjes.items():
     print(f"{deelnemer} trekt lootje van {lootje}.")
