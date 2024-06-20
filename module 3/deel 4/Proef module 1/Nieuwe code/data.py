@@ -7,15 +7,16 @@ CORRECT_AVATAR_ANSWER = 'Batman'
 YES_OPTIONS = ['y','j','yes','ja']
 NO_OPTIONS = ['n','no','nee']
 
-'Dag speler, dit is een adventure game waar het draait om keuzes.'
-'Om je bekend te maken met hoe dit spel werkt zal je nu een voorbeeld vraag krijgen.'
-'A, B of C?'
-'Top! het gegeven antwoord is {test}.'
-'Helaas, dit was geen keuze. Probeer het opnieuw...'
-'A, B of C?'
+#Introduction/GAME OVER texts
+INTRO_TEXT = colored('Dag speler, dit is een adventure game waar het draait om keuzes.', 'blue')
+EXAMPLE_TEXT = colored('Om je bekend te maken met hoe dit spel werkt zal je nu een voorbeeld vraag krijgen.', 'blue')
+CHOICE_PROMPT = colored('A, B of C?', 'blue')
+WRONG_CHOICE = colored('Helaas, dit was geen keuze. Probeer het opnieuw...', 'blue')
+CORRECT_CHOICE = colored('Top! het gegeven antwoord is {}.', 'green')
+AVATAR_PROMPT = colored('Selecteer nu één van de volgende karakters.', 'blue')
+AVATAR_OPTIONS = colored('Spider-Man, Joe, Thanos, Graig', 'blue')
 
-'Selecteer nu één van de volgende karakters.'
-'Spider-Man, Joe, Thanos, Graig'
+#Spider-Man Storyline texts
 'Je wordt om 8 uur in de ochtend wakker in je bed op halloween..'
 'Welke outfit doe je vandaag aan?'
 'Casual, Spider-Suit'
@@ -32,7 +33,7 @@ NO_OPTIONS = ['n','no','nee']
 'Dat is helemaal fout, ga jij maar melden bij de directie'
 'Je bent op de gang onderweg naar de directie'
 'Alleen omdat ik maar 5 minuutjes te laat ben'
-'Ga je meldeen bij directie?'
+'Ga je melden bij directie?'
 
 'Waarom ben je eruit gestuurd?'
 'Omdat ik 5 minuutjes te laat was...'
