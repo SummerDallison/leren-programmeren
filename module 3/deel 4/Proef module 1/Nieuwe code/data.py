@@ -7,7 +7,6 @@ CORRECT_AVATAR_ANSWER = 'Batman'
 YES_OPTIONS = ['y','j','yes','ja']
 NO_OPTIONS = ['n','no','nee']
 
-#Introduction/Endings texts
 INTRO_TEXT = colored('Dag speler, dit is een adventure game waar het draait om keuzes.','blue')
 EXAMPLE_TEXT = colored('Om je bekend te maken met hoe dit spel werkt zal je nu een voorbeeld vraag krijgen.','blue')
 CHOICE_PROMPT = colored('A, B of C?','blue')
@@ -16,9 +15,8 @@ CORRECT_CHOICE = colored('Top! het gegeven antwoord is {test}.','green')
 AVATAR_PROMPT = colored('Selecteer nu één van de volgende karakters.','blue')
 AVATAR_OPTIONS = colored('Spider-Man, Joe, Thanos, Graig','blue')
 CLASS_ENDING = colored('Top of the class ending.','magenta')
+ESCAPE_ENDING = colored('Escape Ending','magenta')
 GAME_OVER = colored('Game-Over!','red')
-
-#Spider-Man Storyline texts
 STARTING_SCENE = colored('Je wordt om 8 uur in de ochtend wakker in je bed op halloween.','blue')
 OUTFIT_PROMPT = colored('Welke outfit doe je vandaag aan?','blue')
 OUTFIT_OPTIONS = colored('Casual, Spider-Suit','blue')
@@ -36,10 +34,10 @@ REPORT_TO_PRINCIPAL = colored('Ga je melden bij directie?','blue')
 PRINCIPAL_QUESTION = colored('Waarom ben je eruit gestuurd?','yellow')
 LATENESS_REASON = colored('Alleen omdat ik maar 5 minuutjes te laat ben.','light_cyan')
 CAUGHT_BY_ADMINSTRATION = colored('Je bent gecatched door directie, laat je nooit vangen!','red')
-SHOCKED_STATEMENT = colored('WAT JE GAAT NIET, IK WIST NIET DAT JE DIT IN JE HAD','blue')
+SHOCKED_STATEMENT = colored('WAT JE GAAT NIET, IK WIST NIET DAT JE DIT IN JE HAD!','blue')
 RUN_ALERT = colored('RENNEN!!!!!','blue')
 RUNNING_THROUGH_SCHOOL = colored('Je rent heel hard door de gangen van de school!','blue')
-CHASED_BY_STAFF = colored('Achter je merk je dat je word achtervolgt door medewerkers','blue')
+CHASED_BY_STAFF = colored('Achter je merk je dat je word achtervolgt door medewerkers.','blue')
 HALLWAY_CHOICE = colored('Je komt aan bij een lege gang, een open raam en een deur waarvan je niet weet waar het naartoe gaat.','blue')
 HALLWAY_PROMPT = colored('Gang, Deur, Raam','blue')
 EXIT_HALLWAY = colored('Je rent de gang uit...','blue')
@@ -54,60 +52,36 @@ DETENTION_ENDING = colored('Voor de rest van de game moet je nablijven.','red')
 EXIT_WINDOW = colored('Je springt door het raam.','blue')
 WEB_SLINGERS_FORGOTTEN = colored('Na een goeie seconden besef je je dat je je Web-Slingers niet hebt...','blue')
 DEATH_ENDING = colored('Je viel dood op de grond','red')
+WEB_SLINGERS_ACTION = colored('Je pakt je Web-Slingers en slingert weg','blue')
 
+JOE_TEXT = [
+    colored('Okay Joe-','blue'),
+    colored('JOE MAMA, HAHHAHAHAH!!!','yellow'),
+    colored('Wie ben jij dan weer?','blue'),
+    colored('IK BEN DE RIZZLER, HAHAHAHAH!!!','yellow'),
+    colored('Ja hier heb ik totaal geen zin in.','blue'),
+    colored('Je spel is verpest door 9 jarige tiktok kinderen.','red')
+]
 
-'Waarom ben je eruit gestuurd?'
-'Omdat ik 5 minuutjes te laat was...'
-'Je bent gecatched door directie, laat je nooit vangen!'
+THANOS_TEXT = [
+    colored('Okay {avatar}, we gaan nu beginnen.','blue'),
+    colored('Wacht eens even...','blue'),
+    colored('Jij ging toch dood in "EndGame"?','blue'),
+    colored('Wacht ik google het even...','blue'),
+    colored('JA ZIE JE WEL, JE GING ZELFS TWEE KEER DOOD!','blue'),
+    colored('{avatar} ging al dood in de film "Avengers: Endgame".','red')
+]
 
-'WAT JE GAAT NIET, IK WIST NIET DAT JE DIT IN JE HAD'
-'RENNEN!!!!!'
-'Je rent heel hard door de gangen van de school!'
-'Achter je merk je dat je word achtervolgt door medewerkers'
-'Je komt aan bij een lege gang, een open raam en een deur waarvan je niet weet waar het naartoe gaat.'
-'Gang, Deur, Raam'
-
-'Je rent de gang uit...'
-'Je ziet de uitgang aan het eind'
-'BOEM, ineens staat de concierge voor je en pakt je bij je kraag.'
-'Je bent gepakt door de concierge.'
-
-'Na 3 seconden goed ademen, besef je dat je in een kast bent gestormt.'
-'Ineens trekt docent gym de deur van de kast open en trekt je de kast uit.'
-'Je bent gepakt door de gym docent en meegenomen naar het nablijf lokaal.'
-'Voor de rest van de game moet je nablijven.'
-
-'Je springt door het raam.'
-'Je pakt je Web-Slingers en slingert weg'
-'Escape Ending'
-
-'Dit is geen keuze, probeer het opnieuw'
-
-'Okay Joe-'
-'JOE MAMA, HAHHAHAHAH!!!'
-'Wie ben jij dan weer?'
-'IK BEN DE RIZZLER, HAHAHAHAH!!!'
-'Ja hier heb ik totaal geen zin in.'
-'Je spel is verpest door 9 jarige tiktok kinderen.'
-
-'Okay {avatar}, we gaan nu beginnen.'
-'Wacht eens even...'
-'Jij ging toch dood in "EndGame"?'
-'Wacht ik google het even...'
-'JA ZIE JE WEL, JE GING ZELFS TWEE KEER DOOD!'
-'{avatar} ging al dood in de film "Avengers: Endgame".'
-
-'Hallo {avatar}, je bent een postbode.'
-'Laten we wat post posten!'
-'Je loopt door de wijken met HEEL VEEL post'
-'Ga je post posten?'
-
-'Top! Je hebt post gebracht!'
-'Ga je post posten?'
-
-'Je hebt niet genoeg post gebracht'
-'Je bent ontslagen!'
-
-'Op een manier kan je niet simpel ja of nee zeggen, het spel stopt hier voor jou.'
-
-'Je bent te dom om een karakter uit de lijst te kiezen, het spel stopt hier voor jou.'
+GRAIG_TEXT = {
+    'intro' : [
+        colored('Hallo {avatar}, je bent een postbode.','blue'),
+        colored('Laten we wat post posten!','blue'),
+        colored('Je loopt door de wijken met HEEL VEEL post','blue')
+    ],
+    'prompt' : colored('Ga je post posten?','blue'),
+    'success' : colored('Top! Je hebt post gebracht!','green'),
+    'failure' : [
+        colored('Je hebt niet genoeg post gebracht','red'),
+        colored('Je bent ontslagen!','red')
+    ]
+}
