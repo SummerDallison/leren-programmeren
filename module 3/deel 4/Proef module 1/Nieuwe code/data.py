@@ -7,16 +7,20 @@ CORRECT_AVATAR_ANSWER = 'Batman'
 YES_OPTIONS = ['y','j','yes','ja']
 NO_OPTIONS = ['n','no','nee']
 
-INTRO_TEXT = colored('Dag speler, dit is een adventure game waar het draait om keuzes.','blue')
-EXAMPLE_TEXT = colored('Om je bekend te maken met hoe dit spel werkt zal je nu een voorbeeld vraag krijgen.','blue')
-CHOICE_PROMPT = colored('A, B of C?','blue')
-WRONG_CHOICE = colored('Helaas, dit was geen keuze. Probeer het opnieuw...','blue')
-CORRECT_CHOICE = colored('Top! het gegeven antwoord is {test}.','green')
-AVATAR_PROMPT = colored('Selecteer nu één van de volgende karakters.','blue')
-AVATAR_OPTIONS = colored('Spider-Man, Joe, Thanos, Graig','blue')
-CLASS_ENDING = colored('Top of the class ending.','magenta')
-ESCAPE_ENDING = colored('Escape Ending','magenta')
-GAME_OVER = colored('Game-Over!','red')
+INTRO_TEXT = {
+    'intro' : [
+        colored('Dag speler, dit is een adventure game waar het draait om keuzes.','blue'),
+        colored('Om je bekend te maken met hoe dit spel werkt zal je nu een voorbeeld vraag krijgen.','blue')
+    ],
+    'prompt' : colored('A, B of C?','blue'),
+    'correct' : colored('Top! het gegeven antwoord is {test}.','green'),
+    'incorrect' : colored('Helaas, dit was geen keuze. Probeer het opnieuw...','blue'),
+    'avatar' : [
+        colored('Selecteer nu één van de volgende karakters.','blue'),
+        colored('Spider-Man, Joe, Thanos, Graig','blue')
+    ]
+}
+
 STARTING_SCENE = colored('Je wordt om 8 uur in de ochtend wakker in je bed op halloween.','blue')
 OUTFIT_PROMPT = colored('Welke outfit doe je vandaag aan?','blue')
 OUTFIT_OPTIONS = colored('Casual, Spider-Suit','blue')
@@ -27,6 +31,7 @@ ANGRY_TEACHER_ENCOUNTER = colored('Eenmaal binnen gekomen zie je dat de docent a
 LATE_ARRIVAL_CONDITION = colored('Je bent te laat, MAAR als je deze vraag goed beantwoord dan mag je blijven.','yellow')
 MATH_QUESTION = colored('Wat is de wortel van "4 x (7:(15-10))?','yellow')
 CORRECT_ANSWER = colored('Top gedaan 5.6 is helemaal goed!','green')
+CLASS_ENDING = colored('Top of the class ending.','magenta')
 WRONG_ANSWER = colored('Dat is helemaal fout, ga jij maar melden bij de directie.','yellow')
 HEADING_TO_PRINCIPAL = colored('Je bent op de gang onderweg naar de directie.','blue')
 LATE_EXCUSE = colored('Alleen omdat ik maar 5 minuutjes te laat ben.','light_cyan')
@@ -53,6 +58,7 @@ EXIT_WINDOW = colored('Je springt door het raam.','blue')
 WEB_SLINGERS_FORGOTTEN = colored('Na een goeie seconden besef je je dat je je Web-Slingers niet hebt...','blue')
 DEATH_ENDING = colored('Je viel dood op de grond','red')
 WEB_SLINGERS_ACTION = colored('Je pakt je Web-Slingers en slingert weg','blue')
+ESCAPE_ENDING = colored('Escape Ending','magenta')
 
 JOE_TEXT = [
     colored('Okay Joe-','blue'),
@@ -85,3 +91,5 @@ GRAIG_TEXT = {
         colored('Je bent ontslagen!','red')
     ]
 }
+
+GAME_OVER = colored('Game-Over!','red')
