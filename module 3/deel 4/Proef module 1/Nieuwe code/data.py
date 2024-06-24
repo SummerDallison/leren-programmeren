@@ -1,4 +1,7 @@
 from termcolor import colored
+import os
+import time
+from time import sleep
 
 TEST_ANSWERS = ['a','A','b','B','c','C']
 AVATAR_ANSWERS = ['Batman','Spider-Man','Steve','Joe','Thanos','Graig']
