@@ -1,6 +1,5 @@
 import os, time
 from time import sleep
-from termcolor import colored
 from data import *
 
 def sprint(text, delay=0.065):
@@ -11,3 +10,9 @@ def sprint(text, delay=0.065):
 
 def clear_screen():
     os.system('cls')
+
+def game_over(message):
+    clear_screen()
+    sprint(message)
+    sleep(1)
+    sprint(GAME_OVER)
