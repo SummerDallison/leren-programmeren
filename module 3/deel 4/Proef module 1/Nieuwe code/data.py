@@ -36,10 +36,10 @@ CORRECT_ANSWER = [
     colored('Top of the class ending.','magenta')
 ]
 WRONG_ANSWER = [
-    colored('Dat is helemaal fout, ga jij maar melden bij de directie','yellow'),
-    colored('Je bent op de gang onderweg naar de directie','blue'),
-    colored('Alleen omdat ik maar 5 minuutjes te laat ben','light_cyan')
+    colored('Dat is helemaal fout, ga jij maar melden bij de directie.','yellow'),
+    colored('Je bent op de gang onderweg naar de directie.','blue'),
+    colored('Alleen omdat ik maar 5 minuutjes te laat ben.','light_cyan')
 ]
 PRINCIPAL_PROMPT = colored('Ga je melden bij directie?','blue')
 
-GAME_OVER = 'Game-Over!'
+GAME_OVER = colored('Game-Over!', 'red')
