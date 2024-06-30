@@ -1,3 +1,4 @@
+from termcolor import colored
 import os, time
 from time import sleep
 from data import *
@@ -8,19 +9,19 @@ def sprint(text, delay=0.065):
         time.sleep(delay)
     print()
 
-def clear_screen():
+def clear_and_print(text, delay=1):
     os.system('cls')
+    sprint(text)
+    sleep(delay)
 
 def get_valid_input(prompt, valid_options):
     while True:
         user_input = input(prompt).strip().lower()
         if user_input in valid_options:
             return user_input
-        sprint('Ongeldige invoer. Probeer opnieuw.', 'blue')
-        clear_screen()
+        clear_and_print(colored('Ongeldige invoer. Probeer opnieuw.', 'blue'))
 
 def game_over(message):
-    clear_screen()
-    sprint(message)
-    sleep(1)
-    sprint(GAME_OVER)
+    clear_and_print(colored(message, 'red'))
+    clear_and_print(colored(GAME_OVER, 'red'))
+    exit()
