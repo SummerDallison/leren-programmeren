@@ -1,4 +1,4 @@
-TEST_ANSWERS = ['a','A','b','B','c','C']
+TEST_ANSWERS = ['a','b','c']
 YES_OPTIONS = ['y','j','yes','ja']
 NO_OPTIONS = ['n','no','nee']
 AVATAR_ANSWERS = ['Spider-Man','Steve','Joe','Thanos','Graig']
@@ -14,7 +14,7 @@ SELECT_AVATAR = 'Selecteer nu één van de volgende karakters.'
 CHARACTER_OPTIONS = 'Spider-Man, Joe, Thanos, Graig'
 
 #Spider-Man scenario
-SPIDER_MAN_WAKE_UP = 'Je wordt om 8 uur in de ochtend wakker in je bed op Halloween.'
+SPIDER_MAN_WAKEUP = 'Je wordt om 8 uur in de ochtend wakker in je bed op Halloween.'
 OUTFIT_CHOICE = 'Welke outfit doe je vandaag aan?'
 OUTFIT_OPTIONS = 'Casual, Spider-Suit'
 CHOSEN_OUTFIT = 'Je hebt de outfit "{outfit}" gekozen!'
@@ -22,8 +22,8 @@ LATE_FOR_SCHOOL = 'Je gaat naar school maar je bent 5 minuten te laat.'
 FIRST_CLASS = 'Je gaat naar je eerste les, wiskunde...'
 ANGRY_TEACHER = 'Eenmaal binnen gekomen zie je dat de docent al boos kijkt.'
 LATE_QUESTION = 'Je bent te laat, MAAR als je deze vraag goed beantwoord dan mag je blijven.'
-MATH_QUESTION = 'Wat is de wortel van "4 x (7:(15-10))?'
-TOP_CLASS_ENDING = 'Top gedaan 5.6 is helemaal goed!'
+MATH_QUESTION = 'Wat is de wortel van "4 x (7:(15-10))"?'
+TOP_CLASS_ENDING = 'Top gedaan {math} is helemaal goed!'
 INCORRECT_ANSWER = 'Dat is helemaal fout, ga jij maar melden bij de directie'
 DIRECTOR_OFFICE = 'Je bent op de gang onderweg naar de directie'
 JUST_5_MINUTES = 'Alleen omdat ik maar 5 minuutjes te laat ben.'
