@@ -3,6 +3,9 @@ YES_OPTIONS = ['y','j','yes','ja']
 NO_OPTIONS = ['n','no','nee']
 AVATAR_ANSWERS = ['Spider-Man','Steve','Joe','Thanos','Graig']
 
+YES_NO_OPTIONS = YES_OPTIONS + NO_OPTIONS
+WAYS_OPTIONS = ['gang','deur','raam']
+
 #Introduction and tutorial
 INTRO_TEXT = 'Dag speler, dit is een adventure game waar het draait om keuzes.'
 TUTORIAL_TEXT = 'Om je bekend te maken met hoe dit spel werkt zal je nu een voorbeeld vraag krijgen.'
@@ -79,6 +82,7 @@ NOT_ENOUGH_MAIL = 'Je hebt niet genoeg post gebracht'
 FIRED = 'Je bent ontslagen!'
 
 #Game-over scenarios
+ONGELDIGE_INVOER = 'Ongeldige invoer. Probeer opnieuw.'
 NOT_SIMPLE_ANSWER = 'Op een manier kan je niet simpel ja of nee zeggen, het spel stopt hier voor jou.'
 TOO_DUMB = 'Je bent te dom om een karakter uit de lijst te kiezen, het spel stopt hier voor jou.'
 GAME_OVER = 'Game-Over!'

@@ -15,11 +15,11 @@ def main():
     if avatar == 'Spider-man':
         Spiderman_scenario()
     elif avatar == 'Joe':
-        Joe_scenario
+        Joe_scenario()
     elif avatar == 'Thanos':
-        Thanos_scenario()
+        Thanos_scenario(avatar)
     elif avatar == 'Graig':
-        Graig_scenario()
+        Graig_scenario(avatar)
     else:
         game_over(TOO_DUMB)
 
