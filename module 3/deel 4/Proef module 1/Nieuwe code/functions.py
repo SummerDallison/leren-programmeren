@@ -1,16 +1,18 @@
-from termcolor import colored
+from termcolor import colored # Import voor kleuraanpassing van tekst
 import os, time
 from time import sleep
 from data import *
 
 # ------------------------- Common Functions -------------------------
 
+# Print tekst langzaam, karakter voor karakter
 def sprint(text, delay=0.065):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(delay)
     print()
 
+# Wissen van het scherm en printen van tekst met een vertraging
 def clear_and_print(text, delay=1):
     os.system('cls')
     sprint(text)
