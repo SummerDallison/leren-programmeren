@@ -18,13 +18,11 @@ def clear_and_print(text, delay=1):
     sprint(text)
     sleep(delay)
 
+# Blijft vragen om invoer tot een geldig antwoord wordt gegeven
 def get_valid_input(prompt, valid_options):
     while True:
         clear_and_print(prompt)
         user_input = input().strip().lower()
-
-        clear_and_print(f"Debug: User input = '{user_input}'")
-        clear_and_print(f"Debug: Valid options = {valid_options}")
 
         if user_input in valid_options:
             return user_input
