@@ -19,7 +19,7 @@ def vraag_bolletjes():
 def vraag_keuze(aantal):
     while True:
         keuze = input(PROMPT_KEUZE.format(aantal=aantal)).lower()
-        if keuze == "hoorntje" or keuze == "bakje":
+        if keuze in KEUZE_HOORNTJE_BAKJE:
             print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal))
             return
         else:

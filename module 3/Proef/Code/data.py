@@ -1,3 +1,5 @@
+KEUZE_HOORNTJE_BAKJE = ['hoorntje', 'bakje']
+
 PROMPT_WELKOM = "Welkom bij Papi Gelato, je mag alle smaken kiezen zolang het maar vanille ijs is."
 PROMPT_BOLLETJES = "Hoeveel bolletjes wilt u? "
 PROMPT_KEUZE = "Wilt u deze {aantal} bolletje(s) in een hoorntje of een bakje? "
