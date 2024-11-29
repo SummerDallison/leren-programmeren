@@ -1,14 +1,11 @@
 from data import *
 
-def vraag_bolletje():
+def vraag_bolletjes():
     while True:
         try:
             aantal_bolletjes = int(input(PROMPT_BOLLETJES))
-            return aantal_bolletjes
         except ValueError:
             print(ERROR_ONBEKEND)
-
-
 
 def vraag_bolletjes():
     while True:
