@@ -1,16 +1,24 @@
+from data import PROMPT_WELKOM, AFSLUITING
 from functions import *
-from data import *
 
-def main():
+def start_programma():
     print(PROMPT_WELKOM)
-
+    
     while True:
-        aantal_bolletjes = vraag_bolletjes()
+        aantal = vraag_bolletjes()
 
-        if aantal_bolletjes is not None:
-            vraag_keuze(aantal_bolletjes)
+        if check_aantal_bolletjes(aantal):  
+            keuze = vraag_keuze(aantal) 
+            if keuze:
+                pass 
 
-        if not vraag_meer_bestellen():
+        antwoord = vraag_meer_bestellen()
+        
+        if antwoord == 'nee':
+            print(AFSLUITING)  
             break
+        elif antwoord != 'ja':
+            print(ERROR_ONBEKEND)  
+            continue
 
-main()
+start_programma()
