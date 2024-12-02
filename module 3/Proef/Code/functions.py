@@ -1,20 +1,25 @@
 from data import *
 
-def vraag_bolletjes():
+def krijg_aantal_bolletjes():
     while True:
         try:
             aantal_bolletjes = int(input(PROMPT_BOLLETJES))
-            if 1 <= aantal_bolletjes <= 3:
+            if aantal_bolletjes > 0:
                 return aantal_bolletjes
-            elif 4 <= aantal_bolletjes <= 8:
-                print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
-                return None  # Sla stap 2 over, geen keuze nodig
-            elif aantal_bolletjes > 8:
-                print(ERROR_BAKKEN)
             else:
                 print(ERROR_ONBEKEND)
         except ValueError:
             print(ERROR_ONBEKEND)
+
+def verwerk_aantal_bolletjes(aantal_bolletjes):
+    if 1 <= aantal_bolletjes <= 3:
+        return aantal_bolletjes  # Ga door naar stap 2
+    elif 4 <= aantal_bolletjes <= 8:
+        print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
+        return None  # Sla stap 2 over
+    else:
+        print(ERROR_BAKKEN)
+        return False  # Terug naar begin vraag
 
 def vraag_keuze(aantal):
     while True:
