@@ -6,7 +6,7 @@ def vraag_aantal_bolletjes():
             aantal_bolletjes = int(input(PROMPT_BOLLETJES))
             return aantal_bolletjes
         except ValueError:
-            print(ERROR_ONBEKEND)  # Foutmelding bij ongeldige invoer
+            print(ERROR_ONBEKEND)
 
 def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
     while True:
@@ -32,7 +32,7 @@ def antwoord_bolletjes(aantal_bolletjes):
 
 def vraag_meer_bestellen():
     while True:
-        meer_bestellen = input("Wilt u nog meer bestellen? (ja/nee) ").lower()
+        meer_bestellen = input(PROMPT_MEER).lower()
         if meer_bestellen == "ja":
             return True
         elif meer_bestellen == "nee":
