@@ -14,16 +14,19 @@
                 # Ga naar 'Nog meer bestellen'
             # Anders:
                 # Toon bericht: "Sorry, dat snap ik niet..."
+                # Herhaal vraag keuze
 
     # Anders als aantal_bolletjes tussen 4 en 8:
         # Toon bericht: "Dan krijgt u van mij een bakje met {aantal_bolletjes} bolletjes."
         # Ga naar 'Nog meer bestellen'
 
     # Anders als aantal_bolletjes groter dan 8:
-    # Toon bericht: "Sorry, zulke grote bakken hebben we niet."
+        # Toon bericht: "Sorry, zulke grote bakken hebben we niet."
+        # Herhaal vraag aantal bolletjes
 
     # Anders:
         # Toon bericht: "Sorry, dat snap ik niet..."
+        # Herhaal vraag aantal bolletjes
 
 # 'Nog meer bestellen?'
 # Toon vraag: "Wilt u nog meer bestellen?"
@@ -37,3 +40,4 @@
             # Stop programma
         # Als antwoord is anders:
             # Toon bericht: "Sorry, dat snap ik niet..."
+            # Herhaal vraag meer bestellen
