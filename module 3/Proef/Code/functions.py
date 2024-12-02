@@ -1,42 +1,36 @@
 from data import *
 
-def krijg_aantal_bolletjes():
+def vraag_aantal_bolletjes():
     while True:
         try:
             aantal_bolletjes = int(input(PROMPT_BOLLETJES))
-            if aantal_bolletjes > 0:
-                return aantal_bolletjes
-            else:
+            if aantal_bolletjes < 1:
                 print(ERROR_ONBEKEND)
+            else:
+                return aantal_bolletjes
         except ValueError:
             print(ERROR_ONBEKEND)
 
-def verwerk_aantal_bolletjes(aantal_bolletjes):
-    if 1 <= aantal_bolletjes <= 3:
-        return aantal_bolletjes  # Ga door naar stap 2
-    elif 4 <= aantal_bolletjes <= 8:
-        print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
-        return None  # Sla stap 2 over
-    else:
-        print(ERROR_BAKKEN)
-        return False  # Retourneer False zodat de vraag opnieuw gesteld wordt
-
-def vraag_keuze(aantal):
+def vraag_hoorntje_of_bakje():
     while True:
-        keuze = input(PROMPT_KEUZE.format(aantal=aantal)).lower()
+        keuze = input(PROMPT_KEUZE).lower()
         if keuze in KEUZE_HOORNTJE_BAKJE:
-            print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal))
-            return
+            return keuze
         else:
             print(ERROR_ONBEKEND)
 
+def geef_bakje_met_bolletjes(aantal_bolletjes):
+    print(ANTWOORD_BAKJE)
+
+def geef_order_bevestiging(keuze, aantal_bolletjes):
+    print(ANTWOORD_HOORNTJE_BAKJE)
+
 def vraag_meer_bestellen():
     while True:
-        meer = input(PROMPT_MEER).lower()
-        if meer == "ja":
+        meer_bestellen = input(PROMPT_MEER).lower()
+        if meer_bestellen == "ja":
             return True
-        elif meer == "nee":
-            print(AFSLUITING)
+        elif meer_bestellen == "nee":
             return False
         else:
             print(ERROR_ONBEKEND)
