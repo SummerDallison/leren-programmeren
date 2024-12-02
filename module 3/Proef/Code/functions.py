@@ -11,19 +11,19 @@ def vraag_aantal_bolletjes():
         except ValueError:
             print(ERROR_ONBEKEND)
 
-def vraag_hoorntje_of_bakje():
+def vraag_hoorntje_of_bakje(aantal_bolletjes):
     while True:
-        keuze = input(PROMPT_KEUZE).lower()
+        keuze = input(PROMPT_KEUZE.format(aantal=aantal_bolletjes)).lower()  # Vervang {aantal} met het werkelijke aantal
         if keuze in KEUZE_HOORNTJE_BAKJE:
             return keuze
         else:
             print(ERROR_ONBEKEND)
 
 def geef_bakje_met_bolletjes(aantal_bolletjes):
-    print(ANTWOORD_BAKJE)
+    print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
 
 def geef_order_bevestiging(keuze, aantal_bolletjes):
-    print(ANTWOORD_HOORNTJE_BAKJE)
+    print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
 
 def vraag_meer_bestellen():
     while True:

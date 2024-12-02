@@ -8,7 +8,7 @@ def start_programma():
         aantal_bolletjes = vraag_aantal_bolletjes()
 
         if 1 <= aantal_bolletjes <= 3:
-            keuze = vraag_hoorntje_of_bakje()
+            keuze = vraag_hoorntje_of_bakje(aantal_bolletjes)  # Geef het aantal bolletjes door
             geef_order_bevestiging(keuze, aantal_bolletjes)
 
         elif 4 <= aantal_bolletjes <= 8:
