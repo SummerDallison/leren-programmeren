@@ -1,36 +1,41 @@
 from data import *
 
-def vraag_bolletjes():
-    while True:
-        try:
-            aantal_bolletjes = int(input(PROMPT_BOLLETJES))
-            if 1 <= aantal_bolletjes <= 3:
-                return aantal_bolletjes
-            elif 4 <= aantal_bolletjes <= 8:
-                print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
-                return None  # Sla stap 2 over, geen keuze nodig
-            elif aantal_bolletjes > 8:
-                print(ERROR_BAKKEN)
-            else:
-                print(ERROR_ONBEKEND)
-        except ValueError:
-            print(ERROR_ONBEKEND)
+def vraag_aantal_bolletjes():
+    """Vraag de klant hoeveel bolletjes ze willen"""
+    aantal_bolletjes = int(input("Hoeveel bolletjes wilt u? "))
+    return aantal_bolletjes
 
-def vraag_keuze(aantal):
+def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
+    """Vraag de klant of ze een bakje of hoorntje willen"""
     while True:
-        keuze = input(PROMPT_KEUZE.format(aantal=aantal)).lower()
-        if keuze == "hoorntje" or keuze == "bakje":
-            print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal))
-            return
+        keuze = input(PROMPT_KEUZE.format(aantal=aantal_bolletjes)).lower()
+        if keuze in KEUZE_HOORNTJE_BAKJE:
+            return keuze
         else:
             print(ERROR_ONBEKEND)
 
+def antwoord_bolletjes(aantal_bolletjes):
+    """Geef het juiste antwoord op basis van het aantal bolletjes"""
+    if 1 <= aantal_bolletjes <= 3:
+        keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
+        print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
+    elif 4 <= aantal_bolletjes <= 8:
+        print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
+    elif aantal_bolletjes > 8:
+        print(ERROR_BAKKEN)
+        return False
+    else:
+        print(ERROR_ONBEKEND)
+        return False
+    return True
+
 def vraag_meer_bestellen():
+    """Vraag de klant of ze nog meer willen bestellen"""
     while True:
-        meer = input(PROMPT_MEER).lower()
-        if meer == "ja":
+        meer_bestellen = input("Wilt u nog meer bestellen? (ja/nee) ").lower()
+        if meer_bestellen == "ja":
             return True
-        elif meer == "nee":
+        elif meer_bestellen == "nee":
             print(AFSLUITING)
             return False
         else:
