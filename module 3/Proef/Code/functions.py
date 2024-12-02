@@ -19,7 +19,7 @@ def verwerk_aantal_bolletjes(aantal_bolletjes):
         return None  # Sla stap 2 over
     else:
         print(ERROR_BAKKEN)
-        return False  # Terug naar begin vraag
+        return False  # Retourneer False zodat de vraag opnieuw gesteld wordt
 
 def vraag_keuze(aantal):
     while True:
