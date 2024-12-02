@@ -24,19 +24,19 @@ def antwoord_bolletjes(aantal_bolletjes):
         print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
     elif aantal_bolletjes > 8:
         print(ERROR_BAKKEN)
-        return False
+        return False # Geef False terug om aan te geven dat we moeten herhalen
     else:
         print(ERROR_ONBEKEND)
         return False
-    return True
+    return True # Geef True terug als alles goed is gegaan
 
 def vraag_meer_bestellen():
     while True:
         meer_bestellen = input(PROMPT_MEER).lower()
         if meer_bestellen == "ja":
-            return True
+            return True # Geef True terug om het proces opnieuw te starten
         elif meer_bestellen == "nee":
             print(AFSLUITING)
-            return False
+            return False # Geef False terug om het programma te beëindigen
         else:
             print(ERROR_ONBEKEND)
