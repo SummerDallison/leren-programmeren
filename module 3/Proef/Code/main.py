@@ -6,12 +6,13 @@ def main():
 
     while True:
         aantal_bolletjes = krijg_aantal_bolletjes()
-        while not verwerk_aantal_bolletjes(aantal_bolletjes):
-            aantal_bolletjes = krijg_aantal_bolletjes()  # Vraag opnieuw bij te groot aantal
+        aantal_verwerkt = verwerk_aantal_bolletjes(aantal_bolletjes)
 
-        if aantal_bolletjes:  # Alleen verder als stap 2 nodig is
-            vraag_keuze(aantal_bolletjes)
+        # Alleen verdergaan naar stap 2 als verwerk_aantal_bolletjes geen None teruggeeft
+        if aantal_verwerkt:
+            vraag_keuze(aantal_verwerkt)
         
+        # Vraag alleen na afhandeling of ze meer willen
         if not vraag_meer_bestellen():
             break
 
