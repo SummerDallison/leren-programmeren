@@ -6,13 +6,14 @@ def main():
 
     while True:
         aantal_bolletjes = krijg_aantal_bolletjes()
-        aantal_verwerkt = verwerk_aantal_bolletjes(aantal_bolletjes)
+        if aantal_bolletjes:  # Gaat verder alleen bij geldige invoer (niet None of False)
+            if not verwerk_aantal_bolletjes(aantal_bolletjes):
+                continue  # Foutmelding bij >8 bolletjes; ga terug naar de vraag
+            # Voor 4-8 bolletjes wordt al direct het bericht getoond en niets gedaan
 
-        # Alleen verdergaan naar stap 2 als verwerk_aantal_bolletjes geen None teruggeeft
-        if aantal_verwerkt:
-            vraag_keuze(aantal_verwerkt)
+            if 1 <= aantal_bolletjes <= 3:
+                vraag_keuze(aantal_bolletjes)
         
-        # Vraag alleen na afhandeling of ze meer willen
         if not vraag_meer_bestellen():
             break
 
