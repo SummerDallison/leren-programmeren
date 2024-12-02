@@ -1,12 +1,14 @@
 from data import *
 
 def vraag_aantal_bolletjes():
-    """Vraag de klant hoeveel bolletjes ze willen"""
-    aantal_bolletjes = int(input("Hoeveel bolletjes wilt u? "))
-    return aantal_bolletjes
+    while True:
+        try:
+            aantal_bolletjes = int(input(PROMPT_BOLLETJES))
+            return aantal_bolletjes
+        except ValueError:
+            print(ERROR_ONBEKEND)  # Foutmelding bij ongeldige invoer
 
 def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
-    """Vraag de klant of ze een bakje of hoorntje willen"""
     while True:
         keuze = input(PROMPT_KEUZE.format(aantal=aantal_bolletjes)).lower()
         if keuze in KEUZE_HOORNTJE_BAKJE:
@@ -15,7 +17,6 @@ def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
             print(ERROR_ONBEKEND)
 
 def antwoord_bolletjes(aantal_bolletjes):
-    """Geef het juiste antwoord op basis van het aantal bolletjes"""
     if 1 <= aantal_bolletjes <= 3:
         keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
         print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
@@ -30,7 +31,6 @@ def antwoord_bolletjes(aantal_bolletjes):
     return True
 
 def vraag_meer_bestellen():
-    """Vraag de klant of ze nog meer willen bestellen"""
     while True:
         meer_bestellen = input("Wilt u nog meer bestellen? (ja/nee) ").lower()
         if meer_bestellen == "ja":

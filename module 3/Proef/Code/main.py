@@ -16,5 +16,4 @@ def main():
         if not vraag_meer_bestellen():
             break
 
-if __name__ == "__main__":
-    main()
+main()
