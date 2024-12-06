@@ -43,6 +43,7 @@ def vraag_meer_bestellen():
 
 def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes):
     totaal_prijs = 0
+    print(BEGIN_BONNETJE)
 
     if totaal_bolletjes > 0:
         prijs_bolletjes = totaal_bolletjes * BOLLETJE
@@ -58,3 +59,7 @@ def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes):
         prijs_bakjes = totaal_bakjes * BAKJE
         totaal_prijs += prijs_bakjes
         print(BON_BAKJES.format(totaal_bakjes=totaal_bakjes,BAKJE=BAKJE, prijs_bakjes=prijs_bakjes))
+
+    # Print de optelsom en het totaalbedrag
+    print(BON_OPTELTEKEN)
+    print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
