@@ -40,26 +40,3 @@ def vraag_meer_bestellen():
             return False # Geef False terug om het programma te beëindigen
         else:
             print(ERROR_ONBEKEND)
-
-from data import *
-
-def druk_bonnetje_af(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes):
-    prijs_bolletjes = totaal_bolletjes * BOLLETJE
-    prijs_hoorntjes = totaal_hoorntjes * HOORNTJE
-    prijs_bakjes = totaal_bakjes * BAKJE
-    totaal_prijs = prijs_bolletjes + prijs_hoorntjes + prijs_bakjes
-
-    print(BEGIN_BONNETJE)
-
-    if totaal_bolletjes > 0:
-        print(BON_BOLLETJES.format(totaal_bolletjes=totaal_bolletjes, prijs_bolletjes=prijs_bolletjes))
-
-    if totaal_hoorntjes > 0:
-        print(BON_HOORNTJES.format(totaal_hoorntjes=totaal_hoorntjes, prijs_hoorntjes=prijs_hoorntjes))
-
-    if totaal_bakjes > 0:
-        print(BON_BAKJES.format(totaal_bakjes=totaal_bakjes, prijs_bakjes=prijs_bakjes))
-
-    print(BON_OPTELTEKEN)
-    print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
-    print(AFSLUITING)
