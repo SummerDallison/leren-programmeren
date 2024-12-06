@@ -14,4 +14,12 @@ ERROR_BAKKEN = "Sorry, zulke grote bakken hebben we niet."
 
 ANTWOORD_BAKJE = "Dan krijgt u van mij een bakje met {aantal} bolletjes."
 ANTWOORD_HOORNTJE_BAKJE = "Hier is uw {keuze} met {aantal} bolletje(s)."
+
+BEGIN_BONNETJE = "\n--------- [Papi Gelato] ---------"
+BON_BOLLETJES = "Bolletjes    {totaal_bolletjes} x €{BOLLETJE:.2f} = € {prijs_bolletjes:.2f}"
+BON_HOORNTJES = "Hoorntjes    {totaal_hoorntjes} x €{HOORNTJE:.2f} = € {prijs_hoorntjes:.2f}"
+BON_BAKJES = "Bakjes          {totaal_bakjes} x €{BAKJE:.2f} = € {prijs_bakjes:.2f}"
+BON_OPTELTEKEN = "                                    ---------- +"
+BON_TOTAAL = "Totaal                          = € {totaal_prijs:.2f}"
+
 AFSLUITING = "Bedankt en tot ziens!"
