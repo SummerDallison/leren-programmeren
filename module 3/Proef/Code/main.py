@@ -12,13 +12,15 @@ def main():
         # Vraag naar het aantal bolletjes
         aantal_bolletjes = vraag_aantal_bolletjes()
 
-        # Verwerk het aantal bolletjes
+        # Verwerk het aantal bolletjes en de keuze voor hoorntje of bakje
         keuze = antwoord_bolletjes(aantal_bolletjes)
         if not keuze:
-            continue
+            continue  
 
+        # Tel de bestellingen op
         totaal_bolletjes += aantal_bolletjes
 
+        # Verhoog de juiste teller afhankelijk van de keuze
         if keuze == "hoorntje":
             totaal_hoorntjes += 1
         elif keuze == "bakje":

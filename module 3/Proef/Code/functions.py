@@ -20,25 +20,25 @@ def antwoord_bolletjes(aantal_bolletjes):
     if 1 <= aantal_bolletjes <= 3:
         keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
         print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
+        return keuze 
     elif 4 <= aantal_bolletjes <= 8:
         print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
-        return "bakje"  # Hier wordt automatisch een bakje gekozen
+        return "bakje"
     elif aantal_bolletjes > 8:
         print(ERROR_BAKKEN)
-        return False  # Geef False terug om aan te geven dat we moeten herhalen
+        return False  
     else:
         print(ERROR_ONBEKEND)
         return False
-    return True  # Geef True terug als alles goed is gegaan
 
 def vraag_meer_bestellen():
     while True:
         meer_bestellen = input(PROMPT_MEER).lower()
         if meer_bestellen == "ja":
-            return True  # Geef True terug om het proces opnieuw te starten
+            return True 
         elif meer_bestellen == "nee":
             print(AFSLUITING)
-            return False  # Geef False terug om het programma te beëindigen
+            return False
         else:
             print(ERROR_ONBEKEND)
 
