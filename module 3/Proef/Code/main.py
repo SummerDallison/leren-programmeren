@@ -13,17 +13,15 @@ def main():
         aantal_bolletjes = vraag_aantal_bolletjes()
 
         # Verwerk het aantal bolletjes
-        if not antwoord_bolletjes(aantal_bolletjes):
+        keuze = antwoord_bolletjes(aantal_bolletjes)
+        if not keuze:
             continue
 
-        # Tel de bestellingen op
         totaal_bolletjes += aantal_bolletjes
 
-        # Vraag naar het keuze van hoorntje of bakje
-        keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
         if keuze == "hoorntje":
             totaal_hoorntjes += 1
-        else:
+        elif keuze == "bakje":
             totaal_bakjes += 1
 
         # Vraag of ze meer willen bestellen
