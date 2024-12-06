@@ -18,7 +18,8 @@ def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
 
 def antwoord_bolletjes(aantal_bolletjes):
     if 1 <= aantal_bolletjes <= 3:
-        print(ANTWOORD_HOORNTJE_BAKJE.format(keuze="hoorntje", aantal=aantal_bolletjes))
+        keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
+        print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
     elif 4 <= aantal_bolletjes <= 8:
         print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
     elif aantal_bolletjes > 8:
@@ -40,25 +41,25 @@ def vraag_meer_bestellen():
         else:
             print(ERROR_ONBEKEND)
 
-def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes):
-    totaal_prijs = 0
-    print(BEGIN_BONNETJE)  # Begin van het bonnetje
+from data import *
+
+def druk_bonnetje_af(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes):
+    prijs_bolletjes = totaal_bolletjes * BOLLETJE
+    prijs_hoorntjes = totaal_hoorntjes * HOORNTJE
+    prijs_bakjes = totaal_bakjes * BAKJE
+    totaal_prijs = prijs_bolletjes + prijs_hoorntjes + prijs_bakjes
+
+    print(BEGIN_BONNETJE)
 
     if totaal_bolletjes > 0:
-        prijs_bolletjes = totaal_bolletjes * BOLLETJE
-        totaal_prijs += prijs_bolletjes
-        print(BON_BOLLETJES.format(totaal_bolletjes=totaal_bolletjes,BOLLETJE=BOLLETJE, prijs_bolletjes=prijs_bolletjes))
+        print(BON_BOLLETJES.format(totaal_bolletjes=totaal_bolletjes, prijs_bolletjes=prijs_bolletjes))
 
     if totaal_hoorntjes > 0:
-        prijs_hoorntjes = totaal_hoorntjes * HOORNTJE
-        totaal_prijs += prijs_hoorntjes
-        print(BON_HOORNTJES.format(totaal_hoorntjes=totaal_hoorntjes,HOORNTJE=HOORNTJE, prijs_hoorntjes=prijs_hoorntjes))
+        print(BON_HOORNTJES.format(totaal_hoorntjes=totaal_hoorntjes, prijs_hoorntjes=prijs_hoorntjes))
 
     if totaal_bakjes > 0:
-        prijs_bakjes = totaal_bakjes * BAKJE
-        totaal_prijs += prijs_bakjes
-        print(BON_BAKJES.format(totaal_bakjes=totaal_bakjes,BAKJE=BAKJE, prijs_bakjes=prijs_bakjes))
+        print(BON_BAKJES.format(totaal_bakjes=totaal_bakjes, prijs_bakjes=prijs_bakjes))
 
-    # Print de optelsom en het totaalbedrag
     print(BON_OPTELTEKEN)
     print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
+    print(AFSLUITING)
