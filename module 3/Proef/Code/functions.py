@@ -18,8 +18,7 @@ def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
 
 def antwoord_bolletjes(aantal_bolletjes):
     if 1 <= aantal_bolletjes <= 3:
-        keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
-        print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
+        print(ANTWOORD_HOORNTJE_BAKJE.format(keuze="hoorntje", aantal=aantal_bolletjes))
     elif 4 <= aantal_bolletjes <= 8:
         print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
     elif aantal_bolletjes > 8:
@@ -43,7 +42,7 @@ def vraag_meer_bestellen():
 
 def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes):
     totaal_prijs = 0
-    print(BEGIN_BONNETJE)
+    print(BEGIN_BONNETJE)  # Begin van het bonnetje
 
     if totaal_bolletjes > 0:
         prijs_bolletjes = totaal_bolletjes * BOLLETJE

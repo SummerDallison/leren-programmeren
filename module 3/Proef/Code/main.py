@@ -29,7 +29,7 @@ def main():
         # Vraag of ze meer willen bestellen
         if not vraag_meer_bestellen():
             break
-    
+
     print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes)
 
 main()
