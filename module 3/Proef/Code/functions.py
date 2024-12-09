@@ -79,7 +79,7 @@ def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken):
 
     # Print de smaken van de bolletjes
     for smaak in smaken:
-        print(BON_BOLLETJES(smaak=smaak, BOLLETJE=BOLLETJE))
+        print(BON_BOLLETJES.format(smaak=smaak, BOLLETJE=BOLLETJE))
 
     if totaal_hoorntjes > 0:
         print(BON_HOORNTJES.format(totaal_hoorntjes=totaal_hoorntjes, HOORNTJE=HOORNTJE, prijs_hoorntjes=prijs_hoorntjes))
