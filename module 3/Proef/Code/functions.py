@@ -59,6 +59,7 @@ def vraag_smaak(bolletje_nummer):
 def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken_bestelling):
     print(BEGIN_BONNETJE)
 
+    # Prijzen berekenen
     prijs_bolletjes = totaal_bolletjes * BOLLETJE
     prijs_hoorntjes = totaal_hoorntjes * HOORNTJE
     prijs_bakjes = totaal_bakjes * BAKJE
