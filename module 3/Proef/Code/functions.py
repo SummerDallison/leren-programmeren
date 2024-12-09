@@ -33,24 +33,18 @@ def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
 def antwoord_bolletjes(aantal_bolletjes):
     smaken_lijst = []  # Om de gekozen smaken op te slaan
 
+    # Vraag per bolletje naar de smaak
+    for i in range(1, aantal_bolletjes + 1):
+        smaak = vraag_smaak_bolletje(i)
+        smaken_lijst.append(smaak)
+
     if 1 <= aantal_bolletjes <= 3:
         keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
         print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
 
-        # Vraag per bolletje naar de smaak
-        for i in range(1, aantal_bolletjes + 1):
-            smaak = vraag_smaak_bolletje(i)
-            smaken_lijst.append(smaak)
-        
         return keuze, smaken_lijst
     elif 4 <= aantal_bolletjes <= 8:
         print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
-
-        # Vraag per bolletje naar de smaak
-        for i in range(1, aantal_bolletjes + 1):
-            smaak = vraag_smaak_bolletje(i)
-            smaken_lijst.append(smaak)
-
         return "bakje", smaken_lijst
     elif aantal_bolletjes > 8:
         print(ERROR_BAKKEN)
