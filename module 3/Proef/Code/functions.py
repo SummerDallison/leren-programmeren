@@ -64,9 +64,10 @@ def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken_bes
     prijs_bakjes = totaal_bakjes * BAKJE
 
     # Print de smaken met de bijbehorende prijs
-    for smaak in set(smaken_bestelling):
+    for smaak in KEUZE_SMAAK_BOLLETJE:
         aantal_smaken = smaken_bestelling.count(smaak)
-        print(BON_BOLLETJES (smaak=smaak, aantal_smaken=aantal_smaken, BOLLETJE=BOLLETJE))
+        if aantal_smaken > 0:
+            print(BON_BOLLETJES.format(smaak=smaak, aantal_smaken=aantal_smaken, BOLLETJE=BOLLETJE))
 
     if totaal_hoorntjes > 0:
         print(BON_HOORNTJES.format(totaal_hoorntjes=totaal_hoorntjes, HOORNTJE=HOORNTJE, prijs_hoorntjes=prijs_hoorntjes))
