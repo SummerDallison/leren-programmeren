@@ -18,8 +18,7 @@ ANTWOORD_BAKJE = "Dan krijgt u van mij een bakje met {aantal} bolletjes."
 ANTWOORD_HOORNTJE_BAKJE = "Hier is uw {keuze} met {aantal} bolletje(s)."
 
 BEGIN_BONNETJE = "\n--------- [Papi Gelato] ---------"
-BON_BOLLETJES = "B. {smaak:<12} 1 x €{BOLLETJE:.2f} = € {BOLLETJE:.2f}"
-
+BON_BOLLETJES = "B. {smaak: <10} {aantal_smaken} x €{BOLLETJE:.2f} = € {aantal_smaken * BOLLETJE:.2f}"
 BON_HOORNTJES = "Hoorntjes       {totaal_hoorntjes} x €{HOORNTJE:.2f} = € {prijs_hoorntjes:.2f}"
 BON_BAKJES = "Bakjes          {totaal_bakjes} x €{BAKJE:.2f} = € {prijs_bakjes:.2f}"
 BON_OPTELTEKEN = "                        ---------- +"
