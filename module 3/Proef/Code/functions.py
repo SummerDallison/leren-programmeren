@@ -8,14 +8,6 @@ def vraag_aantal_bolletjes():
         except ValueError:
             print(ERROR_ONBEKEND)
 
-def vraag_smaak_bolletje(bolletje_nummer):
-    while True:
-        smaak = input(PROMPT_SMAAK.format(X=bolletje_nummer)).lower()
-        if smaak in ['a', 'c', 'm', 'v']:
-            return smaak
-        else:
-            print(ERROR_ONBEKEND)
-
 def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
     while True:
         keuze = input(PROMPT_KEUZE.format(aantal=aantal_bolletjes)).lower()
@@ -24,23 +16,17 @@ def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
         else:
             print(ERROR_ONBEKEND)
 
-def antwoord_bolletjes(aantal_bolletjes, smaken):
+def antwoord_bolletjes(aantal_bolletjes):
     if 1 <= aantal_bolletjes <= 3:
         keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
-        for i in range(1, aantal_bolletjes + 1):
-            smaak = vraag_smaak_bolletje(i)
-            smaken.append(smaak)
         print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
-        return keuze
+        return keuze 
     elif 4 <= aantal_bolletjes <= 8:
         print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
-        for i in range(1, aantal_bolletjes + 1):
-            smaak = vraag_smaak_bolletje(i)
-            smaken.append(smaak)
         return "bakje"
     elif aantal_bolletjes > 8:
         print(ERROR_BAKKEN)
-        return False
+        return False  
     else:
         print(ERROR_ONBEKEND)
         return False
