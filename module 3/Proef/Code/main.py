@@ -13,8 +13,13 @@ def main():
         # Vraag naar het aantal bolletjes
         aantal_bolletjes = vraag_aantal_bolletjes()
 
+        # Controleer of het aantal bolletjes boven de 8 is
+        if aantal_bolletjes > 8:
+            print(ERROR_BAKKEN)
+            continue  # Ga terug naar het begin van de lus
+
         # Vraag de smaak voor elk bolletje
-        smaken = vraag_smaken_bolletjes(aantal_bolletjes, smaken_teller)
+        vraag_smaken_bolletjes(aantal_bolletjes, smaken_teller)
 
         # Verwerk het aantal bolletjes en de keuze voor hoorntje of bakje
         keuze = antwoord_bolletjes(aantal_bolletjes)

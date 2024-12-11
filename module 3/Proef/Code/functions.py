@@ -1,12 +1,28 @@
 from data import *
 
+from data import *
+
 def vraag_aantal_bolletjes():
     while True:
         try:
             aantal_bolletjes = int(input(PROMPT_BOLLETJES))
-            return aantal_bolletjes
+            if aantal_bolletjes > 0:
+                return aantal_bolletjes
+            else:
+                print(ERROR_ONBEKEND)
         except ValueError:
             print(ERROR_ONBEKEND)
+
+def vraag_smaken_bolletjes(aantal_bolletjes, smaken_teller):
+    for x in range(1, aantal_bolletjes + 1):
+        while True:
+            smaak = input(PROMPT_SMAAK.format(X=x)).lower()
+            if smaak in ['a', 'c', 'm', 'v']:
+                smaak_naam = {"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]
+                smaken_teller[smaak_naam] += 1
+                break
+            else:
+                print(ERROR_ONBEKEND)
 
 def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
     while True:
@@ -25,8 +41,7 @@ def antwoord_bolletjes(aantal_bolletjes):
         print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
         return "bakje"
     elif aantal_bolletjes > 8:
-        print(ERROR_BAKKEN)
-        return False  
+        return False  # Geen verdere acties als het aantal te groot is
     else:
         print(ERROR_ONBEKEND)
         return False
