@@ -3,7 +3,6 @@ HOORNTJE = 1.25
 BAKJE = 0.75
 
 KEUZE_HOORNTJE_BAKJE = ['hoorntje', 'bakje']
-
 KEUZE_SMAAK_BOLLETJE = ['aardbei', 'chocolade', 'munt', 'vanille']
 
 PROMPT_WELKOM = "Welkom bij Papi Gelato, je mag alle smaken kiezen zolang het maar vanille ijs is."
@@ -19,7 +18,7 @@ ANTWOORD_BAKJE = "Dan krijgt u van mij een bakje met {aantal} bolletjes."
 ANTWOORD_HOORNTJE_BAKJE = "Hier is uw {keuze} met {aantal} bolletje(s)."
 
 BEGIN_BONNETJE = "\n--------- [Papi Gelato] ---------"
-BON_BOLLETJES = "Bolletjes       {totaal_bolletjes} x €{BOLLETJE:.2f} = € {prijs_bolletjes:.2f}"
+BON_SMAAK = "B. {smaak:13} {aantal} x €{BOLLETJE:.2f} = € {prijs:.2f}"
 BON_HOORNTJES = "Hoorntjes       {totaal_hoorntjes} x €{HOORNTJE:.2f} = € {prijs_hoorntjes:.2f}"
 BON_BAKJES = "Bakjes          {totaal_bakjes} x €{BAKJE:.2f} = € {prijs_bakjes:.2f}"
 BON_OPTELTEKEN = "                        ---------- +"
