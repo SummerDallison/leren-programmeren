@@ -60,4 +60,4 @@ def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes):
     print(BON_OPTELTEKEN)
     print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
 
-    print(AFSLUITING)    
+    print(AFSLUITING)  

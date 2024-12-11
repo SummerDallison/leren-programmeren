@@ -3,6 +3,7 @@ HOORNTJE = 1.25
 BAKJE = 0.75
 
 KEUZE_HOORNTJE_BAKJE = ['hoorntje', 'bakje']
+
 KEUZE_SMAAK_BOLLETJE = ['aardbei', 'chocolade', 'munt', 'vanille']
 
 PROMPT_WELKOM = "Welkom bij Papi Gelato, je mag alle smaken kiezen zolang het maar vanille ijs is."
