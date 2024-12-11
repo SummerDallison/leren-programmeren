@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.3">
   <diagram name="Pagina-1" id="o8SB5Iup6SPwX9aD0dav">
-    <mxGraphModel dx="1042" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="1303" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,27 +8,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="900" y="10" width="120" height="60" as="geometry" />
+          <mxGeometry x="905" y="10" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-2" target="pbiHoTIueWZ6qJaHBMEw-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-2" value="Welkom bij Papi Gelato" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="900" y="140" width="120" height="60" as="geometry" />
+          <mxGeometry x="905" y="140" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-4" target="pbiHoTIueWZ6qJaHBMEw-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-4" value="Hoeveel bolletjes wilt u?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="900" y="270" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="pbiHoTIueWZ6qJaHBMEw-9" value="1 t/m 3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-6" target="pbiHoTIueWZ6qJaHBMEw-8" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="960" y="490" />
-              <mxPoint x="960" y="490" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="905" y="270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-16" value="&amp;gt; 8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-6" target="pbiHoTIueWZ6qJaHBMEw-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -36,17 +28,17 @@
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-37" value="Anders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-6" target="pbiHoTIueWZ6qJaHBMEw-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TuK_LcdwhqyAIoseYK0I-1" value="4 t/m 8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-6" target="pbiHoTIueWZ6qJaHBMEw-12" edge="1">
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="pbiHoTIueWZ6qJaHBMEw-6" target="n4ZlQVNkim9csWAo9_Kt-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-6" value="Kies aantal bolletjes" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;sketch=1;curveFitting=1;jiggle=2;strokeColor=#b46504;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="910" y="390" width="100" height="90" as="geometry" />
+          <mxGeometry x="910" y="410" width="110" height="100" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-8" target="pbiHoTIueWZ6qJaHBMEw-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-8" value="Wilt u een hoorntje of een bakje?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="900" y="540" width="120" height="60" as="geometry" />
+          <mxGeometry x="905" y="900" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-28" value="Bakje" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-10" target="pbiHoTIueWZ6qJaHBMEw-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -54,8 +46,8 @@
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-29" value="Hoorntje" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-10" target="pbiHoTIueWZ6qJaHBMEw-24" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1060" y="705" />
-              <mxPoint x="1060" y="840" />
+              <mxPoint x="1070" y="1105" />
+              <mxPoint x="1070" y="1310" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -63,82 +55,110 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-10" value="Hoorntje of bakje?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;strokeColor=#b46504;" parent="1" vertex="1">
-          <mxGeometry x="910" y="660" width="100" height="90" as="geometry" />
+          <mxGeometry x="915" y="1060" width="100" height="90" as="geometry" />
         </mxCell>
         <mxCell id="TuK_LcdwhqyAIoseYK0I-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-12" target="pbiHoTIueWZ6qJaHBMEw-48" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="1180" />
+              <mxPoint x="820" y="1180" />
+              <mxPoint x="820" y="1460" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-12" value="&quot;Dan krijgt u van mij een bakje met {aantal} bolletjes.&quot;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=none;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="570" y="550" width="120" height="60" as="geometry" />
+          <mxGeometry x="540" y="950" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-15" target="pbiHoTIueWZ6qJaHBMEw-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-15" value="&quot;Sorry, zulke grote bakken hebben we niet.&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="1110" y="340" width="120" height="60" as="geometry" />
+          <mxGeometry x="1140" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-21" target="pbiHoTIueWZ6qJaHBMEw-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-21" value="&quot;Sorry, dat snap ik niet...&quot;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-          <mxGeometry x="680" y="350" width="120" height="60" as="geometry" />
+          <mxGeometry x="660" y="350" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-24" target="pbiHoTIueWZ6qJaHBMEw-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-24" value="&quot;Hier is uw {hoorntje/bakje} met {aantal} bolletje(s).&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="900" y="810" width="120" height="60" as="geometry" />
+          <mxGeometry x="905" y="1280" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-31" target="pbiHoTIueWZ6qJaHBMEw-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-31" value="&quot;Sorry, dat snap ik niet...&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
-          <mxGeometry x="690" y="675" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="pbiHoTIueWZ6qJaHBMEw-53" value="Ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-34" target="pbiHoTIueWZ6qJaHBMEw-4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="500" y="1055" />
-              <mxPoint x="500" y="285" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="700" y="1000" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-55" value="Anders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-34" target="pbiHoTIueWZ6qJaHBMEw-48" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1080" y="1032" />
-              <mxPoint x="1080" y="940" />
+              <mxPoint x="989" y="1590" />
+              <mxPoint x="1080" y="1590" />
+              <mxPoint x="1080" y="1460" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aiyrUGEM9KCyfMPsP08Q-3" value="Nee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" edge="1" parent="1" source="pbiHoTIueWZ6qJaHBMEw-34" target="aiyrUGEM9KCyfMPsP08Q-1">
+        <mxCell id="aiyrUGEM9KCyfMPsP08Q-3" value="Nee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-34" target="aiyrUGEM9KCyfMPsP08Q-1" edge="1">
           <mxGeometry x="-0.0123" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-34" value="Meer bestellen?" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fillColor=#fad7ac;strokeColor=#b46504;shadow=0;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-          <mxGeometry x="913" y="1010" width="95" height="90" as="geometry" />
+          <mxGeometry x="917.5" y="1570" width="95" height="90" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-39" value="&quot;Bedankt en tot ziens!&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontFamily=Comic Sans MS;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-          <mxGeometry x="1070" y="1080" width="120" height="60" as="geometry" />
+          <mxGeometry x="1110" y="1770" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pbiHoTIueWZ6qJaHBMEw-48" target="pbiHoTIueWZ6qJaHBMEw-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pbiHoTIueWZ6qJaHBMEw-48" value="&quot;Wilt u nog meer bestellen?&quot;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-          <mxGeometry x="900" y="910" width="120" height="60" as="geometry" />
+          <mxGeometry x="905" y="1430" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aiyrUGEM9KCyfMPsP08Q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="aiyrUGEM9KCyfMPsP08Q-1" target="aiyrUGEM9KCyfMPsP08Q-2">
+        <mxCell id="aiyrUGEM9KCyfMPsP08Q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="aiyrUGEM9KCyfMPsP08Q-1" target="aiyrUGEM9KCyfMPsP08Q-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="aiyrUGEM9KCyfMPsP08Q-1" value="Alles wordt bij elkaar berekend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" vertex="1" parent="1">
-          <mxGeometry x="900" y="1140" width="120" height="60" as="geometry" />
+        <mxCell id="aiyrUGEM9KCyfMPsP08Q-1" value="Alles wordt bij elkaar berekend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="905" y="1750" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aiyrUGEM9KCyfMPsP08Q-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="aiyrUGEM9KCyfMPsP08Q-2" target="pbiHoTIueWZ6qJaHBMEw-39">
+        <mxCell id="aiyrUGEM9KCyfMPsP08Q-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="aiyrUGEM9KCyfMPsP08Q-2" target="pbiHoTIueWZ6qJaHBMEw-39" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="aiyrUGEM9KCyfMPsP08Q-2" value="Bonnetje wordt uitgeprint" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" vertex="1" parent="1">
-          <mxGeometry x="900.5" y="1240" width="120" height="60" as="geometry" />
+        <mxCell id="aiyrUGEM9KCyfMPsP08Q-2" value="Bonnetje wordt uitgeprint" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="905" y="1890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="n4ZlQVNkim9csWAo9_Kt-1" target="n4ZlQVNkim9csWAo9_Kt-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-1" value="Welke smaak/smaken wilt u bestellen?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="905" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n4ZlQVNkim9csWAo9_Kt-4" target="pbiHoTIueWZ6qJaHBMEw-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-10" value="Anders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="n4ZlQVNkim9csWAo9_Kt-4" target="n4ZlQVNkim9csWAo9_Kt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="n4ZlQVNkim9csWAo9_Kt-4" target="pbiHoTIueWZ6qJaHBMEw-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="750" />
+              <mxPoint x="720" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-4" value="Kies genoemde smaken voor het {aantal_bolletjes" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+          <mxGeometry x="912.5" y="700" width="105" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n4ZlQVNkim9csWAo9_Kt-8" target="n4ZlQVNkim9csWAo9_Kt-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n4ZlQVNkim9csWAo9_Kt-8" value="&quot;Sorry, dat snap ik niet...&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="720" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
