@@ -28,7 +28,7 @@ def main():
         topping = vraag_topping(keuze, aantal_bolletjes)
         totaal_topping += topping[1]
 
-        # Verwerk het aantal bolletjes en de keuze
+        # Verwerk de bestelling
         antwoord_bolletjes(aantal_bolletjes, keuze, topping)
 
         totaal_bolletjes += aantal_bolletjes

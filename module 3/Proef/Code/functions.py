@@ -47,16 +47,21 @@ def vraag_topping(keuze, aantal_bolletjes):
             print(ERROR_ONBEKEND)
 
 def antwoord_bolletjes(aantal_bolletjes, keuze, topping):
-    if 1 <= aantal_bolletjes <= 3:
-        if topping[0] == "geen":
-            print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
-        else:
-            print(ANTWOORD_HOORNTJE_TOPPING.format(keuze=keuze, aantal=aantal_bolletjes, topping=topping[0]))
-    elif 4 <= aantal_bolletjes <= 8:
-        if topping[0] == "geen":
+    # Controleer of het aantal bolletjes boven de 8 is
+    if aantal_bolletjes > 8:
+        print(ERROR_BAKKEN)
+        return
+
+    if topping[0] == "geen":
+        if keuze == "bakje":
             print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
         else:
+            print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
+    else:
+        if keuze == "bakje":
             print(ANTWOORD_BAKJE_TOPPING.format(aantal=aantal_bolletjes, topping=topping[0]))
+        else:
+            print(ANTWOORD_HOORNTJE_TOPPING.format(keuze=keuze, aantal=aantal_bolletjes, topping=topping[0]))
 
 def vraag_meer_bestellen():
     while True:
