@@ -7,8 +7,8 @@ def main():
     totaal_bolletjes = 0
     totaal_hoorntjes = 0
     totaal_bakjes = 0
-    totaal_toppings = 0
     smaken_teller = {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE}
+    totale_topping_kosten = 0
 
     while True:
         # Vraag naar het aantal bolletjes
@@ -17,7 +17,7 @@ def main():
         # Controleer of het aantal bolletjes boven de 8 is
         if aantal_bolletjes > 8:
             print(ERROR_BAKKEN)
-            continue  # Ga terug naar het begin van de lus
+            continue
 
         # Vraag de smaak voor elk bolletje
         vraag_smaken_bolletjes(aantal_bolletjes, smaken_teller)
@@ -27,8 +27,8 @@ def main():
         if not keuze:
             continue  
 
-        # Vraag naar de topping en bereken de kosten
-        totaal_toppings += vraag_topping(keuze, aantal_bolletjes)
+        # Vraag de topping en voeg de kosten toe
+        totale_topping_kosten += vraag_topping(aantal_bolletjes, keuze)
 
         # Tel de bestellingen op
         totaal_bolletjes += aantal_bolletjes
@@ -42,7 +42,7 @@ def main():
         # Vraag of ze meer willen bestellen
         if not vraag_meer_bestellen():
             # Toon het bonnetje als ze klaar zijn
-            print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken_teller, totaal_toppings)
+            print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken_teller, totale_topping_kosten)
             break
 
 main()
