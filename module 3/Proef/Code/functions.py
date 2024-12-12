@@ -1,5 +1,6 @@
 from data import *
 
+from data import *
 def vraag_aantal_bolletjes():
     while True:
         try:
@@ -30,39 +31,21 @@ def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
         else:
             print(ERROR_ONBEKEND)
 
-def vraag_topping(keuze, aantal_bolletjes):
-    while True:
-        topping_keuze = input(PROMPT_TOPPING).lower()
-        if topping_keuze in ["a", "b", "c", "d"]:
-            if topping_keuze == "a":
-                return "geen", 0.0
-            elif topping_keuze == "b":
-                return "slagroom", TOPPING_PRIJZEN["slagroom"]
-            elif topping_keuze == "c":
-                return "sprinkels", aantal_bolletjes * TOPPING_PRIJZEN["sprinkels"]
-            elif topping_keuze == "d":
-                prijs = TOPPING_PRIJZEN["caramel saus"][keuze]
-                return "caramel saus", prijs
-        else:
-            print(ERROR_ONBEKEND)
-
-def antwoord_bolletjes(aantal_bolletjes, keuze, topping):
-    # Controleer of het aantal bolletjes boven de 8 is
-    if aantal_bolletjes > 8:
+def antwoord_bolletjes(aantal_bolletjes):
+    if 1 <= aantal_bolletjes <= 3:
+        keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
+        print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
+        return keuze 
+    elif 4 <= aantal_bolletjes <= 8:
+        print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
+        return "bakje"
+    elif aantal_bolletjes > 8:
         print(ERROR_BAKKEN)
-        return
-
-    if topping[0] == "geen":
-        if keuze == "bakje":
-            print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
-        else:
-            print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
+        return False  # Geen verdere acties als het aantal te groot is
     else:
-        if keuze == "bakje":
-            print(ANTWOORD_BAKJE_TOPPING.format(aantal=aantal_bolletjes, topping=topping[0]))
-        else:
-            print(ANTWOORD_HOORNTJE_TOPPING.format(keuze=keuze, aantal=aantal_bolletjes, topping=topping[0]))
-
+        print(ERROR_ONBEKEND)
+        return False
+    
 def vraag_meer_bestellen():
     while True:
         meer_bestellen = input(PROMPT_MEER).lower()
@@ -74,24 +57,33 @@ def vraag_meer_bestellen():
         else:
             print(ERROR_ONBEKEND)
 
-def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken_teller, totaal_topping):
+def vraag_smaken_bolletjes(aantal_bolletjes, smaken_teller):
+    for x in range(1, aantal_bolletjes + 1):
+        while True:
+            smaak = input(PROMPT_SMAAK.format(X=x)).lower()
+            if smaak in ['a', 'c', 'm', 'v']:
+                smaak_naam = {"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]
+                smaken_teller[smaak_naam] += 1
+                break
+            else:
+                print(ERROR_ONBEKEND)
+
+def print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken_teller):
     print(BEGIN_BONNETJE)
 
-    prijs_bolletjes = totaal_bolletjes * BOLLETJE
+    for smaak, aantal in smaken_teller.items():
+        if aantal > 0:
+            prijs = aantal * BOLLETJE
+            print(BON_SMAAK.format(smaak=smaak.capitalize(), aantal=aantal, BOLLETJE=BOLLETJE, prijs=prijs))
+
     prijs_hoorntjes = totaal_hoorntjes * HOORNTJE
     prijs_bakjes = totaal_bakjes * BAKJE
 
-    if totaal_bolletjes > 0:
-        print(BON_BOLLETJES.format(totaal_bolletjes=totaal_bolletjes, BOLLETJE=BOLLETJE, prijs_bolletjes=prijs_bolletjes))
     if totaal_hoorntjes > 0:
         print(BON_HOORNTJES.format(totaal_hoorntjes=totaal_hoorntjes, HOORNTJE=HOORNTJE, prijs_hoorntjes=prijs_hoorntjes))
     if totaal_bakjes > 0:
         print(BON_BAKJES.format(totaal_bakjes=totaal_bakjes, BAKJE=BAKJE, prijs_bakjes=prijs_bakjes))
-    if totaal_topping > 0:
-        print(BON_TOPPINGS.format(prijs_toppings=totaal_topping))
 
-    totaal_prijs = prijs_bolletjes + prijs_hoorntjes + prijs_bakjes + totaal_topping
+    totaal_prijs = sum(aantal * BOLLETJE for aantal in smaken_teller.values()) + prijs_hoorntjes + prijs_bakjes
     print(BON_OPTELTEKEN)
     print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
-
-    print(AFSLUITING)
