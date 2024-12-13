@@ -30,6 +30,24 @@ def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
         else:
             print(ERROR_ONBEKEND)
 
+def vraag_topping(aantal_bolletjes, keuze_bakje_hoorntje):
+    while True:
+        topping_keuze = input(PROMPT_TOPPING).lower()
+        if topping_keuze in ['a', 'b', 'c', 'd']:
+            topping = {"a": "geen", "b": "slagroom", "c": "sprinkels", "d": "caramel_saus"}[topping_keuze]
+            
+            if topping == "geen":
+                return topping, 0.0
+            elif topping == "sprinkels":
+                return topping, aantal_bolletjes * TOPPING_PRIJZEN[topping]
+            elif topping == "caramel_saus":
+                # Haal de prijs op afhankelijk van bakje of hoorntje
+                return topping, TOPPING_PRIJZEN[topping][keuze_bakje_hoorntje]
+            else:
+                return topping, TOPPING_PRIJZEN[topping]
+        else:
+            print(ERROR_ONBEKEND)
+
 def antwoord_bolletjes(aantal_bolletjes, topping=None):
     if 1 <= aantal_bolletjes <= 3:
         keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
@@ -62,21 +80,17 @@ def vraag_smaken_bolletjes(aantal_bolletjes, smaken_teller):
             else:
                 print(ERROR_ONBEKEND)
     
-def vraag_topping(aantal_bolletjes, keuze_bakje_hoorntje):
-    while True:
-        topping_keuze = input(PROMPT_TOPPING).lower()
-        if topping_keuze in ['a', 'b', 'c', 'd']:
-            topping = {"a": "geen", "b": "slagroom", "c": "sprinkels", "d": "caramel_saus"}[topping_keuze]
-            if topping == "geen":
-                return topping, 0.0
-            elif topping == "sprinkels":
-                return topping, aantal_bolletjes * TOPPING_PRIJZEN[topping]
-            elif topping == "caramel_saus":
-                return topping, TOPPING_PRIJZEN[topping][keuze_bakje_hoorntje]
-            else:
-                return topping, TOPPING_PRIJZEN[topping]
-        else:
-            print(ERROR_ONBEKEND)
+def toon_bakje_hoorntje(aantal_bolletjes, keuze, topping):
+    if topping != "geen":
+        if keuze == "bakje":
+            print(ANTWOORD_BAKJE_TOPPING.format(aantal=aantal_bolletjes, topping=topping))
+        elif keuze == "hoorntje":
+            print(ANTWOORD_HOORNTJE_TOPPING.format(keuze=keuze, aantal=aantal_bolletjes, topping=topping))
+    else:
+        if keuze == "bakje":
+            print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
+        elif keuze == "hoorntje":
+            print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
     
 def vraag_meer_bestellen():
     while True:

@@ -22,20 +22,19 @@ def main():
         # Vraag de smaak voor elk bolletje
         vraag_smaken_bolletjes(aantal_bolletjes, smaken_teller)
 
-        # Verwerk het aantal bolletjes en de keuze voor hoorntje of bakje
-        keuze = antwoord_bolletjes(aantal_bolletjes)
-        if not keuze:
-            continue
+        # Vraag om een keuze tussen bakje of hoorntje
+        keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
 
-        # Vraag naar topping en verwerk de prijs
+        # Vraag naar topping en bereken de prijs
         topping, topping_prijs = vraag_topping(aantal_bolletjes, keuze)
         totaal_topping_prijs += topping_prijs
 
-        antwoord_bolletjes(aantal_bolletjes, topping)
+        # Toon het antwoord inclusief topping
+        toon_bakje_hoorntje(aantal_bolletjes, keuze, topping)
 
         # Tel de bestellingen op
         totaal_bolletjes += aantal_bolletjes
-        
+
         # Verhoog de juiste teller afhankelijk van de keuze
         if keuze == "hoorntje":
             totaal_hoorntjes += 1

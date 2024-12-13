@@ -6,7 +6,7 @@ TOPPING_PRIJZEN = {
     "geen": 0.0,
     "slagroom": 0.5,
     "sprinkels": 0.3,  # per bolletje
-    "caramel_saus": {"hoorntje": 0.6, "bakje": 0.9}
+    "caramel saus": {"hoorntje": 0.6, "bakje": 0.9}
 }
 
 KEUZE_HOORNTJE_BAKJE = ['hoorntje', 'bakje']
