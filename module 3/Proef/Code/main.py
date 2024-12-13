@@ -27,8 +27,11 @@ def main():
         if not keuze:
             continue
 
+        # Vraag naar topping en verwerk de prijs
         topping, topping_prijs = vraag_topping(aantal_bolletjes, keuze)
         totaal_topping_prijs += topping_prijs
+
+        antwoord_bolletjes(aantal_bolletjes, topping)
 
         # Tel de bestellingen op
         totaal_bolletjes += aantal_bolletjes
@@ -42,7 +45,7 @@ def main():
         # Vraag of ze meer willen bestellen
         if not vraag_meer_bestellen():
             # Toon het bonnetje als ze klaar zijn
-            print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken_teller)
+            print_bonnetje(totaal_bolletjes, totaal_hoorntjes, totaal_bakjes, smaken_teller, totaal_topping_prijs)
             break
 
 main()

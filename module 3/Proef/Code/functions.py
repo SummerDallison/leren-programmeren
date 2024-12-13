@@ -1,6 +1,5 @@
 from data import *
 
-from data import *
 def vraag_aantal_bolletjes():
     while True:
         try:
@@ -31,17 +30,23 @@ def vraag_keuze_bakje_hoorntje(aantal_bolletjes):
         else:
             print(ERROR_ONBEKEND)
 
-def antwoord_bolletjes(aantal_bolletjes):
+def antwoord_bolletjes(aantal_bolletjes, topping=None):
     if 1 <= aantal_bolletjes <= 3:
         keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
-        print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
+        if topping and topping != "geen":
+            print(ANTWOORD_HOORNTJE_TOPPING.format(keuze=keuze, aantal=aantal_bolletjes, topping=topping))
+        else:
+            print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal_bolletjes))
         return keuze 
     elif 4 <= aantal_bolletjes <= 8:
-        print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
+        if topping and topping != "geen":
+            print(ANTWOORD_BAKJE_TOPPING.format(aantal=aantal_bolletjes, topping=topping))
+        else:
+            print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
         return "bakje"
     elif aantal_bolletjes > 8:
         print(ERROR_BAKKEN)
-        return False  # Geen verdere acties als het aantal te groot is
+        return False
     else:
         print(ERROR_ONBEKEND)
         return False
