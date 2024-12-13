@@ -34,13 +34,13 @@ def vraag_topping(aantal_bolletjes, keuze_bakje_hoorntje):
     while True:
         topping_keuze = input(PROMPT_TOPPING).lower()
         if topping_keuze in ['a', 'b', 'c', 'd']:
-            topping = {"a": "geen", "b": "slagroom", "c": "sprinkels", "d": "caramel_saus"}[topping_keuze]
+            topping = {"a": "geen", "b": "slagroom", "c": "sprinkels", "d": "caramel saus"}[topping_keuze]
             
             if topping == "geen":
                 return topping, 0.0
             elif topping == "sprinkels":
                 return topping, aantal_bolletjes * TOPPING_PRIJZEN[topping]
-            elif topping == "caramel_saus":
+            elif topping == "caramel saus":
                 # Haal de prijs op afhankelijk van bakje of hoorntje
                 return topping, TOPPING_PRIJZEN[topping][keuze_bakje_hoorntje]
             else:
