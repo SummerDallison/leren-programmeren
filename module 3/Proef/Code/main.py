@@ -22,8 +22,13 @@ def main():
         # Vraag de smaak voor elk bolletje
         vraag_smaken_bolletjes(aantal_bolletjes, smaken_teller)
 
-        # Vraag om een keuze tussen bakje of hoorntje
-        keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
+        # Bepaal automatisch de keuze voor 4-8 bolletjes
+        if 4 <= aantal_bolletjes <= 8:
+            keuze = "bakje"
+            print(ANTWOORD_BAKJE.format(aantal=aantal_bolletjes))
+        else:
+            # Vraag om een keuze tussen bakje of hoorntje
+            keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
 
         # Vraag naar topping en bereken de prijs
         topping, topping_prijs = vraag_topping(aantal_bolletjes, keuze)
