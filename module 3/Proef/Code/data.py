@@ -16,7 +16,7 @@ PROMPT_WELKOM = "Welkom bij Papi Gelato"
 PROMPT_BOLLETJES = "Hoeveel bolletjes wilt u? "
 PROMPT_KEUZE = "Wilt u deze {aantal} bolletje(s) in een hoorntje of een bakje? "
 PROMPT_MEER = "Wilt u nog meer bestellen? (ja/nee) "
-PROMPT_SMAAK = "Welke smaak wilt u voor bolletje nummer {X}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? "
+PROMPT_SMAAK = "Welke smaak wilt u voor bolletje nummer {bolletje_nummer}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? "
 PROMPT_TOPPING = "Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D) Caramel Saus? "
 
 ERROR_ONBEKEND = "Sorry, dat snap ik niet..."

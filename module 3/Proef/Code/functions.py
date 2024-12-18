@@ -11,9 +11,9 @@ def vraag_aantal_bolletjes():
             print(ERROR_ONBEKEND)
 
 def vraag_smaken_bolletjes(aantal, smaken_teller):
-    for x in range(1, aantal + 1):
+    for bolletje_nummer in range(1, aantal + 1):
         while True:
-            smaak = input(PROMPT_SMAAK.format(X=x)).lower()
+            smaak = input(PROMPT_SMAAK.format(bolletje_nummer=bolletje_nummer)).lower()
             if smaak in ["a", "c", "m", "v"]:
                 smaken_teller[{"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]] += 1
                 break
@@ -43,17 +43,27 @@ def vraag_topping(aantal, keuze):
 
 def toon_bakje_hoorntje(aantal, keuze, topping):
     if topping == "geen":
-        print(ANTWOORD_BAKJE.format(aantal=aantal) if keuze == "bakje" else ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal))
+        if keuze == "bakje":
+            print(ANTWOORD_BAKJE.format(aantal=aantal))
+        else:
+            print(ANTWOORD_HOORNTJE_BAKJE.format(keuze=keuze, aantal=aantal))
     else:
-        print(ANTWOORD_BAKJE_TOPPING.format(aantal=aantal, topping=topping) if keuze == "bakje" else ANTWOORD_HOORNTJE_TOPPING.format(keuze=keuze, aantal=aantal, topping=topping))
+        if keuze == "bakje":
+            print(ANTWOORD_BAKJE_TOPPING.format(aantal=aantal, topping=topping))
+        else:
+            print(ANTWOORD_HOORNTJE_TOPPING.format(keuze=keuze, aantal=aantal, topping=topping))
 
 def vraag_meer_bestellen():
     while True:
         antwoord = input(PROMPT_MEER).lower()
         if antwoord in ["ja", "nee"]:
-            print(AFSLUITING if antwoord == "nee" else "")
+            if antwoord == "nee":
+                print(AFSLUITING)
+            else:
+                pass
             return antwoord == "ja"
-        print(ERROR_ONBEKEND)
+        else:
+            print(ERROR_ONBEKEND)
 
 def print_bonnetje(totaal):
     print(BEGIN_BONNETJE)

@@ -23,7 +23,12 @@ def main():
         vraag_smaken_bolletjes(aantal_bolletjes, totaal["smaken"])
 
         # Bepaal bakje of hoorntje
-        keuze = "bakje" if aantal_bolletjes > 3 else vraag_keuze_bakje_hoorntje(aantal_bolletjes)
+        if aantal_bolletjes > 3:
+            keuze = "bakje"
+        else:
+            keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
+
+        # Update totaal op basis van de keuze
         if keuze == "hoorntje":
             totaal["hoorntjes"] += 1
         else:
