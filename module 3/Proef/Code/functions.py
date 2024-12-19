@@ -1,7 +1,7 @@
 from data import *
 
 # Vraagt het aantal bolletjes aan de gebruiker
-def vraag_aantal_bolletjes():
+def vraag_aantal_bolletjes() -> int:
     while True:
         try:
             aantal = int(input(PROMPT_BOLLETJES))
@@ -12,7 +12,7 @@ def vraag_aantal_bolletjes():
             print(ERROR_ONBEKEND)
 
 # Vraagt de smaak voor elk bolletje en houdt een teller bij voor de gekozen smaken
-def vraag_smaken_bolletjes(aantal, smaken_teller):
+def vraag_smaken_bolletjes(aantal: int, smaken_teller: int):
     for bolletje_nummer in range(1, aantal + 1):
         while True:
             smaak = input(PROMPT_SMAAK.format(bolletje_nummer=bolletje_nummer)).lower()
@@ -22,7 +22,7 @@ def vraag_smaken_bolletjes(aantal, smaken_teller):
             print(ERROR_ONBEKEND)
 
 # Vraagt de keuze tussen een hoorntje of een bakje
-def vraag_keuze_bakje_hoorntje(aantal):
+def vraag_keuze_bakje_hoorntje(aantal: int) -> str:
     while True:
         keuze = input(PROMPT_KEUZE.format(aantal=aantal)).lower()
         if keuze in KEUZE_HOORNTJE_BAKJE:
@@ -66,8 +66,6 @@ def vraag_meer_bestellen():
         if antwoord in ["ja", "nee"]:
             if antwoord == "nee":
                 print(AFSLUITING)
-            else:
-                pass
             return antwoord == "ja"
         else:
             print(ERROR_ONBEKEND)
