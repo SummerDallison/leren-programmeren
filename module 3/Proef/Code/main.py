@@ -9,44 +9,70 @@ def main():
         "hoorntjes": 0,
         "bakjes": 0,
         "toppings": 0.0,
-        "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE}
+        "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE},
+        "liter": 0
     }
 
-    while True:
-        # Vraag aantal bolletjes
-        aantal_bolletjes = vraag_aantal_bolletjes()
-        if aantal_bolletjes > 8:
-            print(ERROR_BAKKEN)
-            continue
-        
-        # Vraag smaken en update smaken teller
-        vraag_smaken_bolletjes(aantal_bolletjes, totaal["smaken"])
+    klanttype = vraag_klanttype()
 
-        # Bepaal bakje of hoorntje
-        if aantal_bolletjes > 3:
-            keuze = "bakje"
-        else:
-            keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
+    if klanttype == "1":
+        while True:
+            # Vraag aantal bolletjes
+            aantal_bolletjes = vraag_aantal_bolletjes()
+            if aantal_bolletjes > 8:
+                print(ERROR_BAKKEN)
+                continue
+            
+            # Vraag smaken en update smaken teller
+            vraag_smaken_bolletjes(aantal_bolletjes, totaal["smaken"])
 
-        # Update totaal op basis van de keuze
-        if keuze == "hoorntje":
-            totaal["hoorntjes"] += 1
-        else:
-            totaal["bakjes"] += 1
+            # Bepaal bakje of hoorntje
+            if aantal_bolletjes > 3:
+                keuze = "bakje"
+            else:
+                keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
 
-        # Vraag topping
-        topping, topping_prijs = vraag_topping(aantal_bolletjes, keuze)
-        totaal["toppings"] += topping_prijs
+            # Update totaal op basis van de keuze
+            if keuze == "hoorntje":
+                totaal["hoorntjes"] += 1
+            else:
+                totaal["bakjes"] += 1
 
-        # Toon keuze
-        toon_bakje_hoorntje(aantal_bolletjes, keuze, topping)
+            # Vraag topping
+            topping, topping_prijs = vraag_topping(aantal_bolletjes, keuze)
+            totaal["toppings"] += topping_prijs
 
-        # Totaal aantal bolletjes
-        totaal["bolletjes"] += aantal_bolletjes
+            # Toon keuze
+            toon_bakje_hoorntje(aantal_bolletjes, keuze, topping)
 
-        # Check of er meer besteld moet worden
-        if not vraag_meer_bestellen():
-            print_bonnetje(totaal)
-            break
+            # Totaal aantal bolletjes
+            totaal["bolletjes"] += aantal_bolletjes
+
+            # Check of er meer besteld moet worden
+            if not vraag_meer_bestellen():
+                print_bonnetje(totaal)
+                break
+
+    elif klanttype == "2":
+        while True:
+            # Vraag aantal liters
+            aantal_liters = vraag_aantal_liters()
+            totaal["liter"] += aantal_liters
+
+            # Vraag smaken per liter
+            for i in range(aantal_liters):
+                smaak = vraag_smaken(aantal=1, item=f"liter {i+1}")
+                totaal["smaken"][smaak] += 1
+
+            # Toont keuze
+            print(f"U heeft {aantal_liters} liter besteld.")
+
+            # Check of er meer besteld moet worden
+            if not vraag_meer_bestellen():
+                print_bonnetje(totaal, klanttype)
+                break
+
+    else:
+        print(ERROR_ONBEKEND)
 
 main()
