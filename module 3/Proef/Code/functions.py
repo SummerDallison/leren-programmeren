@@ -113,6 +113,8 @@ def print_bonnetje(totaal, klanttype="1"):
         print(BON_BAKJES.format(totaal_bakjes=totaal["bakjes"], BAKJE=BAKJE, prijs_bakjes=prijs))
     if totaal["toppings"] > 0:
         print(BON_TOPPING.format(totaal_topping_prijs=totaal["toppings"]))
+    
+    # Zakelijke klant bon met liters
     if klanttype == "2":
         totaal_prijs = totaal["liter"] * LITER
         print(BON_OPTELTEKEN)
@@ -123,3 +125,5 @@ def print_bonnetje(totaal, klanttype="1"):
         totaal_prijs = sum([aantal * BOLLETJE for aantal in totaal["smaken"].values()]) + totaal["hoorntjes"] * HOORNTJE + totaal["bakjes"] * BAKJE + totaal["toppings"]
         print(BON_OPTELTEKEN)
         print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
+        btw_bedrag = totaal_prijs * BTW_PERCENTAGE
+        print(BON_BTW.format(btw_bedrag=btw_bedrag))

@@ -30,6 +30,7 @@ ANTWOORD_BAKJE = "Dan krijgt u van mij een bakje met {aantal} bolletjes."
 ANTWOORD_HOORNTJE_BAKJE = "Hier is uw {keuze} met {aantal} bolletje(s)."
 ANTWOORD_BAKJE_TOPPING = "Dan krijgt u van mij een bakje met {aantal} bolletjes en {topping}."
 ANTWOORD_HOORNTJE_TOPPING = "Hier is uw {keuze} met {aantal} bolletje(s) en {topping}."
+ANTWOORD_LITERS = "U heeft {aantal_liters} liter besteld."
 
 BEGIN_BONNETJE = "\n---------- [Papi Gelato] ----------"
 BON_SMAAK = "B. {smaak:13} {aantal} x €{BOLLETJE:.2f} = € {prijs:.2f}"
