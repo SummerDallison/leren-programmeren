@@ -14,6 +14,14 @@ TOPPING_PRIJZEN = {
 KEUZE_HOORNTJE_BAKJE = ['hoorntje', 'bakje']
 KEUZE_SMAAK_BOLLETJE = ['aardbei', 'chocolade', 'munt', 'vanille']
 
+TOTAAL = {
+        "bolletjes": 0,
+        "hoorntjes": 0,
+        "bakjes": 0,
+        "toppings": 0.0,
+        "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE}
+    }
+
 PROMPT_WELKOM = "Welkom bij Papi Gelato"
 PROMPT_KLANT = "Bent u 1) een particuliere klant of 2) een zakelijke klant? "
 PROMPT_BOLLETJES = "Hoeveel bolletjes wilt u? "
@@ -39,8 +47,8 @@ BON_HOORNTJES = "Hoorntje         {totaal_hoorntjes} x €{HOORNTJE:.2f} = € {
 BON_BAKJES = "Bakje            {totaal_bakjes} x €{BAKJE:.2f} = € {prijs_bakjes:.2f}"
 BON_TOPPING = "Topping                    = € {totaal_topping_prijs:.2f}"
 BON_LITER = "L. {smaak:13} {aantal} x €{LITER_PRIJS:.2f} = € {liter_prijs:.2f}"
-BON_OPTELTEKEN = "                         ---------- +"
+BON_OPTELTEKEN = "                          ---------- +"
 BON_TOTAAL = "Totaal                     = € {totaal_prijs:.2f}"
-BON_BTW = "BTW ({BTW_PERCENTAGE}%)                = € {btw_bedrag:.2f}"
+BON_BTW = "BTW ({BTW_PERCENTAGE}%)                   = € {btw_bedrag:.2f}"
 
 AFSLUITING = "Bedankt en tot ziens!"

@@ -5,14 +5,7 @@ def main():
     print(PROMPT_WELKOM)
 
     klanttype = vraag_klanttype()
-
-    totaal = {
-        "bolletjes": 0,
-        "hoorntjes": 0,
-        "bakjes": 0,
-        "toppings": 0.0,
-        "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE}
-    }
+    totaal = TOTAAL.copy()
 
     if klanttype == 1:  # Particuliere klant
         while True:
