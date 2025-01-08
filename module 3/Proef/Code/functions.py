@@ -1,9 +1,9 @@
 from data import *
 
-# Vraagt het type klant (particulier of zakelijk)
+# Vraag het type klant (particulier of zakelijk)
 def vraag_klanttype() -> int:
     while True:
-        klanttype = input(PROMPT_KLANT)
+        klanttype = input(PROMPT_KLANT).strip()
         if klanttype in ["1", "2"]:
             return int(klanttype)
         print(ERROR_ONBEKEND)
@@ -99,7 +99,7 @@ def vraag_meer_bestellen() -> bool:
         else:
             print(ERROR_ONBEKEND)
 
-# Print een overzichtsbonnetje met de totaalprijs en specificaties (particuliere klanten)
+# Print een bonnetje voor particuliere klanten
 def print_bonnetje(totaal: dict):
     print(BEGIN_BONNETJE)
     for smaak, aantal in totaal["smaken"].items():
@@ -112,20 +112,20 @@ def print_bonnetje(totaal: dict):
     if totaal["bakjes"] > 0:
         prijs = totaal["bakjes"] * BAKJE
         print(BON_BAKJES.format(totaal_bakjes=totaal["bakjes"], BAKJE=BAKJE, prijs=prijs))
-    if totaal["toppings"] > 0:
-        print(BON_TOPPING.format(totaal_topping_prijs=totaal["toppings"]))
-    totaal_prijs = sum([aantal * BOLLETJE for aantal in totaal["smaken"].values()]) + totaal["hoorntjes"] * HOORNTJE + totaal["bakjes"] * BAKJE + totaal["toppings"]
+    totaal_prijs = sum(
+        aantal * BOLLETJE for aantal in totaal["smaken"].values()
+    ) + totaal["hoorntjes"] * HOORNTJE + totaal["bakjes"] * BAKJE
     print(BON_OPTELTEKEN)
     print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
 
-# Print een overzichtsbonnetje met BTW voor zakelijke klanten
+# Print een bonnetje met BTW voor zakelijke klanten
 def print_bonnetje_zakelijk(totaal: dict):
     print(BEGIN_BONNETJE)
     for smaak, aantal in totaal["smaken"].items():
         if aantal > 0:
             prijs = aantal * LITER_PRIJS
-            print(BON_LITER.format(smaak=smaak.capitalize(), aantal=aantal, LITER_PRIJS=LITER_PRIJS, prijs=prijs))
-    totaal_prijs = sum([aantal * LITER_PRIJS for aantal in totaal["smaken"].values()])
+            print(BON_LITER.format(smaak=smaak.capitalize(), aantal=aantal, LITER_PRIJS=LITER_PRIJS, liter_prijs=prijs))
+    totaal_prijs = sum(aantal * LITER_PRIJS for aantal in totaal["smaken"].values())
     btw_bedrag = totaal_prijs * (BTW_PERCENTAGE / 100)
     print(BON_OPTELTEKEN)
     print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
