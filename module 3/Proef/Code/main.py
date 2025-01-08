@@ -4,75 +4,50 @@ from functions import *
 def main():
     print(PROMPT_WELKOM)
 
+    klanttype = vraag_klanttype()
+
     totaal = {
         "bolletjes": 0,
         "hoorntjes": 0,
         "bakjes": 0,
         "toppings": 0.0,
-        "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE},
-        "liter": 0
+        "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE}
     }
 
-    klanttype = vraag_klanttype()
-
-    if klanttype == "1":
+    if klanttype == 1:  # Particuliere klant
         while True:
-            # Vraag aantal bolletjes
             aantal_bolletjes = vraag_aantal_bolletjes()
             if aantal_bolletjes > 8:
                 print(ERROR_BAKKEN)
                 continue
             
-            # Vraag smaken en update smaken teller
             vraag_smaken_bolletjes(aantal_bolletjes, totaal["smaken"])
 
-            # Bepaal bakje of hoorntje
             if aantal_bolletjes > 3:
                 keuze = "bakje"
             else:
                 keuze = vraag_keuze_bakje_hoorntje(aantal_bolletjes)
 
-            # Update totaal op basis van de keuze
             if keuze == "hoorntje":
                 totaal["hoorntjes"] += 1
             else:
                 totaal["bakjes"] += 1
 
-            # Vraag topping
             topping, topping_prijs = vraag_topping(aantal_bolletjes, keuze)
             totaal["toppings"] += topping_prijs
 
-            # Toon keuze
             toon_bakje_hoorntje(aantal_bolletjes, keuze, topping)
 
-            # Totaal aantal bolletjes
             totaal["bolletjes"] += aantal_bolletjes
 
-            # Check of er meer besteld moet worden
             if not vraag_meer_bestellen():
                 print_bonnetje(totaal)
                 break
+    else:  # Zakelijke klant
+        aantal_liters = vraag_aantal_liters()
+        vraag_smaken_liters(aantal_liters, totaal["smaken"])
+        print_bonnetje_zakelijk(totaal)
 
-    elif klanttype == "2":
-        while True:
-            # Vraag aantal liters
-            aantal_liters = vraag_aantal_liters()
-            totaal["liter"] += aantal_liters
-
-            # Vraag smaken per liter
-            for i in range(aantal_liters):
-                smaak = vraag_smaken(aantal=1, item=f"liter {i+1}")
-                totaal["smaken"][smaak] += 1
-
-            # Toont keuze
-            print(f"U heeft {aantal_liters} liter besteld.")
-
-            # Check of er meer besteld moet worden
-            if not vraag_meer_bestellen():
-                print_bonnetje(totaal, klanttype)
-                break
-
-    else:
-        print(ERROR_ONBEKEND)
+    print(AFSLUITING)
 
 main()

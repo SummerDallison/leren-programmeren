@@ -1,11 +1,11 @@
 from data import *
 
-# Vraag klanttype
-def vraag_klanttype() -> str:
+# Vraagt het type klant (particulier of zakelijk)
+def vraag_klanttype() -> int:
     while True:
-        klanttype = input(PROMPT_KLANT).strip()
+        klanttype = input(PROMPT_KLANT)
         if klanttype in ["1", "2"]:
-            return klanttype
+            return int(klanttype)
         print(ERROR_ONBEKEND)
 
 # Vraagt het aantal bolletjes aan de gebruiker
@@ -19,7 +19,7 @@ def vraag_aantal_bolletjes() -> int:
         except ValueError:
             print(ERROR_ONBEKEND)
 
-# Vraag aantal liters voor zakelijke klant
+# Vraagt het aantal liters aan de zakelijke klant
 def vraag_aantal_liters() -> int:
     while True:
         try:
@@ -30,25 +30,25 @@ def vraag_aantal_liters() -> int:
         except ValueError:
             print(ERROR_ONBEKEND)
 
-# Vraag smaken voor bolletjes of liters
+# Vraagt de smaak voor elk bolletje en houdt een teller bij voor de gekozen smaken
 def vraag_smaken_bolletjes(aantal: int, smaken_teller: dict):
-    for nummer in range(1, aantal + 1):
+    for bolletje_nummer in range(1, aantal + 1):
         while True:
-            smaak = input(PROMPT_SMAAK.format(bolletje_nummer=nummer)).lower()
+            smaak = input(PROMPT_SMAAK.format(bolletje_nummer=bolletje_nummer)).lower()
             if smaak in ["a", "c", "m", "v"]:
-                gekozen_smaak = {"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]
-                smaken_teller[gekozen_smaak] += 1
+                smaken_teller[{"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]] += 1
                 break
             print(ERROR_ONBEKEND)
 
-# Vraag smaken voor zakelijke bestellingen
-def vraag_smaken(aantal: int, item: str) -> str:
-    while True:
-        smaak = input(f"Welke smaak wilt u voor {item}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? ").lower()
-        if smaak in ["a", "c", "m", "v"]:
-            gekozen_smaak = {"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]
-            return gekozen_smaak
-        print(ERROR_ONBEKEND)
+# Vraagt de smaak voor elke liter en houdt een teller bij voor de gekozen smaken
+def vraag_smaken_liters(aantal: int, smaken_teller: dict):
+    for liter_nummer in range(1, aantal + 1):
+        while True:
+            smaak = input(PROMPT_SMAAK_LITER.format(liter_nummer=liter_nummer)).lower()
+            if smaak in ["a", "c", "m", "v"]:
+                smaken_teller[{"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]] += 1
+                break
+            print(ERROR_ONBEKEND)
 
 # Vraagt de keuze tussen een hoorntje of een bakje
 def vraag_keuze_bakje_hoorntje(aantal: int) -> str:
@@ -59,10 +59,11 @@ def vraag_keuze_bakje_hoorntje(aantal: int) -> str:
         print(ERROR_ONBEKEND)
 
 # Vraagt welke topping de gebruiker wil en berekent de prijs
-def vraag_topping(aantal, keuze):
+def vraag_topping(aantal: int, keuze: str):
     while True:
         keuze_topping = input(PROMPT_TOPPING).lower()
         if keuze_topping in ["a", "b", "c", "d"]:
+            # Zet de keuze om naar een toppingnaam en bereken de prijs
             topping = {"a": "geen", "b": "slagroom", "c": "sprinkels", "d": "caramel saus"}[keuze_topping]
             prijs = 0.0
             if topping == "sprinkels":
@@ -75,7 +76,7 @@ def vraag_topping(aantal, keuze):
         print(ERROR_ONBEKEND)
 
 # Toont aantal bolletjes, de keuze van bakje of hoorntje en de topping
-def toon_bakje_hoorntje(aantal, keuze, topping):
+def toon_bakje_hoorntje(aantal: int, keuze: str, topping: str):
     if topping == "geen":
         if keuze == "bakje":
             print(ANTWOORD_BAKJE.format(aantal=aantal))
@@ -88,7 +89,7 @@ def toon_bakje_hoorntje(aantal, keuze, topping):
             print(ANTWOORD_HOORNTJE_TOPPING.format(keuze=keuze, aantal=aantal, topping=topping))
 
 # Vraagt of de gebruiker meer wil bestellen
-def vraag_meer_bestellen():
+def vraag_meer_bestellen() -> bool:
     while True:
         antwoord = input(PROMPT_MEER).lower()
         if antwoord in ["ja", "nee"]:
@@ -98,8 +99,8 @@ def vraag_meer_bestellen():
         else:
             print(ERROR_ONBEKEND)
 
-# Print een overzichtsbonnetje met de totaalprijs en specificaties
-def print_bonnetje(totaal, klanttype="1"):
+# Print een overzichtsbonnetje met de totaalprijs en specificaties (particuliere klanten)
+def print_bonnetje(totaal: dict):
     print(BEGIN_BONNETJE)
     for smaak, aantal in totaal["smaken"].items():
         if aantal > 0:
@@ -110,20 +111,22 @@ def print_bonnetje(totaal, klanttype="1"):
         print(BON_HOORNTJES.format(totaal_hoorntjes=totaal["hoorntjes"], HOORNTJE=HOORNTJE, prijs_hoorntjes=prijs))
     if totaal["bakjes"] > 0:
         prijs = totaal["bakjes"] * BAKJE
-        print(BON_BAKJES.format(totaal_bakjes=totaal["bakjes"], BAKJE=BAKJE, prijs_bakjes=prijs))
+        print(BON_BAKJES.format(totaal_bakjes=totaal["bakjes"], BAKJE=BAKJE, prijs=prijs))
     if totaal["toppings"] > 0:
         print(BON_TOPPING.format(totaal_topping_prijs=totaal["toppings"]))
-    
-    # Zakelijke klant bon met liters
-    if klanttype == "2":
-        totaal_prijs = totaal["liter"] * LITER
-        print(BON_OPTELTEKEN)
-        print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
-        btw_bedrag = totaal_prijs * BTW_PERCENTAGE
-        print(BON_BTW.format(btw_bedrag=btw_bedrag))
-    else:
-        totaal_prijs = sum([aantal * BOLLETJE for aantal in totaal["smaken"].values()]) + totaal["hoorntjes"] * HOORNTJE + totaal["bakjes"] * BAKJE + totaal["toppings"]
-        print(BON_OPTELTEKEN)
-        print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
-        btw_bedrag = totaal_prijs * BTW_PERCENTAGE
-        print(BON_BTW.format(btw_bedrag=btw_bedrag))
+    totaal_prijs = sum([aantal * BOLLETJE for aantal in totaal["smaken"].values()]) + totaal["hoorntjes"] * HOORNTJE + totaal["bakjes"] * BAKJE + totaal["toppings"]
+    print(BON_OPTELTEKEN)
+    print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
+
+# Print een overzichtsbonnetje met BTW voor zakelijke klanten
+def print_bonnetje_zakelijk(totaal: dict):
+    print(BEGIN_BONNETJE)
+    for smaak, aantal in totaal["smaken"].items():
+        if aantal > 0:
+            prijs = aantal * LITER_PRIJS
+            print(BON_LITER.format(smaak=smaak.capitalize(), aantal=aantal, LITER_PRIJS=LITER_PRIJS, prijs=prijs))
+    totaal_prijs = sum([aantal * LITER_PRIJS for aantal in totaal["smaken"].values()])
+    btw_bedrag = totaal_prijs * (BTW_PERCENTAGE / 100)
+    print(BON_OPTELTEKEN)
+    print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
+    print(BON_BTW.format(BTW_PERCENTAGE=BTW_PERCENTAGE, btw_bedrag=btw_bedrag))
