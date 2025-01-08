@@ -35,8 +35,8 @@ def vraag_smaken_bolletjes(aantal: int, smaken_teller: dict):
     for bolletje_nummer in range(1, aantal + 1):
         while True:
             smaak = input(PROMPT_SMAAK.format(bolletje_nummer=bolletje_nummer)).lower()
-            if smaak in ["a", "c", "m", "v"]:
-                smaken_teller[{"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]] += 1
+            if smaak in ["a", "c", "v"]:
+                smaken_teller[{"a": "aardbei", "c": "chocolade", "v": "vanille"}[smaak]] += 1
                 break
             print(ERROR_ONBEKEND)
 
@@ -45,8 +45,8 @@ def vraag_smaken_liters(aantal: int, smaken_teller: dict):
     for liter_nummer in range(1, aantal + 1):
         while True:
             smaak = input(PROMPT_SMAAK_LITER.format(liter_nummer=liter_nummer)).lower()
-            if smaak in ["a", "c", "m", "v"]:
-                smaken_teller[{"a": "aardbei", "c": "chocolade", "m": "munt", "v": "vanille"}[smaak]] += 1
+            if smaak in ["a", "c", "v"]:
+                smaken_teller[{"a": "aardbei", "c": "chocolade", "v": "vanille"}[smaak]] += 1
                 break
             print(ERROR_ONBEKEND)
 
