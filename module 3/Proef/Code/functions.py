@@ -123,7 +123,7 @@ def print_bonnetje(totaal: dict, klanttype: int):
         print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
     elif klanttype == 2:
         # Voor zakelijke klanten wordt BTW berekend
-        basis_prijs = totaal_prijs / (1 + BTW_PERCENTAGE / 100)
-        btw_bedrag = totaal_prijs - basis_prijs
+        btw_bedrag = totaal_prijs * (BTW_PERCENTAGE / (100 + BTW_PERCENTAGE))
+        
         print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
         print(BON_BTW.format(BTW_PERCENTAGE=BTW_PERCENTAGE, btw_bedrag=btw_bedrag))
