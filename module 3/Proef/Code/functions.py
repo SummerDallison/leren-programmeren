@@ -107,13 +107,13 @@ def print_bonnetje(totaal: dict, klanttype: int):
     elif klanttype == 2:
         for smaak, aantal in totaal["smaken"].items():
             if aantal > 0:
-                prijs_inclusief_btw = aantal * LITER_PRIJS
-                totaal_prijs += prijs_inclusief_btw
+                prijs_liters = aantal * LITER_PRIJS
+                totaal_prijs += prijs_liters
                 print(BON_LITER.format(
                     smaak=smaak.capitalize(),
                     aantal=aantal,
                     LITER_PRIJS=LITER_PRIJS,
-                    liter_prijs=prijs_inclusief_btw
+                    liter_prijs=prijs_liters
                 ))
 
     # Bereken en toon totaalbedrag
@@ -124,6 +124,6 @@ def print_bonnetje(totaal: dict, klanttype: int):
     elif klanttype == 2:
         # Voor zakelijke klanten wordt BTW berekend
         btw_bedrag = totaal_prijs * (BTW_PERCENTAGE / (100 + BTW_PERCENTAGE))
-        
+
         print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
         print(BON_BTW.format(BTW_PERCENTAGE=BTW_PERCENTAGE, btw_bedrag=btw_bedrag))
