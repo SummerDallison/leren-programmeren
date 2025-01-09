@@ -78,50 +78,52 @@ def vraag_meer_bestellen() -> bool:
         else:
             print(ERROR_ONBEKEND)
 
-# Print een bonnetje voor particuliere klanten
-def print_bonnetje(totaal: dict):
-    print(BEGIN_BONNETJE)
-    for smaak, aantal in totaal["smaken"].items():
-        if aantal > 0:
-            prijs = aantal * BOLLETJE
-            print(BON_SMAAK.format(smaak=smaak.capitalize(), aantal=aantal, BOLLETJE=BOLLETJE, prijs=prijs))
-    if totaal["hoorntjes"] > 0:
-        prijs_hoorntjes = totaal["hoorntjes"] * HOORNTJE
-        print(BON_HOORNTJES.format(totaal_hoorntjes=totaal["hoorntjes"], HOORNTJE=HOORNTJE, prijs_hoorntjes=prijs_hoorntjes))
-    if totaal["bakjes"] > 0:
-        prijs_bakjes = totaal["bakjes"] * BAKJE
-        print(BON_BAKJES.format(totaal_bakjes=totaal["bakjes"], BAKJE=BAKJE, prijs_bakjes=prijs_bakjes))
-    if totaal["toppings"] > 0:
-        print(BON_TOPPING.format(totaal_topping_prijs=totaal["toppings"]))
-    totaal_prijs = (
-        sum([aantal * BOLLETJE for aantal in totaal["smaken"].values()]) +
-        totaal["hoorntjes"] * HOORNTJE +
-        totaal["bakjes"] * BAKJE +
-        totaal["toppings"]
-    )
-    print(BON_OPTELTEKEN)
-    print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
-
-# Print een overzichtsbonnetje met BTW voor zakelijke klanten
-def print_bonnetje_zakelijk(totaal: dict):
+def print_bonnetje(totaal: dict, klanttype: int):
     print(BEGIN_BONNETJE)
     totaal_prijs = 0
 
-    for smaak, aantal in totaal["smaken"].items():
-        if aantal > 0:
-            prijs_inclusief_btw = aantal * LITER_PRIJS
-            totaal_prijs += prijs_inclusief_btw
-            print(BON_LITER.format(
-                smaak=smaak.capitalize(),
-                aantal=aantal,
-                LITER_PRIJS=LITER_PRIJS,
-                liter_prijs=prijs_inclusief_btw
-            ))
+    # Bon voor particuliere klanten
+    if klanttype == 1:
+        for smaak, aantal in totaal["smaken"].items():
+            if aantal > 0:
+                prijs = aantal * BOLLETJE
+                totaal_prijs += prijs
+                print(BON_SMAAK.format(smaak=smaak.capitalize(), aantal=aantal, BOLLETJE=BOLLETJE, prijs=prijs))
+        
+        if totaal["hoorntjes"] > 0:
+            prijs_hoorntjes = totaal["hoorntjes"] * HOORNTJE
+            totaal_prijs += prijs_hoorntjes
+            print(BON_HOORNTJES.format(totaal_hoorntjes=totaal["hoorntjes"], HOORNTJE=HOORNTJE, prijs_hoorntjes=prijs_hoorntjes))
 
-    # Bereken basisprijs (exclusief BTW) en BTW-bedrag
-    basis_prijs = totaal_prijs / (1 + BTW_PERCENTAGE / 100)
-    btw_bedrag = totaal_prijs - basis_prijs
+        if totaal["bakjes"] > 0:
+            prijs_bakjes = totaal["bakjes"] * BAKJE
+            totaal_prijs += prijs_bakjes
+            print(BON_BAKJES.format(totaal_bakjes=totaal["bakjes"], BAKJE=BAKJE, prijs_bakjes=prijs_bakjes))
 
+        if totaal["toppings"] > 0:
+            print(BON_TOPPING.format(totaal_topping_prijs=totaal["toppings"]))
+
+    # Bon voor zakelijke klanten
+    elif klanttype == 2:
+        for smaak, aantal in totaal["smaken"].items():
+            if aantal > 0:
+                prijs_inclusief_btw = aantal * LITER_PRIJS
+                totaal_prijs += prijs_inclusief_btw
+                print(BON_LITER.format(
+                    smaak=smaak.capitalize(),
+                    aantal=aantal,
+                    LITER_PRIJS=LITER_PRIJS,
+                    liter_prijs=prijs_inclusief_btw
+                ))
+
+    # Bereken en toon totaalbedrag
     print(BON_OPTELTEKEN)
-    print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
-    print(BON_BTW.format(BTW_PERCENTAGE=BTW_PERCENTAGE, btw_bedrag=btw_bedrag))
+
+    if klanttype == 1:
+        print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
+    elif klanttype == 2:
+        # Voor zakelijke klanten wordt BTW berekend
+        basis_prijs = totaal_prijs / (1 + BTW_PERCENTAGE / 100)
+        btw_bedrag = totaal_prijs - basis_prijs
+        print(BON_TOTAAL.format(totaal_prijs=totaal_prijs))
+        print(BON_BTW.format(BTW_PERCENTAGE=BTW_PERCENTAGE, btw_bedrag=btw_bedrag))

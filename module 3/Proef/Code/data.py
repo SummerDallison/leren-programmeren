@@ -8,7 +8,7 @@ TOPPING_PRIJZEN = {
     "geen": 0.0,
     "slagroom": 0.5,
     "sprinkels": 0.3,  # per bolletje
-    "caramel saus": {"hoorntje": 0.6, "bakje": 0.9}
+    "caramel saus": {"hoorntje": 0.6, "bakje": 0.9}  # Prijzen per keuze
 }
 
 KEUZE_HOORNTJE_BAKJE = ['hoorntje', 'bakje']
@@ -20,7 +20,7 @@ TOTAAL = {
     "bakjes": 0,
     "toppings": 0.0,
     "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE}
-    }
+}
 
 PROMPT_WELKOM = "Welkom bij Papi Gelato"
 PROMPT_KLANT = "Bent u 1) een particuliere klant of 2) een zakelijke klant? "
