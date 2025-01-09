@@ -9,12 +9,12 @@ def main():
 
     if klanttype == 1:  # Particuliere klant
         while True:
-            aantal_bolletjes = vraag_aantal_bolletjes()
+            aantal_bolletjes = vraag_aantal(PROMPT_BOLLETJES)
             if aantal_bolletjes > 8:
                 print(ERROR_BAKKEN)
                 continue
             
-            vraag_smaken_bolletjes(aantal_bolletjes, totaal["smaken"])
+            vraag_smaken(aantal_bolletjes, totaal["smaken"], PROMPT_SMAAK_BOLLETJE)
 
             if aantal_bolletjes > 3:
                 keuze = "bakje"
@@ -37,8 +37,8 @@ def main():
                 print_bonnetje(totaal)
                 break
     else:  # Zakelijke klant
-        aantal_liters = vraag_aantal_liters()
-        vraag_smaken_liters(aantal_liters, totaal["smaken"])
+        aantal_liters = vraag_aantal(PROMPT_LITERS)
+        vraag_smaken(aantal_liters, totaal["smaken"], PROMPT_SMAAK_LITER)
         print_bonnetje_zakelijk(totaal)
 
     print(AFSLUITING)

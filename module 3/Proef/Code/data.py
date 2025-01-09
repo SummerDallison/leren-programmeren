@@ -2,7 +2,7 @@ BOLLETJE = 0.95
 HOORNTJE = 1.25
 BAKJE = 0.75
 LITER_PRIJS = 9.80
-BTW_PERCENTAGE = 6  # Zakelijke klanten betalen 6% BTW
+BTW_PERCENTAGE = 6
 
 TOPPING_PRIJZEN = {
     "geen": 0.0,
@@ -15,19 +15,19 @@ KEUZE_HOORNTJE_BAKJE = ['hoorntje', 'bakje']
 KEUZE_SMAAK_BOLLETJE = ['aardbei', 'chocolade', 'vanille']
 
 TOTAAL = {
-        "bolletjes": 0,
-        "hoorntjes": 0,
-        "bakjes": 0,
-        "toppings": 0.0,
-        "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE}
+    "bolletjes": 0,
+    "hoorntjes": 0,
+    "bakjes": 0,
+    "toppings": 0.0,
+    "smaken": {smaak: 0 for smaak in KEUZE_SMAAK_BOLLETJE}
     }
 
 PROMPT_WELKOM = "Welkom bij Papi Gelato"
 PROMPT_KLANT = "Bent u 1) een particuliere klant of 2) een zakelijke klant? "
 PROMPT_BOLLETJES = "Hoeveel bolletjes wilt u? "
 PROMPT_LITERS = "Hoeveel liter wilt u? "
-PROMPT_SMAAK = "Welke smaak wilt u voor bolletje nummer {bolletje_nummer}? A) Aardbei, C) Chocolade of V) Vanille? "
-PROMPT_SMAAK_LITER = "Welke smaak wilt u voor liter nummer {liter_nummer}? A) Aardbei, C) Chocolade of V) Vanille? "
+PROMPT_SMAAK_BOLLETJE = "Welke smaak wilt u voor bolletje nummer {nummer}? A) Aardbei, C) Chocolade of V) Vanille? "
+PROMPT_SMAAK_LITER = "Welke smaak wilt u voor liter nummer {nummer}? A) Aardbei, C) Chocolade of V) Vanille? "
 PROMPT_KEUZE = "Wilt u deze {aantal} bolletje(s) in een hoorntje of een bakje? "
 PROMPT_MEER = "Wilt u nog meer bestellen? (ja/nee) "
 PROMPT_TOPPING = "Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D) Caramel Saus? "

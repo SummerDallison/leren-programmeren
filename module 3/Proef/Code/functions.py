@@ -8,22 +8,11 @@ def vraag_klanttype() -> int:
             return int(klanttype)
         print(ERROR_ONBEKEND)
 
-# Vraagt het aantal bolletjes aan de gebruiker
-def vraag_aantal_bolletjes() -> int:
+# Vraagt het aantal bolletjes/liters aan de gebruiker
+def vraag_aantal(prompt: str) -> int:
     while True:
         try:
-            aantal = int(input(PROMPT_BOLLETJES))
-            if aantal > 0:
-                return aantal
-            print(ERROR_ONBEKEND)
-        except ValueError:
-            print(ERROR_ONBEKEND)
-
-# Vraagt het aantal liters aan de zakelijke klant
-def vraag_aantal_liters() -> int:
-    while True:
-        try:
-            aantal = int(input(PROMPT_LITERS))
+            aantal = int(input(prompt))
             if aantal > 0:
                 return aantal
             print(ERROR_ONBEKEND)
@@ -31,20 +20,10 @@ def vraag_aantal_liters() -> int:
             print(ERROR_ONBEKEND)
 
 # Vraagt de smaak voor elk bolletje en houdt een teller bij voor de gekozen smaken
-def vraag_smaken_bolletjes(aantal: int, smaken_teller: dict):
-    for bolletje_nummer in range(1, aantal + 1):
+def vraag_smaken(aantal: int, smaken_teller: dict, prompt: str):
+    for nummer in range(1, aantal + 1):
         while True:
-            smaak = input(PROMPT_SMAAK.format(bolletje_nummer=bolletje_nummer)).lower()
-            if smaak in ["a", "c", "v"]:
-                smaken_teller[{"a": "aardbei", "c": "chocolade", "v": "vanille"}[smaak]] += 1
-                break
-            print(ERROR_ONBEKEND)
-
-# Vraagt de smaak voor elke liter en houdt een teller bij voor de gekozen smaken
-def vraag_smaken_liters(aantal: int, smaken_teller: dict):
-    for liter_nummer in range(1, aantal + 1):
-        while True:
-            smaak = input(PROMPT_SMAAK_LITER.format(liter_nummer=liter_nummer)).lower()
+            smaak = input(prompt.format(nummer=nummer)).lower()
             if smaak in ["a", "c", "v"]:
                 smaken_teller[{"a": "aardbei", "c": "chocolade", "v": "vanille"}[smaak]] += 1
                 break
